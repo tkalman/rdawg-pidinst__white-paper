@@ -1,20 +1,3 @@
-===============================================================================
-Persistent Identification of Instruments (PIDINST) ePIC Cookbook
-===============================================================================
-
-.. sectnum::
-
-+------------------+-------------------------------------------------------------------------------+
-|Document type     |Research Data Alliance (RDA) Persistent Identification of Instruments (PIDINST)|
-|                  |working group output report                                                    |
-+------------------+-------------------------------------------------------------------------------+
-
-
-Introduction
-~~~~~~~~~~~~
-This cookbook enables instrument providers to create persistent identifiers (PID) for instruments using the ePIC infrastructure [1]_. ePIC is an international consortium that provides PID services for the worldwide research community, allowing them to allocate and resolve PIDs based on the handle system (TM, https://www.handle.net/). In 2019, ePIC published a metadata schema for citing instruments, as part of the recommendations resulting from the Research Data Alliance working group for the persistent identification of instruments (PIDINST) [2]_ referred to as the PIDINST metadata schema [3]_. This document provides technical guidance for publishing instrument PIDs through ePIC.
-
-
 PIDINST handles at ePIC
 ~~~~~~~~~~~~~~~~~~~~~~~
 Properties, sub-properties and attributes of the PIDINST metadata schema used in ePIC PID handle records can be viewed as follows. Use ‘#’ before ‘objects’ to interchange between human-readable and JSON representations. Each property, sub-property and attribute is resolvable through a unique handle record:
@@ -146,7 +129,3 @@ For given username, index, where the public key HS_PUBKEY is stored, and prefix 
 **Delete Handle created:**
 ::
 	curl -s --insecure ${VERBOSE} --key ${USERKEY} --cert ${USERCERT} -H "Content-Type:application/json" -H 'Authorization: Handle clientCert="true"' -X DELETE  https://${SERVPORT}/api/handles/test_epic3_1234
-
-..	[1] https://www.pidconsortium.net/
-..	[2] https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
-..	[3] https://github.com/rdawg-pidinst/schema
