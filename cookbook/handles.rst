@@ -92,9 +92,7 @@ Updating the description of a PID handle record
 
 Properties are updated using the PUT method by either specifying the
 JSON properties directly in the cURL request or parsing them via a
-JSON file.  A `JSON example
-<https://github.com/rdawg-pidinst/White-paper/blob/master/ePIC_json_example.json>`_
-is available at our GitHub repository.
+JSON file (see :download:`JSON example </examples/ePIC_json_example.json>`).
 
 Directly specifying properties within the cURL request::
 
