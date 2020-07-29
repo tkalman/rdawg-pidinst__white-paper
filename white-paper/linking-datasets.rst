@@ -75,7 +75,9 @@ way, users can express properties of their choice. Through groups, other
 information relating to parameter streams or instruments could be
 expressed, such as calibralibrations and instrument reference frames and
 orientations.
+
 ::
+
       netcdf iocean_example {
       dimensions:
          INSTANCE = UNLIMITED ; // (1 currently)
@@ -173,7 +175,9 @@ the root group of the NetCDF file instead of sub groups. The PIDINST
 instrument identifier may be expressed as an instrument attribute e.g.
 snippet 11.5. Ideally, blank separated lists should be used if linking
 more than one instrument.
+
 ::
+
       int instrument_parameter_variable;
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
