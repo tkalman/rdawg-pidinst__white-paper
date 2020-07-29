@@ -8,7 +8,7 @@ of Instruments WG`__.
    :maxdepth: 1
    :caption: Contents:
 
-   white-paper/index.rst
-   cookbook/index.rst
+   white-paper/index
+   cookbook/index
 
 .. __: https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
