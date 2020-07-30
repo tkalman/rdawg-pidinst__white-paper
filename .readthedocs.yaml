@@ -1,0 +1,17 @@
+# .readthedocs.yml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+version: 2
+
+sphinx:
+  configuration: conf.py
+
+# For the moment, restrict to building html only.  In the long run, we
+# will want to build pdf as well, but that needs more configuration
+# tweaking to create decent results.
+formats: []
+
+python:
+  install:
+    - requirements: .requirements
