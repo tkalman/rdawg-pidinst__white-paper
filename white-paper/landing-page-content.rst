@@ -1,3 +1,5 @@
+.. _landing-page-content:
+
 Landing page content
 ====================
 
@@ -5,11 +7,10 @@ It is recommended that instrument providers use enough information
 (metadata) on landing pages to unambiguously identify the instrument.
 Ideally, landing pages should include the metadata specified in the
 schema for PID providers and use common terminology where practical to
-aid interoperability (see `Using common
-terminology\ section <#using-common-terminologies>`__). Institutions
-should also consider providing links to the metadata record that
-accompanies PIDs published at PID providers to aid metadata exchange
-(e.g. DataCite XML).
+aid interoperability (see :ref:`pidinst-metadata-schema-terminologies`).
+Institutions should also consider providing links to the metadata record
+that accompanies PIDs published at PID providers to aid metadata
+exchange (e.g. DataCite XML).
 
 Tables 9.1and 9.2 provide recommendations for some additional, more
 descriptive metadata that can be published on landing pages. Together

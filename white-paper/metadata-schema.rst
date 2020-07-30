@@ -1,3 +1,5 @@
+.. _pidinst-metadata-schema:
+
 PIDINST metadata schema
 =======================
 
@@ -12,6 +14,8 @@ used for prototypical implementation of metadata properties in the ePIC
 infrastructure. A second variant provides a `mapping between PIDINST
 metadata properties and DataCite Metadata Schema 4.3 <PIDINST DataCite
 schema_>`_.
+
+.. _pidinst-metadata-schema-terminologies:
 
 Using common terminologies
 --------------------------

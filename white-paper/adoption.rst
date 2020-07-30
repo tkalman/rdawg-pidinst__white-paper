@@ -31,10 +31,9 @@ descriptions encoded in the Open Geospatial Consortium’s (OGC)
 `SensorML`_ open standards for conceptualising and integrating
 real-world sensors. In an initial test case, a PID was minted for a
 Sea-Bird Scientific SBE37 Microcat regularly deployed on fixed-point
-moorings in the `Porcupine Abyssal Plain Sustained Observatory
-(PAP-SO) <PAP-SO_>`_
-in the north Atlantic. For further details see section
-`10.2 <#sensor-web-enablement-swe>`__. BODC plan to continue adoption
+moorings in the `Porcupine Abyssal Plain Sustained Observatory (PAP-SO)
+<PAP-SO_>`_ in the north Atlantic. For further details see
+:ref:`landing-page-encoding-swe`. BODC plan to continue adoption
 identifying sensors on large research vessels owned by the Natural
 Environment Research Council (NERC) and managed by the National
 Oceanography Centre (NOC) and British Antarctic Survey (BAS). PIDs will

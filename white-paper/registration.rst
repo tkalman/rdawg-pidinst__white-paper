@@ -35,9 +35,9 @@ properties and processes (e.g. Open Geospatial Consortium’s (OGC)
 SensorML, W3C Semantic Sensor Network (SSN) ontology). Whichever method
 of publication is used, it is necessary to ensure there is enough
 metadata on landing pages to unambiguously identify the instrument (see
-`Landing page content <#landing-page-content>`__). The URL address is
-also used to populate the *LandingPage* property of the `PIDINST
-schema`_, adding this locator to the PID’s metadata record.
+:ref:`landing-page-content`). The URL address is also used to populate
+the *LandingPage* property of the `PIDINST schema`_, adding this
+locator to the PID’s metadata record.
 
 
 .. _PIDINST schema:
