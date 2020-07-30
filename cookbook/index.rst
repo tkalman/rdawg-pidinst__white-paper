@@ -1,3 +1,5 @@
+.. _epic-cookbook:
+
 Persistent Identification of Instruments (PIDINST) ePIC Cookbook
 ================================================================
 
