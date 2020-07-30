@@ -6,6 +6,8 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
+import setuptools_scm
+
 # -- Project information -----------------------------------------------------
 
 project = "PIDINST"
@@ -14,10 +16,11 @@ copyright = "2020, %s" % author
 
 # The full version, including alpha/beta/rc tags
 # Dummy for the time being
-release = "0.0.0"
+release = setuptools_scm.get_version()
 # The short X.Y version
 version = ".".join(release.split(".")[0:2])
 
+today = "30 July 2020"
 
 # -- General configuration ---------------------------------------------------
 

@@ -6,9 +6,9 @@ Persistent Identification of Instruments (PIDINST) PID White Paper
 |               | | Persistent Identification of Instruments (PIDINST) |
 |               | | working group output report                        |
 +---------------+------------------------------------------------------+
-| Version       | 1.0                                                  |
+| Version       | |release|                                            |
 +---------------+------------------------------------------------------+
-| Date          | 15 July 2020                                         |
+| Date          | |today|                                              |
 +---------------+------------------------------------------------------+
 
 Contributors
