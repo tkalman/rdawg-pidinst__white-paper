@@ -15,3 +15,5 @@ formats: []
 python:
   install:
     - requirements: .requirements
+    - method: setuptools
+      path: .

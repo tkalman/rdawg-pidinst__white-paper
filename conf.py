@@ -6,7 +6,10 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-import setuptools_scm
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+import _meta
 
 # -- Project information -----------------------------------------------------
 
@@ -16,7 +19,7 @@ copyright = "2020, %s" % author
 
 # The full version, including alpha/beta/rc tags
 # Dummy for the time being
-release = setuptools_scm.get_version()
+release = _meta.__version__
 # The short X.Y version
 version = ".".join(release.split(".")[0:2])
 
