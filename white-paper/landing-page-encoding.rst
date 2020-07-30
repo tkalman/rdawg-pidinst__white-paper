@@ -189,11 +189,11 @@ that all possible sub types are resolved and referred in @context, but
 not all of them are actually used by the types occuring in the PID. This
 could be pruned by an additional step of the algorithm to a version
 reduced to the necessary and sufficient sub types. Such a pruning is
-also automatically done by LD converters [14]_ as one can see in the
-following snippet with a conversion into Turtle Terse RDF that results
-into the following serialization (snippet 10.2), where only the values
-remain and the names used in the type definitions are replaced by their
-type PID suffixes::
+also automatically done by LD converters\ [#ld_converters]_ as one can
+see in the following snippet with a conversion into Turtle Terse RDF
+that results into the following serialization (snippet 10.2), where only
+the values remain and the names used in the type definitions are
+replaced by their type PID suffixes::
 
 
       @prefix ns0: <http://hdl.handle.net/21.T11148/> .
@@ -291,8 +291,8 @@ The list of properties that can be expressed in SensorML to describe
 sensors is not particularly restrictive and it is recommended that
 institutional instrument providers follow the PIDINST guidance on
 landing page content (see section\  `Landing page
-content <#landing-page-content>`__). Recently, the Marine SWE
-Profiles [15]_ initiative specified a comprehensive metadata profile to
+content <#landing-page-content>`__). Recently, the `Marine SWE
+Profiles`_ initiative specified a comprehensive metadata profile to
 improve the semantic interoperability of SensorML in the Earth Science
 marine domain by developing sets of sensor specific terminologies.
 
@@ -305,13 +305,14 @@ does not specify the form of negotiation that produces human-readable
 content from machine-readable representations. Other groups, such as the
 W3C Dataset Exchange Working Group (DXWG) are currently drafting
 recommendations on content negotiation from different information
-models [16]_
+models.\ [#w3_dxwg]_
 
-.. [14]
-   as for instance: http://www.easyrdf.org/converter
 
-.. [15]
+.. _Marine SWE Profiles:
    https://github.com/ODIP/MarineProfilesForSWE/blob/master/docs/02_SensorML.md
 
-.. [16]
+.. [#ld_converters]
+   as for instance: http://www.easyrdf.org/converter
+
+.. [#w3_dxwg]
    https://www.w3.org/TR/dx-prof-conneg/#dfn-data-profile

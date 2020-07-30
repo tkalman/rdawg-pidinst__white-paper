@@ -8,15 +8,16 @@ responsible for maintaining information about or data from instruments.
 Institutional instrument providers will be responsible for maintaining
 and publishing instrument PIDs locally, potentially on behalf of other
 institutional instrument providers. These recommendations are compiled
-through the activities of the Research Data Alliance (RDA) Persistent
-Identification of Instruments (PIDINST) Working
-Group [1]_, [2]_. This document is expected to evolve with
+through the activities of the Research Data Alliance (RDA) `Persistent
+Identification of Instruments (PIDINST) Working Group
+<PIDINST_>`_.\ [#pidinst2020]_ This document is expected to evolve with
 new user requirements and working group activities.
 
-.. [1]
+
+.. _PIDINST:
    https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 
-.. [2]
+.. [#pidinst2020]
    Stocker, M, Darroch, L, Krahl, R, Habermann, T, Devaraju, A,
    Schwardmann, U, D’Onofrio, C and Häggström, I. 2020. Persistent
    Identification of Instruments. Data Science Journal, 19: 18, pp.

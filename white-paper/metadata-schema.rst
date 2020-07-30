@@ -6,11 +6,12 @@ are used to consistently and accurately identify instruments across
 networks and infrastructures. Thus, in support of unambiguous
 identification, we recommend that an instrument’s associated metadata is
 published in a common language, specifically US English. Currently, two
-variants of the metadata schema exist. The original PIDINST schema [5]_,
+variants of the metadata schema exist. The original `PIDINST schema`_,
 based on the evaluation of use cases collected by the working group, is
 used for prototypical implementation of metadata properties in the ePIC
-infrastructure. A second variant provides a mapping between PIDINST
-metadata properties and DataCite Metadata Schema 4.3 [6]_.
+infrastructure. A second variant provides a `mapping between PIDINST
+metadata properties and DataCite Metadata Schema 4.3 <PIDINST DataCite
+schema_>`_.
 
 Using common terminologies
 --------------------------
@@ -42,7 +43,7 @@ in Table 4.1.
 http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying the use of
 common terminologies to identify instrument metadata compliant with the
 PIDINST schema as implemented by ePIC. The terminologies used are
-published on the NERC Vocabulary Server (NVS) [7]_. The data for each
+published on the `NERC Vocabulary Server (NVS) <NVS_>`_. The data for each
 metadata property is provided in JSON. The Handle record can be viewed
 at http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
 
@@ -168,14 +169,15 @@ RRIDs
 
 In a similar way to common terminologies, persistent identifiers have
 been created to help users classify and accurately describe physical
-objects. A related PID is the RRID, research resource identifier, which
-identifies the classes of instruments (models) and not instances [8]_.
-This work is undertaken by the UsedIT group [9]_, which is extending the
-RRID to instrument classes that could be used to describe the *Model*
-(via *modelIdentifier*) property (Table 4.2). RRIDs are not described in
-detail here, but it is envisioned that the RRID metadata schema, which
-was described in detail previously [10]_, and extended by UsedIT [11]_,
-will be interoperable with instrument instance (PIDINST) PIDs. This
+objects.  A related PID is the RRID, research resource identifier, which
+identifies the classes of instruments (models) and not
+instances.\ [#bandrowski2016]_ This work is undertaken by the `UsedIT`_
+group, which is extending the RRID to instrument classes that could be
+used to describe the *Model* (via *modelIdentifier*) property (Table
+4.2).  RRIDs are not described in detail here, but it is envisioned that
+the RRID metadata schema, which was described in detail
+previously,\ [#bandrowski2012]_ and extended by UsedIT, will be
+interoperable with instrument instance (PIDINST) PIDs.  This
 interoperability should enable any project to quickly download data
 about the model to consistently fill mapped fields.
 
@@ -224,16 +226,20 @@ schema.
 |          |                        |               |         |                                                    | E.g. ‘RRID’                                |
 +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
 
-.. [5]
+
+.. _PIDINST schema:
    https://github.com/rdawg-pidinst/schema/blob/master/schema.rst
 
-.. [6]
+.. _PIDINST DataCite schema:
    https://github.com/rdawg-pidinst/schema/blob/master/schema-datacite.rst
 
-.. [7]
+.. _NVS:
    https://www.bodc.ac.uk/resources/products/web_services/vocab/
 
-.. [8]
+.. _UsedIT:
+   http://myweb.fsu.edu/aglerum/usedit/usedit-about.html
+
+.. [#bandrowski2016]
    Bandrowski A, Brush M, Grethe JS, Haendel MA, Kennedy DN, Hill S, Hof
    PR, Martone ME, Pols M, Tan SC, Washington N, Zudilova-Seinstra E,
    Vasilevsky N. `The Resource Identification Initiative: A Cultural
@@ -241,15 +247,9 @@ schema.
    Comp Neurol. 2016 Jan 1;524(1):8-22.
    https://doi.org/10.1002/cne.23913
 
-.. [9]
-   http://myweb.fsu.edu/aglerum/usedit/usedit-about.html
-
-.. [10]
+.. [#bandrowski2012]
    Bandrowski AE, Cachat J, Li Y, Müller HM, Sternberg PW, Ciccarese P,
    Clark T, Marenco L, Wang R, Astakhov V, Grethe JS, Martone ME. A
    hybrid human and machine resource curation pipeline for the
    Neuroscience Information Framework. Database (Oxford). 2012 Mar
    20;2012:bas005. https://doi.org/10.1093/database/bas005
-
-.. [11]
-   https://github.com/SciCrunch/SciCrunch-Curation/wiki/Equipment-Instrument-data-input

@@ -4,21 +4,22 @@ Current, planned and potential adoption
 Helmholtz-Zentrum Berlin für Materialien und Energie (HZB)
 ----------------------------------------------------------
 
-HZB minted four DOIs with DataCite for HZB instruments: two beamlines at
-the neutron source BER II [20]_\ :sup:`,`  [21]_; one beamline at the
-synchrotron light source BESSY II [22]_; and one experimental station at
-BESSY II [23]_. The DOIs resolve to the respective instrument page from
-the HZB instrument database that did already exist before and was thus
-not created for this purpose. One particularity with these instruments
-is that they are custom built by HZB. Thus, in the metadata HZB appears
-as Creator as well as Contributor with property contributorType value
-HostingInstitution. It is noteworthy that one of the DOIs uses the
+HZB minted four DOIs with DataCite for HZB instruments: two beamlines
+at the neutron source BER II;\ [#hzb_e2]_\ :sup:`,`\ [#hzb_e9]_ one
+beamline at the synchrotron light source BESSY II;\ [#hzb_nc_bl]_ and
+one experimental station at BESSY II.\ [#hzb_nc_st]_ The DOIs resolve
+to the respective instrument page from the HZB instrument database
+that did already exist before and was thus not created for this
+purpose.  One particularity with these instruments is that they are
+custom built by HZB.  Thus, in the metadata HZB appears as Creator as
+well as Contributor with property contributorType value
+HostingInstitution.  It is noteworthy that one of the DOIs uses the
 additional property fundingReference from the DataCite schema to
 acknowledge external funding that HZB received for upgrading the
-instrument. This property was not considered in the PIDINST schema, or
-in the DataCite mapping. HZB plans to continue the adoption and to mint
-DOIs for all its beamlines and experimental stations that are in user
-operation in the near future.
+instrument.  This property was not considered in the PIDINST schema,
+or in the DataCite mapping.  HZB plans to continue the adoption and to
+mint DOIs for all its beamlines and experimental stations that are in
+user operation in the near future.
 
 British Oceanographic Data Centre (BODC)
 ----------------------------------------
@@ -27,11 +28,12 @@ The British Oceanographic Data Centre (BODC) is a national facility for
 preserving and distributing oceanographic and marine data. BODC tested
 the ePIC implementation in web-published, sensor technical metadata
 descriptions encoded in the Open Geospatial Consortium’s (OGC)
-SensorML [24]_ open standards for conceptualising and integrating
+`SensorML`_ open standards for conceptualising and integrating
 real-world sensors. In an initial test case, a PID was minted for a
 Sea-Bird Scientific SBE37 Microcat regularly deployed on fixed-point
-moorings in the Porcupine Abyssal Plain Sustained Observatory (PAP-SO)
-in the north Atlantic [25]_. For further details see section
+moorings in the `Porcupine Abyssal Plain Sustained Observatory
+(PAP-SO) <PAP-SO_>`_
+in the north Atlantic. For further details see section
 `10.2 <#sensor-web-enablement-swe>`__. BODC plan to continue adoption
 identifying sensors on large research vessels owned by the Natural
 Environment Research Council (NERC) and managed by the National
@@ -42,7 +44,7 @@ desktop’ as part of a UK initiative, I/Ocean.
 EISCAT3D
 --------
 
-EISCAT3D [26]_ will be an international research infrastructure, using
+`EISCAT3D`_ will be an international research infrastructure, using
 radar observations and the incoherent scatter technique for studies of
 the atmosphere and near-Earth space environment above the
 Fenno-Scandinavian Arctic as well as for the support of the solar system
@@ -67,24 +69,24 @@ marine regions. In order to address the increasing heterogeneity of
 research platforms and respective devices and sensors along with varying
 project-driven requirements, a generic and modular framework has been
 built intended to support the flow of sensor observations to archives
-(O2A) [27]_. In this context, SENSOR.awi.de, available since 2015, is an
-O2A component dedicated to the registry of research platforms, devices
-and sensors and in the meantime in use by several international partners
-(e.g. MOSAiC project). SENSOR.awi.de has been built using OGC SensorML
-standard and all individual records, to date over 4000, are assigned a
-persistent identifier using UUIDs in the handle syntax along with
-automated generation of a record citation. Terminologies (e.g.,
-controlled vocabularies) are used to define sensor categories (NERC L05)
-as well as sensor types and models (NERC L22). The data model of
-SENSOR.awi.de is compliant with the PIDINST schema and the additional
-implementation of Datacite DOIS for sensors is to date under evaluation.
-The ultimate goal of SENSOR.awi.de is to enhance the quality of
-published and archived data in PANGAEA by providing complete metadata
-and persistent identifiers on instruments and sensors used in the data
-acquisition process (Fig 11.1). Given that platforms and sensors evolve
-in time (sensors are being calibrated, instrument payload changes, etc),
-SENSOR.awi.de also supports record versioning by maintaining an audit
-trail of changes in the XML record.
+(O2A).\ [#koppe2015]_ In this context, SENSOR.awi.de, available since
+2015, is an O2A component dedicated to the registry of research
+platforms, devices and sensors and in the meantime in use by several
+international partners (e.g. MOSAiC project). SENSOR.awi.de has been
+built using OGC SensorML standard and all individual records, to date
+over 4000, are assigned a persistent identifier using UUIDs in the
+handle syntax along with automated generation of a record
+citation. Terminologies (e.g., controlled vocabularies) are used to
+define sensor categories (NERC L05) as well as sensor types and models
+(NERC L22). The data model of SENSOR.awi.de is compliant with the
+PIDINST schema and the additional implementation of Datacite DOIS for
+sensors is to date under evaluation.  The ultimate goal of SENSOR.awi.de
+is to enhance the quality of published and archived data in PANGAEA by
+providing complete metadata and persistent identifiers on instruments
+and sensors used in the data acquisition process (Fig 11.1). Given that
+platforms and sensors evolve in time (sensors are being calibrated,
+instrument payload changes, etc), SENSOR.awi.de also supports record
+versioning by maintaining an audit trail of changes in the XML record.
 
 PANGAEA is a digital repository for environmental research data and the
 dedicated long term archive within the O2A framework jointly operated by
@@ -106,7 +108,7 @@ Since AWI and PANGAEA use the same vocabularies/terminologies as well as
 PIDs to represent devices, they facilitate easy integration of datasets
 in particular during transfer of near real time data from O2A raw data
 staging areas via data quality control services etc to their final
-destination, the PANGAEA data archive [28]_.
+destination, the PANGAEA data archive.\ [#koppe2015]_
 
 ICOS
 ----
@@ -119,35 +121,30 @@ humidity, temperature, etc. To deliver high quality measurement data,
 ICOS considers the adoption of a persistent identifier for instruments a
 must for documenting data provenance and tracking calibration history.
 
-.. [20]
-   https://doi.org/10.5442/NI000001
 
-.. [21]
-   https://doi.org/10.5442/NI000002
-
-.. [22]
-   https://doi.org/10.5442/NI000003
-
-.. [23]
-   https://doi.org/10.5442/NI000004
-
-.. [24]
+.. _SensorML:
    https://www.opengeospatial.org/standards/sensorml
 
-.. [25]
+.. _PAP-SO:
    https://projects.noc.ac.uk/pap/
 
-.. [26]
+.. _EISCAT3D:
    https://eiscat.se/business/eiscat3d7/
 
-.. [27]
-   Koppe, R. , Gerchow, P. , Macario, A. , Haas, A. , Schäfer-Neth, C.
-   and Pfeiffenberger, H. (2015): O2A: A Generic Framework for Enabling
-   the Flow of Sensor Observations to Archives and Publications , OCEANS
-   2015 Genova . doi: 10.1109/OCEANS-Genova.2015.7271657
+.. [#hzb_e2]
+   https://doi.org/10.5442/NI000001
 
-.. [28]
-   Koppe, R. , Gerchow, P. , Macario, A. , Haas, A. , Schäfer-Neth, C.
+.. [#hzb_e9]
+   https://doi.org/10.5442/NI000002
+
+.. [#hzb_nc_bl]
+   https://doi.org/10.5442/NI000003
+
+.. [#hzb_nc_st]
+   https://doi.org/10.5442/NI000004
+
+.. [#koppe2015]
+   Koppe, R., Gerchow, P., Macario, A., Haas, A., Schäfer-Neth, C.
    and Pfeiffenberger, H. (2015): O2A: A Generic Framework for Enabling
-   the Flow of Sensor Observations to Archives and Publications , OCEANS
-   2015 Genova . doi: 10.1109/OCEANS-Genova.2015.7271657
+   the Flow of Sensor Observations to Archives and Publications, OCEANS
+   2015 Genova. doi: 10.1109/OCEANS-Genova.2015.7271657

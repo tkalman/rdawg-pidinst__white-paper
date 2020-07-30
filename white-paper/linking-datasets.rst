@@ -53,28 +53,28 @@ State-of-the-art research ships are multimillion-pound floating
 laboratories which operate diverse arrays of high-powered,
 high-resolution sensors around-the-clock (e.g. sea-floor depth, weather,
 ocean current velocity and hydrography etc.). The National Oceanography
-Centre (NOC) [17]_ and British Antarctic Survey (BAS) [18]_ are
-currently working together to improve the integrity of the data
+Centre (NOC)\ [#uk_noc]_ and British Antarctic Survey (BAS)\ [#uk_bas]_
+are currently working together to improve the integrity of the data
 management workflow from these sensor systems to end-users across the UK
 National Environment Research Council (NERC) large research vessel
 fleet, as part of a UK initiative, I/Ocean. In doing so, we can make
-cost effective use of vessel time while improving the FAIRness [19]_,
-and in turn, access of data from these sensor arrays. The initial phase
-of the solution implements common NetCDF formats across ships enabling
-harmonised access to data for researchers on board while reducing
-ambiguity using common metadata standards. The formats are based on
-NetCDF4 and comply with Climate Forecast conventions. NetCDF4 groups are
-used to include rich information about the instruments used to derive
-parameter streams. Data streams are linked to the instruments which
-produced them using the variable attribute *instrument* from Attribute
-Convention for Data Discovery (ACDD) 1-3 (snippet 11.4). Each instrument
-is identified as a group where their properties are expressed in
-variables including the instrument’s PID. Each property is defined using
-common terminologies published on the NERC Vocabulary Server. In this
-way, users can express properties of their choice. Through groups, other
-information relating to parameter streams or instruments could be
-expressed, such as calibralibrations and instrument reference frames and
-orientations.
+cost effective use of vessel time while improving the
+FAIRness,\ [#wilkinson2016]_ and in turn, access of data from these
+sensor arrays. The initial phase of the solution implements common
+NetCDF formats across ships enabling harmonised access to data for
+researchers on board while reducing ambiguity using common metadata
+standards. The formats are based on NetCDF4 and comply with Climate
+Forecast conventions. NetCDF4 groups are used to include rich
+information about the instruments used to derive parameter streams. Data
+streams are linked to the instruments which produced them using the
+variable attribute *instrument* from Attribute Convention for Data
+Discovery (ACDD) 1-3 (snippet 11.4). Each instrument is identified as a
+group where their properties are expressed in variables including the
+instrument’s PID. Each property is defined using common terminologies
+published on the NERC Vocabulary Server. In this way, users can express
+properties of their choice. Through groups, other information relating
+to parameter streams or instruments could be expressed, such as
+calibralibrations and instrument reference frames and orientations.
 
 ::
 
@@ -186,14 +186,15 @@ more than one instrument.
 **Snippet 11.5:** Addition of a PIDINST PID attribute to NCEI CF-NetCDF
 files.
 
-.. [17]
+
+.. [#uk_noc]
    British Oceanographic Data Centre (BODC) and National Marine
    Facilities (NMF) divisions
 
-.. [18]
+.. [#uk_bas]
    Uk Polar Data Centre division
 
-.. [19]
+.. [#wilkinson2016]
    Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
    Guiding Principles for scientific data management and stewardship.
    *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18

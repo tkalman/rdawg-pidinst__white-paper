@@ -36,8 +36,9 @@ SensorML, W3C Semantic Sensor Network (SSN) ontology). Whichever method
 of publication is used, it is necessary to ensure there is enough
 metadata on landing pages to unambiguously identify the instrument (see
 `Landing page content <#landing-page-content>`__). The URL address is
-also used to populate the *LandingPage* property of the PIDINST
-schema [12]_, adding this locator to the PID’s metadata record.
+also used to populate the *LandingPage* property of the `PIDINST
+schema`_, adding this locator to the PID’s metadata record.
 
-.. [12]
+
+.. _PIDINST schema:
    https://github.com/rdawg-pidinst/schema/blob/master/schema.rst

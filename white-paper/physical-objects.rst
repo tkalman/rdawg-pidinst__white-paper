@@ -7,9 +7,9 @@ become part of the Internet of Things (IoT) and therefore it is of key
 importance for related identification mechanisms to enable physical
 access to these objects in addition to their digital representations or
 catalogue metadata. Thus, to ultimately allow the “mapping the real
-world into the virtual world”  [13]_. This kind of access is essential
-to reproduce science as it allows us to compare experimental setup and
-to repeat analyses.
+world into the virtual world”.\ [#atzori]_ This kind of access is
+essential to reproduce science as it allows us to compare experimental
+setup and to repeat analyses.
 
 The most trivial but failsafe method to link physical objects with their
 virtual representation would be to permanently label an instrument by
@@ -64,7 +64,7 @@ institutional sensor management system as well as the PID registry, and
 will ensure the persistence of object linking in case of failures on
 either side.
 
-.. [13]
+.. [#atzori]
    Atzori, Luigi & Iera, Antonio & Morabito, Giacomo. (2010). The
    Internet of Things: A Survey. Computer Networks. 2787-2805.
    10.1016/j.comnet.2010.05.010.
