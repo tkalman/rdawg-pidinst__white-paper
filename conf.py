@@ -23,7 +23,7 @@ release = _meta.__version__
 # The short X.Y version
 version = ".".join(release.split(".")[0:2])
 
-today = "30 July 2020"
+today = _meta.__date__
 
 # -- General configuration ---------------------------------------------------
 
