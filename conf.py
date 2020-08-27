@@ -93,6 +93,7 @@ html_static_path = ['_static']
 # If true, links to the reST sources are added to the pages.
 html_show_sourcelink = False
 
+html_favicon = "images/pidinst-logo.ico"
 
 # -- Options for LaTeX output ------------------------------------------------
 
