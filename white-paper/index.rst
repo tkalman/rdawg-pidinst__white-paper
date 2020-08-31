@@ -1,3 +1,5 @@
+.. _white-paper:
+
 Persistent Identification of Instruments (PIDINST) PID White Paper
 ==================================================================
 
