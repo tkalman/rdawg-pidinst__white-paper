@@ -1,7 +1,7 @@
 .. _white-paper:
 
-Persistent Identification of Instruments (PIDINST) PID White Paper
-==================================================================
+PID White Paper
+===============
 
 +---------------+------------------------------------------------------+
 | Document type | | Research Data Alliance (RDA)                       |

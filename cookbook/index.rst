@@ -1,7 +1,7 @@
 .. _epic-cookbook:
 
-Persistent Identification of Instruments (PIDINST) ePIC Cookbook
-================================================================
+ePIC Cookbook
+=============
 
 +---------------+------------------------------------------------------+
 | Document type | | Research Data Alliance (RDA)                       | 
