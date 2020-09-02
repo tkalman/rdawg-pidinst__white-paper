@@ -13,11 +13,6 @@ PID White Paper
 | Date          | |today|                                              |
 +---------------+------------------------------------------------------+
 
-Contributors
-~~~~~~~~~~~~
-
-.. include:: authors.rst
-
 Table of contents
 ~~~~~~~~~~~~~~~~~
 
@@ -36,3 +31,8 @@ Table of contents
    landing-page-encoding
    linking-datasets
    adoption
+
+Contributors
+~~~~~~~~~~~~
+
+.. include:: authors.rst
