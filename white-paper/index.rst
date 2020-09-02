@@ -1,7 +1,7 @@
 .. _white-paper:
 
-PID White Paper
-===============
+PIDINST White Paper
+===================
 
 +---------------+------------------------------------------------------+
 | Document type | | Research Data Alliance (RDA)                       |
