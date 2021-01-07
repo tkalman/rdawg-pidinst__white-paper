@@ -75,7 +75,9 @@ properties of their choice. Through groups, other information relating
 to parameter streams or instruments could be expressed, such as
 calibralibrations and instrument reference frames and orientations.
 
-::
+.. code-block:: default
+    :caption: Truncated CF-NetCDF4 CDL file. Note some terminologies
+	      are in development.
 
       netcdf iocean_example {
       dimensions:
@@ -163,10 +165,6 @@ calibralibrations and instrument reference frames and orientations.
         } // group instruments
       }
 
-
-**Snippet 11.4:** Truncated CF-NetCDF4 CDL file. Note some terminologies
-are in development.
-
 The National Centres for Environmental Information (NCEI) at the
 National Oceanic and Atmospheric Administration (NOAA) in the US, also
 report instruments in CF-NetCDF files but as empty data variables within
@@ -175,16 +173,14 @@ instrument identifier may be expressed as an instrument attribute e.g.
 snippet 11.5. Ideally, blank separated lists should be used if linking
 more than one instrument.
 
-::
+.. code-block:: default
+    :caption: Addition of a PIDINST PID attribute to NCEI CF-NetCDF
+	      files.
 
       int instrument_parameter_variable;
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
          instrument_parameter_variable:pidinst_pid = "" ;
-
-**Snippet 11.5:** Addition of a PIDINST PID attribute to NCEI CF-NetCDF
-files.
-
 
 .. [#uk_noc]
    British Oceanographic Data Centre (BODC) and National Marine

@@ -48,12 +48,11 @@ explicit fields for these properties in PIDINST.
     (http://hdl.handle.net/21.T11998/0000-001A-3905-F).
 
 .. code-block:: XML
+    :caption: An instrument serial number expressed in XML
 
       <AlternateIdentifiers>
          <AlternateIdentifier alternateIdentifierType="serialNumber"">7351-349l-mn24-019f</AlternateIdentifier>
       </AlternateIdentifiers>
-
-**Snippet 7.1:** An instrument serial number expressed in XML
 
 Besides storing e.g. serial numbers in PIDINST schema metadata, it is
 highly recommended to store the instrument PID within an institutional

@@ -20,33 +20,25 @@ schema using the *relatedIdentifier* property with a *relationType*
 attribute *IsNewVersionOf* for the new PID and, *IsPreviousVersionOf*
 for the superceded PID as shown in Snippet 8.1 and 8.2.
 
-(1)
-
 .. code-block:: XML
+    :caption: The use of the relatedIdentifier property to represent
+	      superseding PID records in XML
 
       <relatedIdentifiers>
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf">10.4232/10.CPoS-2013-02en</relatedIdentifier>
       </relatedIdentifiers>
 
-
-
-(2)
-
 .. code-block:: XML
+    :caption: The use of the relatedIdentifier property to represent
+	      superseded PID records in XML
 
       <relatedIdentifiers>
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPreviousVersionOf">http://hdl.handle.net/21.T11998/0000-001A-3905-F</relatedIdentifier>
       </relatedIdentifiers>
 
-
-**Snippet 8.1:** The use of the relatedIdentifier property to represent
-(1) superseding and (2) superseded PID records in XML
-
-
-
-(1)
-
 .. code-block:: JSON
+    :caption: The use of the relatedIdentifier property to represent
+	      superseding PID records in JSON
 
       [{
         "RelatedIdentifier":{
@@ -56,10 +48,9 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
         }
       }]
 
-
-(2)
-
 .. code-block:: JSON
+    :caption: The use of the relatedIdentifier property to represent
+	      superseded PID records in JSON
 
       [{
         "RelatedIdentifier":{
@@ -68,8 +59,3 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
           "relationType":"IsPreviousVersionOf"
         }
       }]
-
-
-
-**Snippet 8.2:** The use of the relatedIdentifier property to represent
-(1) superseding and (2) superseded PID records in JSON
