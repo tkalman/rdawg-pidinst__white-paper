@@ -12,7 +12,7 @@ Institutions should also consider providing links to the metadata record
 that accompanies PIDs published at PID providers to aid metadata
 exchange (e.g. DataCite XML).
 
-Tables 9.1and 9.2 provide recommendations for some additional, more
+Tables 9.1 and 9.2 provide recommendations for some additional, more
 descriptive metadata that can be published on landing pages. Together
 with the PIDINST metadata schema, they are designed to complement the
 administration and discovery of instruments; to enable users to put data
