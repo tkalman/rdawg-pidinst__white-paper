@@ -16,8 +16,10 @@ not been possible, it is recommended that instrument owners employ
 deduplication, effectively merging duplicate records into one
 representative record by ensuring links between them. This can be
 achieved using the PIDINST metadata schema *relatedIdentifier* property
-with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
+with a *relationType* attribute *IsIdenticalTo* as shown in
+:numref:`snip-dub-merge-xml` and :numref:`%s <snip-dub-merge-json>`.
 
+.. _snip-dub-merge-xml:
 .. code-block:: XML
     :caption: Merging duplicate instrument PID records using XML
 
@@ -25,6 +27,7 @@ with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo">10.4232/10.CPoS-2013-02en</relatedIdentifier>
       </relatedIdentifiers>
 
+.. _snip-dub-merge-json:
 .. code-block:: JSON
     :caption: Merging duplicate instrument PID records using JSON
 

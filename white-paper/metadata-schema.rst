@@ -41,8 +41,9 @@ terminologies that describe *instrumentType* or the recently added
 marine domain (`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
 `http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
 An example of the use of common terminologies in ePID records is shown
-in Table 4.1.
+in :numref:`tab-schema-handle-record`.
 
+.. _tab-schema-handle-record:
 .. table:: Handle record of instrument identifier
 	   http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
 	   the use of common terminologies to identify instrument
@@ -179,13 +180,13 @@ objects.  A related PID is the RRID, research resource identifier, which
 identifies the classes of instruments (models) and not
 instances.\ [#bandrowski2016]_ This work is undertaken by the `UsedIT`_
 group, which is extending the RRID to instrument classes that could be
-used to describe the *Model* (via *modelIdentifier*) property (Table
-4.2).  RRIDs are not described in detail here, but it is envisioned that
-the RRID metadata schema, which was described in detail
-previously,\ [#bandrowski2012]_ and extended by UsedIT, will be
-interoperable with instrument instance (PIDINST) PIDs.  This
-interoperability should enable any project to quickly download data
-about the model to consistently fill mapped fields.
+used to describe the *Model* (via *modelIdentifier*) property
+(:numref:`tab-schema-use-rrid`).  RRIDs are not described in detail
+here, but it is envisioned that the RRID metadata schema, which was
+described in detail previously,\ [#bandrowski2012]_ and extended by
+UsedIT, will be interoperable with instrument instance (PIDINST) PIDs.
+This interoperability should enable any project to quickly download
+data about the model to consistently fill mapped fields.
 
 Why RRIDs? RRIDs are currently used in about 1000 journals to tag
 classes of research resources (including reagents like antibodies or
@@ -201,6 +202,7 @@ reproducibility checklist, resolved by identifiers.org and the n2t
 resolver and echoed by some of the major reagent providers (e.g., Thermo
 Fisher, Addgene, and the MMRRC mouse repository).
 
+.. _tab-schema-use-rrid:
 .. table:: Example showing the use of RRIDs in the PIDINST metadata schema.
 
     +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+

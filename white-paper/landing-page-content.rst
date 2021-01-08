@@ -12,12 +12,15 @@ Institutions should also consider providing links to the metadata record
 that accompanies PIDs published at PID providers to aid metadata
 exchange (e.g. DataCite XML).
 
-Tables 9.1 and 9.2 provide recommendations for some additional, more
-descriptive metadata that can be published on landing pages. Together
-with the PIDINST metadata schema, they are designed to complement the
-administration and discovery of instruments; to enable users to put data
-into context; and to automate instrument metadata into data workflows.
+:numref:`Tables %s <tab-landing-content-inst>` and
+:numref:`%s <tab-landing-content-events>` provide recommendations for
+some additional, more descriptive metadata that can be published on
+landing pages. Together with the PIDINST metadata schema, they are
+designed to complement the administration and discovery of
+instruments; to enable users to put data into context; and to automate
+instrument metadata into data workflows.
 
+.. _tab-landing-content-inst:
 .. table:: Descriptive landing page metadata describing measuring
 	   instruments. To be used in conjunction with the core
 	   instrument metadata used in the PIDINST schema.
@@ -47,6 +50,7 @@ into context; and to automate instrument metadata into data workflows.
     |                   | component etc.                                  |
     +-------------------+-------------------------------------------------+
 
+.. _tab-landing-content-events:
 .. table:: Descriptive, landing page metadata that describes the
 	   history of events, operations or changes during the
 	   lifetime of an instrument. This kind of metadata should be

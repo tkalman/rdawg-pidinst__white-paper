@@ -4,10 +4,11 @@ Registration
 Central registration at PID providers
 -------------------------------------
 
-The following resources (Table 5.1) provide technical guidance for
-institutions to publish and manage PID records at PID providers
-compliant with RDA PIDINST recommendations.
+The following resources (:numref:`tab-register-guidance`) provide
+technical guidance for institutions to publish and manage PID records
+at PID providers compliant with RDA PIDINST recommendations.
 
+.. _tab-register-guidance:
 .. table:: Technical guidance for publishing and managing instrument
 	   PIDs at PID providers compliant with RDA PIDINST
 	   recommendations. The table provides links to the relevant

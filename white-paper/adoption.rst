@@ -82,10 +82,11 @@ PIDINST schema and the additional implementation of Datacite DOIS for
 sensors is to date under evaluation.  The ultimate goal of SENSOR.awi.de
 is to enhance the quality of published and archived data in PANGAEA by
 providing complete metadata and persistent identifiers on instruments
-and sensors used in the data acquisition process (Fig 11.1). Given that
-platforms and sensors evolve in time (sensors are being calibrated,
-instrument payload changes, etc), SENSOR.awi.de also supports record
-versioning by maintaining an audit trail of changes in the XML record.
+and sensors used in the data acquisition process
+(:numref:`fig-link-pangea`). Given that platforms and sensors evolve
+in time (sensors are being calibrated, instrument payload changes,
+etc), SENSOR.awi.de also supports record versioning by maintaining an
+audit trail of changes in the XML record.
 
 PANGAEA is a digital repository for environmental research data and the
 dedicated long term archive within the O2A framework jointly operated by

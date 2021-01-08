@@ -18,8 +18,13 @@ institution chooses to create new PIDs, it is recommended that
 instrument providers identify the succession in the PIDINST metadata
 schema using the *relatedIdentifier* property with a *relationType*
 attribute *IsNewVersionOf* for the new PID and, *IsPreviousVersionOf*
-for the superceded PID as shown in Snippet 8.1 and 8.2.
+for the superceded PID as shown in
+:numref:`snip-create-superseding-xml`,
+:numref:`%s <snip-create-superseded-xml>`,
+:numref:`%s <snip-create-superseding-json>`, and
+:numref:`%s <snip-create-superseded-json>`.
 
+.. _snip-create-superseding-xml:
 .. code-block:: XML
     :caption: The use of the relatedIdentifier property to represent
 	      superseding PID records in XML
@@ -28,6 +33,7 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf">10.4232/10.CPoS-2013-02en</relatedIdentifier>
       </relatedIdentifiers>
 
+.. _snip-create-superseded-xml:
 .. code-block:: XML
     :caption: The use of the relatedIdentifier property to represent
 	      superseded PID records in XML
@@ -36,6 +42,7 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPreviousVersionOf">http://hdl.handle.net/21.T11998/0000-001A-3905-F</relatedIdentifier>
       </relatedIdentifiers>
 
+.. _snip-create-superseding-json:
 .. code-block:: JSON
     :caption: The use of the relatedIdentifier property to represent
 	      superseding PID records in JSON
@@ -48,6 +55,7 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
         }
       }]
 
+.. _snip-create-superseded-json:
 .. code-block:: JSON
     :caption: The use of the relatedIdentifier property to represent
 	      superseded PID records in JSON
