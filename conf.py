@@ -29,7 +29,7 @@ today = _meta.__date__
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = '1.3'
+needs_sphinx = '1.8'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -105,6 +105,11 @@ html_static_path = ['_static']
 html_show_sourcelink = False
 
 html_favicon = "images/pidinst-logo.ico"
+
+html_css_files = [
+    'css/captions.css',
+]
+
 
 # -- Options for LaTeX output ------------------------------------------------
 
