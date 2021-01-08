@@ -51,7 +51,7 @@ numfig = True
 
 # Strings to format figure, table, code-block, and section numbers
 numfig_format = {
-    'figure': "Fig. %s",
+    'figure': "Figure %s",
     'table': "Table %s",
     'code-block': "Snippet %s",
     'section': "Section %s",
