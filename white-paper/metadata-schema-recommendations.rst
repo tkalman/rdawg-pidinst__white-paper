@@ -3,17 +3,11 @@
 Recommendations using the PIDINST metadata schema
 =================================================
 
-The PIDINST metadata schema consists of common metadata properties that
-are used to consistently and accurately identify instruments across
-networks and infrastructures. Thus, in support of unambiguous
-identification, we recommend that an instrument’s associated metadata is
-published in a common language, specifically US English. Currently, two
-variants of the metadata schema exist. The original `PIDINST schema`_,
-based on the evaluation of use cases collected by the working group, is
-used for prototypical implementation of metadata properties in the ePIC
-infrastructure. A second variant provides a `mapping between PIDINST
-metadata properties and DataCite Metadata Schema 4.3 <PIDINST DataCite
-schema_>`_.
+In support of unambiguous identification, we recommend that an
+instrument’s associated metadata is published in a common language,
+specifically US English.  In the following section, we provide
+advanced recommendations on how to form the values in the PIDINST
+metadata and discuss special cases.
 
 .. _pidinst-metadata-schema-terminologies:
 
@@ -233,12 +227,6 @@ Fisher, Addgene, and the MMRRC mouse repository).
     |          |                        |               |         |                                                    | E.g. ‘RRID’                                |
     +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
 
-
-.. _PIDINST schema:
-   https://github.com/rdawg-pidinst/schema/blob/master/schema.rst
-
-.. _PIDINST DataCite schema:
-   https://github.com/rdawg-pidinst/schema/blob/master/schema-datacite.rst
 
 .. _NVS:
    https://www.bodc.ac.uk/resources/products/web_services/vocab/
