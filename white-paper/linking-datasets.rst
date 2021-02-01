@@ -1,6 +1,34 @@
 Linking instrument PIDs to datasets
 ===================================
 
+One major purpose of PIDINST is to ease tracking the scientific output
+of the instrument.  In order to benefit from this, it is important to
+establish the relation between the datasets and the instrument being
+used to collect the data in a machine readable way.
+
+DataCite metadata
+-----------------
+
+Datasets are usually published with a DataCite DOI.  The `DataCite
+Metadata Schema`_ allows to link the instrument from the metadata
+registered with that DOI for a data publication using the
+*relatedIdentifier* property.  The recommended *relationType* is
+*IsCompiledBy* in this case.  :numref:`snip-link-dataset-datacite-xml`
+shows a cut-out of the DOI metadata from a data publication containing
+such a link.
+
+.. _snip-link-dataset-datacite-xml:
+.. code-block:: XML
+    :caption: Use of the relatedIdentifier property in the DOI
+	      metadata from a data publication.  The second entry links
+	      the PID of the instrument being used to collect the data.
+
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.17815/jlsrf-4-110</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCompiledBy">10.5442/NI000001</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy">10.1103/physrevb.99.174111</relatedIdentifier>
+      </relatedIdentifiers>
+
 schema.org
 ----------
 
@@ -188,6 +216,8 @@ should be used if linking more than one instrument.
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
          instrument_parameter_variable:pidinst_pid = "" ;
+
+.. _DataCite Metadata Schema: https://schema.datacite.org/
 
 .. [#uk_noc]
    British Oceanographic Data Centre (BODC) and National Marine
