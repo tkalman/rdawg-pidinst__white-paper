@@ -165,6 +165,25 @@ in :numref:`tab-schema-handle-record`.
 Using other PIDs
 ----------------
 
+The PIDINST metadata may contain references to related entities at
+various places.  Obviously, these references should preferably use
+persistent identifiers whenever applicable.  Different types of PIDs
+are recommended depending on the nature of the referenced entity.  The
+most common cases are:
+
++ other instruments may be referenced in several cases.  The most
+  common PID types are Handles and DOIs here.
+
++ organizations that may appear as owner or manufacturer may be
+  referenced using a `ROR`_.
+
++ the most common PID for individuals that may appear as owner or
+  manufacturer is the `ORCID`_ iD.
+
++ the `RRID`_ is common in the biological sciences and may be used to
+  reference a class of instruments, see next subsection.
+
+
 RRIDs
 ~~~~~
 
@@ -230,6 +249,12 @@ Fisher, Addgene, and the MMRRC mouse repository).
 
 .. _NVS:
    https://www.bodc.ac.uk/resources/products/web_services/vocab/
+
+.. _ROR: https://ror.org/
+
+.. _ORCID: https://orcid.org/
+
+.. _RRID: https://www.rrids.org/
 
 .. _UsedIT:
    http://myweb.fsu.edu/aglerum/usedit/usedit-about.html
