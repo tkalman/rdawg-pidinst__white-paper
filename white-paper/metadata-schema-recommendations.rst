@@ -235,12 +235,16 @@ provide some piece of information that should normally be present in
 the metadata.  This may for instance happen, if this information is
 simply unknown, if a property has not or not yet been assigned a
 value, or if it is not appropriate to disclose some piece of
-information.  In these cases it is still useful to make it at least
-explicit that this information has not been omitted inadvertently and
-also to give a reason, why it is missing.  PIDINST adopts for this
-purpose the *standard values for unknown information* from DataCite,
-see Appendix 3 in the DataCite Metadata Schema Documentation.
-[#datacite2019]_
+information.  As an example for the latter case, consider a person
+that contributes measurements to a citizen science project, but who
+prefers to remain anonymous for privacy reasons.  That person might
+not want to be named as the owner of the instrument taking the data.
+
+In all these cases it is still useful to make it at least explicit
+that this information has not been omitted inadvertently and also to
+give a reason, why it is missing.  PIDINST adopts for this purpose the
+*standard values for unknown information* from DataCite, see Appendix
+3 in the DataCite Metadata Schema Documentation. [#datacite2019]_
 
 .. _snip-schema-unknown-xml:
 .. code-block:: XML
