@@ -18,11 +18,12 @@ inventory number and serial number. Because space for labels is limited
 on smaller sensors, modern QR tags or barcodes may be more convenient as
 they offer the possibility to encode any identifying information in a
 machine readable way. A recommended way would be to use QR codes to
-embed a PID’s actionable URIs (Figure 7.1). Ideally such a QR badge
-additionally displays the PID as well as the inventory number and serial
-number in a human readable way. Some QR code generators now allow users
-to integrate images like organisation logos or track scanning activity
-such as the GPS position when the label is scanned.
+embed a PID’s actionable URIs (:numref:`fig-objects-qr`). Ideally such
+a QR badge additionally displays the PID as well as the inventory
+number and serial number in a human readable way. Some QR code
+generators now allow users to integrate images like organisation logos
+or track scanning activity such as the GPS position when the label is
+scanned.
 
 In case neither labelling of physical objects with barcodes or PID
 strings is possible, linking of instruments with their digital
@@ -35,25 +36,27 @@ While PIDINST schema metadata does not provide explicit fields for
 serial numbers or inventory numbers, it currently offers a generic way
 to capture any kind of identifier which can be used for this purpose.
 *AlternateIdentifier* can be used to record any identifier string and
-*alternateIdentifierType* to specify an identifier type (Snippet 7.1).
-PIDINST schema recommends the use of the terms *serialNumber* and
-*inventoryNumber.* There is on-going discussion regarding the use of
-explicit fields for these properties in PIDINST.
+*alternateIdentifierType* to specify an identifier type
+(:numref:`snip-objects-serial`). PIDINST schema recommends the use of
+the terms *serialNumber* and *inventoryNumber.* There is on-going
+discussion regarding the use of explicit fields for these properties
+in PIDINST.
 
-.. image:: /images/image4.png
+.. _fig-objects-qr:
+.. figure:: /images/image4.png
     :alt: QR code
 
-**Figure 7.1:** An example of a webpage QR code that includes an
-organisation logo and re-directs the scanner to the PID URL
-(http://hdl.handle.net/21.T11998/0000-001A-3905-F).
+    An example of a webpage QR code that includes an organisation logo
+    and re-directs the scanner to the PID URL
+    (http://hdl.handle.net/21.T11998/0000-001A-3905-F).
 
+.. _snip-objects-serial:
 .. code-block:: XML
+    :caption: An instrument serial number expressed in XML
 
       <AlternateIdentifiers>
          <AlternateIdentifier alternateIdentifierType="serialNumber"">7351-349l-mn24-019f</AlternateIdentifier>
       </AlternateIdentifiers>
-
-**Snippet 7.1:** An instrument serial number expressed in XML
 
 Besides storing e.g. serial numbers in PIDINST schema metadata, it is
 highly recommended to store the instrument PID within an institutional

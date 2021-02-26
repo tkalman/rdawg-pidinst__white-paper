@@ -4,7 +4,7 @@ Linking instrument PIDs to datasets
 schema.org
 ----------
 
-Figure 11.1 shows an example of marine dataset
+:numref:`fig-link-pangea` shows an example of marine dataset
 (https://doi.org/10.1594/PANGAEA.887579) published through PANGAEA. The
 metadata of the dataset includes descriptive information about the
 dataset and its related entities (e.g., scholarly article, project). The
@@ -14,35 +14,38 @@ which was deployed as part of a cruise campaign (MSM29). The vehicle is
 identified through a persistent identifier assigned by
 https://sensor.awi.de/. The landing page of the instrument contains
 metadata of the instrument such as description, manufacturer, model,
-contact, calibration information. Figure 11.2 depicts schema.org types
-and properties that may be used to model the dataset’s observation event
-(e.g., cruise campaign) and instrument deployed (AUV). Figure 11.3 shows
-the snippet of actual schema.org representation. External vocabularies
-(NERC SeaVoX Platform Categories and GeoLink Schema) are used to
-indicate the additional type for Event and Vehicle. In Schema.org,
-‘Event’ refers to an occurrence at a specific time and location, for
-example a social event. As such, new types and properties are required
-to support the description of observation events and related scientific
-instruments to ensure full compliance with Schema.org functionality.
+contact, calibration information. :numref:`fig-link-model` depicts
+schema.org types and properties that may be used to model the
+dataset’s observation event (e.g., cruise campaign) and instrument
+deployed (AUV). :numref:`fig-link-schema-org` shows the snippet of
+actual schema.org representation. External vocabularies (NERC SeaVoX
+Platform Categories and GeoLink Schema) are used to indicate the
+additional type for Event and Vehicle. In Schema.org, ‘Event’ refers
+to an occurrence at a specific time and location, for example a social
+event. As such, new types and properties are required to support the
+description of observation events and related scientific instruments
+to ensure full compliance with Schema.org functionality.
 
-.. image:: /images/image2.png
+.. _fig-link-pangea:
+.. figure:: /images/image2.png
     :alt: PANGAEA dataset
 
-**Figure 11.1:** An example of a dataset published by PANGAEA which
-includes its instrument identifier
-(https://doi.pangaea.de/10013/sensor.664525cf-45b9-4969-bb88-91a1c5e97a5b)
+    An example of a dataset published by PANGAEA which includes its
+    instrument identifier
+    (https://doi.pangaea.de/10013/sensor.664525cf-45b9-4969-bb88-91a1c5e97a5b)
 
-.. image:: /images/image1.png
+.. _fig-link-model:
+.. figure:: /images/image1.png
     :alt: Conceptual model
 
-**Figure 11.2:** Conceptual model of Event and Specific Instrument Type
-(Vehicle)
+    Conceptual model of Event and Specific Instrument Type (Vehicle)
 
-.. image:: /images/image3.png
+.. _fig-link-schema-org:
+.. figure:: /images/image3.png
     :alt: Schema.org
 
-**Figure 11.3:** Snippet of schema.org representation of event and
-instrument associated with the dataset in Figure 11.1.
+    Snippet of schema.org representation of event and instrument
+    associated with the dataset in :numref:`fig-link-pangea`.
 
 .. _section-1:
 
@@ -68,15 +71,19 @@ Forecast conventions. NetCDF4 groups are used to include rich
 information about the instruments used to derive parameter streams. Data
 streams are linked to the instruments which produced them using the
 variable attribute *instrument* from Attribute Convention for Data
-Discovery (ACDD) 1-3 (snippet 11.4). Each instrument is identified as a
-group where their properties are expressed in variables including the
-instrument’s PID. Each property is defined using common terminologies
-published on the NERC Vocabulary Server. In this way, users can express
-properties of their choice. Through groups, other information relating
-to parameter streams or instruments could be expressed, such as
-calibralibrations and instrument reference frames and orientations.
+Discovery (ACDD) 1-3 (:numref:`snip-link-netcdf-cdl`). Each instrument
+is identified as a group where their properties are expressed in
+variables including the instrument’s PID. Each property is defined
+using common terminologies published on the NERC Vocabulary Server. In
+this way, users can express properties of their choice. Through
+groups, other information relating to parameter streams or instruments
+could be expressed, such as calibralibrations and instrument reference
+frames and orientations.
 
-::
+.. _snip-link-netcdf-cdl:
+.. code-block:: default
+    :caption: Truncated CF-NetCDF4 CDL file. Note some terminologies
+	      are in development.
 
       netcdf iocean_example {
       dimensions:
@@ -164,28 +171,23 @@ calibralibrations and instrument reference frames and orientations.
         } // group instruments
       }
 
-
-**Snippet 11.4:** Truncated CF-NetCDF4 CDL file. Note some terminologies
-are in development.
-
 The National Centres for Environmental Information (NCEI) at the
 National Oceanic and Atmospheric Administration (NOAA) in the US, also
 report instruments in CF-NetCDF files but as empty data variables within
 the root group of the NetCDF file instead of sub groups. The PIDINST
 instrument identifier may be expressed as an instrument attribute e.g.
-snippet 11.5. Ideally, blank separated lists should be used if linking
-more than one instrument.
+:numref:`snip-link-pidinst-netcdf`. Ideally, blank separated lists
+should be used if linking more than one instrument.
 
-::
+.. _snip-link-pidinst-netcdf:
+.. code-block:: default
+    :caption: Addition of a PIDINST PID attribute to NCEI CF-NetCDF
+	      files.
 
       int instrument_parameter_variable;
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
          instrument_parameter_variable:pidinst_pid = "" ;
-
-**Snippet 11.5:** Addition of a PIDINST PID attribute to NCEI CF-NetCDF
-files.
-
 
 .. [#uk_noc]
    British Oceanographic Data Centre (BODC) and National Marine

@@ -41,129 +41,132 @@ terminologies that describe *instrumentType* or the recently added
 marine domain (`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
 `http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
 An example of the use of common terminologies in ePID records is shown
-in Table 4.1.
+in :numref:`tab-schema-handle-record`.
 
-**Table 4.1:** Handle record of instrument identifier
-http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying the use of
-common terminologies to identify instrument metadata compliant with the
-PIDINST schema as implemented by ePIC. The terminologies used are
-published on the `NERC Vocabulary Server (NVS) <NVS_>`_. The data for each
-metadata property is provided in JSON. The Handle record can be viewed
-at http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+.. _tab-schema-handle-record:
+.. table:: Handle record of instrument identifier
+	   http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
+	   the use of common terminologies to identify instrument
+	   metadata compliant with the PIDINST schema as implemented
+	   by ePIC. The terminologies used are published on the `NERC
+	   Vocabulary Server (NVS) <NVS_>`_. The data for each
+	   metadata property is provided in JSON. The Handle record
+	   can be viewed at
+	   http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
 
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| Type                                                  | Data                                                                                        |
-+=======================================================+=============================================================================================+
-| URL                                                   | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     https://linkedsystems.uk/system/instance/TOOL0022_2490/current/                         |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/8eb858ee0b12e8e463a5 (Identifier)           | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     {                                                                                       |
-|                                                       |       "identifierValue":"http://hdl.handle.net/21.T11998/0000-001A-3905-F",                 |
-|                                                       |       "identiferType":"MeasuringInstrument"                                                 |
-|                                                       |     }                                                                                       |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/9a15a4735d4bda329d80 (LandingPage)          | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     https://linkedsystems.uk/system/instance/TOOL0022_2490/current/                         |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/709a23220f2c3d64d1e1 (Name)                 | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     Sea-Bird SBE 37-IM MicroCAT C-T Sensor                                                  |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/4eaec4bc0f1df68ab2a7 (Owners)               | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     [{                                                                                      |
-|                                                       |       "Owner": {                                                                            |
-|                                                       |         "ownerName":"National Oceanography Centre",                                         |
-|                                                       |         "ownerContact":"louise.darroch@bodc.ac.uk",                                         |
-|                                                       |         "ownerIdentifier":{                                                                 |
-|                                                       |           "ownerIdentifierValue":                                                           |
-|                                                       |             "http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/",                     |
-|                                                       |           "ownerIdentifierType":"URL"                                                       |
-|                                                       |          }                                                                                  |
-|                                                       |        }                                                                                    |
-|                                                       |     }]                                                                                      |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/1f3e82ddf0697a497432 (Manufacturers)        | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     [{                                                                                      |
-|                                                       |       "Manufacturer":{                                                                      |
-|                                                       |         "manufacturerName":"Sea-Bird Scientific",                                           |
-|                                                       |         "modelName":"SBE 37-IM",                                                            |
-|                                                       |         "manufacturerIdentifier":{                                                          |
-|                                                       |           "manufacturerIdentifierValue":                                                    |
-|                                                       |             "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/",                      |
-|                                                       |           "manufacturerIdentifierType":"URL"                                                |
-|                                                       |         }                                                                                   |
-|                                                       |       }                                                                                     |
-|                                                       |     }]                                                                                      |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/55f8ebc805e65b5b71dd (Description)          | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     A high accuracy conductivity and temperature recorder with an optional pressure sensor  |
-|                                                       |     designed for deployment on moorings. The IM model has an inductive modem for real-time  |
-|                                                       |     data transmission plus internal flash memory data storage.                              |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/f76ad9d0324302fc47dd (InstrumentType)       | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/                                |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/72928b84e060d491ee41 (MeasuredVariables)    | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     [{                                                                                      |
-|                                                       |       "MeasuredVariable":{                                                                  |
-|                                                       |         "VariableMeasured":                                                                 |
-|                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"                        |
-|                                                       |       }                                                                                     |
-|                                                       |     },{                                                                                     |
-|                                                       |       "MeasuredVariable":{                                                                  |
-|                                                       |         "VariableMeasured":                                                                 |
-|                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"                        |
-|                                                       |       }                                                                                     |
-|                                                       |     },{                                                                                     |
-|                                                       |       "MeasuredVariable":{                                                                  |
-|                                                       |         "VariableMeasured":                                                                 |
-|                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"                        |
-|                                                       |       }                                                                                     |
-|                                                       |     },{                                                                                     |
-|                                                       |       "MeasuredVariable":{                                                                  |
-|                                                       |         "VariableMeasured":                                                                 |
-|                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"                        |
-|                                                       |       }                                                                                     |
-|                                                       |     }]                                                                                      |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/22c62082a4d2d9ae2602 (Dates)                | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     [{                                                                                      |
-|                                                       |       "date":{                                                                              |
-|                                                       |         "date":"1999-11-01",                                                                |
-|                                                       |         "dateType":"Commissioned"                                                           |
-|                                                       |       }                                                                                     |
-|                                                       |     }]                                                                                      |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/eb3c713572f681e6c4c3 (AlternateIdentifiers) | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     [{                                                                                      |
-|                                                       |       "AlternateIdentifier":{                                                               |
-|                                                       |         "AlternateIdentifierValue":"2490",                                                  |
-|                                                       |         "alternateIdentifierType":"serialNumber"                                            |
-|                                                       |       }                                                                                     |
-|                                                       |     }]                                                                                      |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| 21.T11148/178fb558abc755ca7046 (RelatedIdentifiers)   | .. code-block:: JSON                                                                        |
-|                                                       |                                                                                             |
-|                                                       |     [{                                                                                      |
-|                                                       |       "RelatedIdentifier":{                                                                 |
-|                                                       |         "RelatedIdentifierValue":                                                           |
-|                                                       |           "https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf",           |
-|                                                       |         "RelatedIdentifierType": "URL",                                                     |
-|                                                       |         "relationType":"IsDescribedBy "                                                     |
-|                                                       |       }                                                                                     |
-|                                                       |     }]                                                                                      |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | Type                                                  | Data                                                                                        |
+    +=======================================================+=============================================================================================+
+    | URL                                                   | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     https://linkedsystems.uk/system/instance/TOOL0022_2490/current/                         |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/8eb858ee0b12e8e463a5 (Identifier)           | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     {                                                                                       |
+    |                                                       |       "identifierValue":"http://hdl.handle.net/21.T11998/0000-001A-3905-F",                 |
+    |                                                       |       "identiferType":"MeasuringInstrument"                                                 |
+    |                                                       |     }                                                                                       |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/9a15a4735d4bda329d80 (LandingPage)          | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     https://linkedsystems.uk/system/instance/TOOL0022_2490/current/                         |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/709a23220f2c3d64d1e1 (Name)                 | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     Sea-Bird SBE 37-IM MicroCAT C-T Sensor                                                  |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/4eaec4bc0f1df68ab2a7 (Owners)               | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     [{                                                                                      |
+    |                                                       |       "Owner": {                                                                            |
+    |                                                       |         "ownerName":"National Oceanography Centre",                                         |
+    |                                                       |         "ownerContact":"louise.darroch@bodc.ac.uk",                                         |
+    |                                                       |         "ownerIdentifier":{                                                                 |
+    |                                                       |           "ownerIdentifierValue":                                                           |
+    |                                                       |             "http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/",                     |
+    |                                                       |           "ownerIdentifierType":"URL"                                                       |
+    |                                                       |          }                                                                                  |
+    |                                                       |        }                                                                                    |
+    |                                                       |     }]                                                                                      |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/1f3e82ddf0697a497432 (Manufacturers)        | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     [{                                                                                      |
+    |                                                       |       "Manufacturer":{                                                                      |
+    |                                                       |         "manufacturerName":"Sea-Bird Scientific",                                           |
+    |                                                       |         "modelName":"SBE 37-IM",                                                            |
+    |                                                       |         "manufacturerIdentifier":{                                                          |
+    |                                                       |           "manufacturerIdentifierValue":                                                    |
+    |                                                       |             "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/",                      |
+    |                                                       |           "manufacturerIdentifierType":"URL"                                                |
+    |                                                       |         }                                                                                   |
+    |                                                       |       }                                                                                     |
+    |                                                       |     }]                                                                                      |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/55f8ebc805e65b5b71dd (Description)          | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     A high accuracy conductivity and temperature recorder with an optional pressure sensor  |
+    |                                                       |     designed for deployment on moorings. The IM model has an inductive modem for real-time  |
+    |                                                       |     data transmission plus internal flash memory data storage.                              |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/f76ad9d0324302fc47dd (InstrumentType)       | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/                                |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/72928b84e060d491ee41 (MeasuredVariables)    | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     [{                                                                                      |
+    |                                                       |       "MeasuredVariable":{                                                                  |
+    |                                                       |         "VariableMeasured":                                                                 |
+    |                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"                        |
+    |                                                       |       }                                                                                     |
+    |                                                       |     },{                                                                                     |
+    |                                                       |       "MeasuredVariable":{                                                                  |
+    |                                                       |         "VariableMeasured":                                                                 |
+    |                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"                        |
+    |                                                       |       }                                                                                     |
+    |                                                       |     },{                                                                                     |
+    |                                                       |       "MeasuredVariable":{                                                                  |
+    |                                                       |         "VariableMeasured":                                                                 |
+    |                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"                        |
+    |                                                       |       }                                                                                     |
+    |                                                       |     },{                                                                                     |
+    |                                                       |       "MeasuredVariable":{                                                                  |
+    |                                                       |         "VariableMeasured":                                                                 |
+    |                                                       |           "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"                        |
+    |                                                       |       }                                                                                     |
+    |                                                       |     }]                                                                                      |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/22c62082a4d2d9ae2602 (Dates)                | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     [{                                                                                      |
+    |                                                       |       "date":{                                                                              |
+    |                                                       |         "date":"1999-11-01",                                                                |
+    |                                                       |         "dateType":"Commissioned"                                                           |
+    |                                                       |       }                                                                                     |
+    |                                                       |     }]                                                                                      |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/eb3c713572f681e6c4c3 (AlternateIdentifiers) | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     [{                                                                                      |
+    |                                                       |       "AlternateIdentifier":{                                                               |
+    |                                                       |         "AlternateIdentifierValue":"2490",                                                  |
+    |                                                       |         "alternateIdentifierType":"serialNumber"                                            |
+    |                                                       |       }                                                                                     |
+    |                                                       |     }]                                                                                      |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
+    | 21.T11148/178fb558abc755ca7046 (RelatedIdentifiers)   | .. code-block:: JSON                                                                        |
+    |                                                       |                                                                                             |
+    |                                                       |     [{                                                                                      |
+    |                                                       |       "RelatedIdentifier":{                                                                 |
+    |                                                       |         "RelatedIdentifierValue":                                                           |
+    |                                                       |           "https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf",           |
+    |                                                       |         "RelatedIdentifierType": "URL",                                                     |
+    |                                                       |         "relationType":"IsDescribedBy "                                                     |
+    |                                                       |       }                                                                                     |
+    |                                                       |     }]                                                                                      |
+    +-------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
 Using other PIDs
 ----------------
@@ -177,13 +180,13 @@ objects.  A related PID is the RRID, research resource identifier, which
 identifies the classes of instruments (models) and not
 instances.\ [#bandrowski2016]_ This work is undertaken by the `UsedIT`_
 group, which is extending the RRID to instrument classes that could be
-used to describe the *Model* (via *modelIdentifier*) property (Table
-4.2).  RRIDs are not described in detail here, but it is envisioned that
-the RRID metadata schema, which was described in detail
-previously,\ [#bandrowski2012]_ and extended by UsedIT, will be
-interoperable with instrument instance (PIDINST) PIDs.  This
-interoperability should enable any project to quickly download data
-about the model to consistently fill mapped fields.
+used to describe the *Model* (via *modelIdentifier*) property
+(:numref:`tab-schema-use-rrid`).  RRIDs are not described in detail
+here, but it is envisioned that the RRID metadata schema, which was
+described in detail previously,\ [#bandrowski2012]_ and extended by
+UsedIT, will be interoperable with instrument instance (PIDINST) PIDs.
+This interoperability should enable any project to quickly download
+data about the model to consistently fill mapped fields.
 
 Why RRIDs? RRIDs are currently used in about 1000 journals to tag
 classes of research resources (including reagents like antibodies or
@@ -199,36 +202,36 @@ reproducibility checklist, resolved by identifiers.org and the n2t
 resolver and echoed by some of the major reagent providers (e.g., Thermo
 Fisher, Addgene, and the MMRRC mouse repository).
 
-**Table 4.2:** Example showing the use of RRIDs in the PIDINST metadata
-schema.
+.. _tab-schema-use-rrid:
+.. table:: Example showing the use of RRIDs in the PIDINST metadata schema.
 
-+----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
-|          |                        |               |         |                                                    |                                            |
-| ID       | Property               | Obligation    | Occ.    | Definition                                         | Allowed values, constraints, remarks       |
-+==========+========================+===============+=========+====================================================+============================================+
-|          |                        |               |         |                                                    |                                            |
-| 6        | Model                  | R             | 0-1     | Name of the model or type of device as attributed  | Element                                    |
-|          |                        |               |         | by the manufacturer                                |                                            |
-+----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
-|          |                        |               |         |                                                    |                                            |
-| 6.1      | modelName              | R             | 1       | Full name of the model                             | Name field from RRID                       |
-|          |                        |               |         |                                                    |                                            |
-|          |                        |               |         |                                                    | E.g.                                       |
-|          |                        |               |         |                                                    |                                            |
-|          |                        |               |         |                                                    | ‘Illumina HiSeq 3000/HiSeq 4000 System’    |
-+----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
-|          |                        |               |         |                                                    |                                            |
-| 6.2      | modelIdentifier        | O             | 0-1     | Persistent identifier of the model                 | RRID identifier                            |
-|          |                        |               |         |                                                    |                                            |
-|          |                        |               |         |                                                    | E.g.                                       |
-|          |                        |               |         |                                                    |                                            |
-|          |                        |               |         |                                                    | ‘RRID:SCR_016386’                          |
-+----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
-|          |                        |               |         |                                                    |                                            |
-| 6.2.1    | modelIdentifierType    | O             | 1       | Type of the identifier                             | Free text; must be identifier type         |
-|          |                        |               |         |                                                    |                                            |
-|          |                        |               |         |                                                    | E.g. ‘RRID’                                |
-+----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
+    +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
+    |          |                        |               |         |                                                    |                                            |
+    | ID       | Property               | Obligation    | Occ.    | Definition                                         | Allowed values, constraints, remarks       |
+    +==========+========================+===============+=========+====================================================+============================================+
+    |          |                        |               |         |                                                    |                                            |
+    | 6        | Model                  | R             | 0-1     | Name of the model or type of device as attributed  | Element                                    |
+    |          |                        |               |         | by the manufacturer                                |                                            |
+    +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
+    |          |                        |               |         |                                                    |                                            |
+    | 6.1      | modelName              | R             | 1       | Full name of the model                             | Name field from RRID                       |
+    |          |                        |               |         |                                                    |                                            |
+    |          |                        |               |         |                                                    | E.g.                                       |
+    |          |                        |               |         |                                                    |                                            |
+    |          |                        |               |         |                                                    | ‘Illumina HiSeq 3000/HiSeq 4000 System’    |
+    +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
+    |          |                        |               |         |                                                    |                                            |
+    | 6.2      | modelIdentifier        | O             | 0-1     | Persistent identifier of the model                 | RRID identifier                            |
+    |          |                        |               |         |                                                    |                                            |
+    |          |                        |               |         |                                                    | E.g.                                       |
+    |          |                        |               |         |                                                    |                                            |
+    |          |                        |               |         |                                                    | ‘RRID:SCR_016386’                          |
+    +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
+    |          |                        |               |         |                                                    |                                            |
+    | 6.2.1    | modelIdentifierType    | O             | 1       | Type of the identifier                             | Free text; must be identifier type         |
+    |          |                        |               |         |                                                    |                                            |
+    |          |                        |               |         |                                                    | E.g. ‘RRID’                                |
+    +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
 
 
 .. _PIDINST schema:
