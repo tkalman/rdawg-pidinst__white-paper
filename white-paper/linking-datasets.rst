@@ -157,39 +157,34 @@ frames and orientations.
             string instrument_pid(NCOLUMNS) ;
                instrument_pid:long_name = "PIDINST PID" ;
                instrument_pid:sdn_variable_name = "TBC" ;
-               instrument_pid:sdn_variable_url = "TBC" ;
+               instrument_pid:sdn_variable_urn = "TBC" ;
             string uuid(NCOLUMNS) ;
                uuid:long_name = "UUID" ;
                uuid:sdn_variable_name = "Universally Unique Identifier (UUID)" ;
-               uuid:sdn_variable_url = "http://vocab.nerc.ac.uk/collection/W07/current/IDEN0007/" ;
+               uuid:sdn_variable_urn = "SDN:W07::IDEN0007" ;
             string instrument_name(NCOLUMNS) ;
                instrument_name:long_name = "Instrument name" ;
                instrument_name:sdn_variable_name = "Long name" ;
-               instrument_name:sdn_variable_url = "http://vocab.nerc.ac.uk/collection/W07/current/IDEN0002/" ;
+               instrument_name:sdn_variable_urn = "SDN:W07::IDEN0002" ;
             string serial_number(NCOLUMNS) ;
                serial_number:long_name = "Instrument serial number" ;
                serial_number:sdn_variable_name = "Serial Number" ;
-               serial_number:sdn_variable_url = "http://vocab.nerc.ac.uk/collection/W07/current/IDEN0005/" ;
-            string model_name(NCOLUMNS) ;
-               model_name:long_name = "Instrument model name" ;
-               model_name:sdn_variable_name = "Model Name" ;
-               model_name:sdn_variable_url = "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/" ;
+               serial_number:sdn_variable_urn = "SDN:W07::IDEN0005" ;
             string model_id(NCOLUMNS) ;
                model_id:long_name = "Model Name Identifier" ;
-               model_id:sdn_variable_name = "TBC" ;
-               model_id:sdn_variable_url = "TBC" ;
+               model_id:sdn_variable_name = "Model name" ;
+               model_id:sdn_variable_urn = "SDN:W07::IDEN0003" ;
             float accuracy_temperature(NCOLUMNS) ;
                accuracy_temperature:long_name = "Instrument accuracy of temperature" ;
                accuracy_temperature:units = "degC" ;
                accuracy_temperature:sdn_variable_name = "Accuracy" ;
-               accuracy_temperature:sdn_variable_url = "http://vocab.nerc.ac.uk/collection/W04/current/CAPB0001/" ;
+               accuracy_temperature:sdn_variable_urn = "SDN:W04::CAPB0001" ;
                accuracy_temperature:variable_parameter = "/seatemp" ;
-               accuracy_temperature:sdn_uom_url = "http://vocab.nerc.ac.uk/collection/P06/current/UPAA/" ;
+               accuracy_temperature:sdn_uom_urn = "SDN:P06::UPAA" ;
                accuracy_temperature:sdn_uom_name = "Degrees Celsius" ;
 
           // group attributes:
                :date_valid_from = "2020-01-31T00:00:00Z" ;
-               :first_use_date = "2020-01-31T00:00:00Z" ;
                :metadata_link = "https://linkedsystems.uk/system/instance/TOOL0022_2490/current/" ;
                :comment = "\n2020-06-26T13:29:42Z: Instrument cleaned on 2020-02-10T13:04:00Z" ;
           data:
@@ -202,8 +197,6 @@ frames and orientations.
 
            serial_number = "2490" ;
 
-           model_name = "Sea-Bird SBE 37-IM MicroCAT C-T Sensor" ;
-
            model_id = "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/" ;
 
            accuracy_temperature = 0.002 ;
@@ -214,20 +207,20 @@ frames and orientations.
 The National Centres for Environmental Information (NCEI) at the
 National Oceanic and Atmospheric Administration (NOAA) in the US, also
 report instruments in CF-NetCDF files but as empty data variables within
-the root group of the NetCDF file instead of sub groups. The PIDINST
+the root group of the NetCDF file instead of sub groups. The PID
 instrument identifier may be expressed as an instrument attribute e.g.
 :numref:`snip-link-pidinst-netcdf`. Ideally, blank separated lists
 should be used if linking more than one instrument.
 
 .. _snip-link-pidinst-netcdf:
 .. code-block:: default
-    :caption: Addition of a PIDINST PID attribute to NCEI CF-NetCDF
+    :caption: Addition of a instrument PID attribute to NCEI CF-NetCDF
 	      files.
 
       int instrument_parameter_variable;
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
-         instrument_parameter_variable:pidinst_pid = "" ;
+         instrument_parameter_variable:instrument_pid = "" ;
 
 .. _DataCite Metadata Schema: https://schema.datacite.org/
 
