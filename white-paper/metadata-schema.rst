@@ -4,7 +4,7 @@ PIDINST metadata schema
 =======================
 
 The metadata that is to be registered with an instrument PID need to
-contain enough information to consistently and accurately identify the
+contain enough information to unambiguously identify the
 instrument across networks and infrastructures.  It furthermore allows
 to link resources related to the instrument and thus provides a mean
 to aggregate information about the instrument.
@@ -19,7 +19,7 @@ describe the properties in the original PIDINST schema and discuss
 their semantics:
 
 `Identifier`
-  The PID that this metadata record pertains to.  The subproperty
+  The PID of the instrument.  The subproperty
   `identifierType` contains the type of the PID, e.g. `Handle` or
   `DOI` in the case of an ePIC Handle or a DataCite DOI respectively.
 
@@ -28,7 +28,7 @@ their semantics:
 
 `Name`
   The name by which this instrument is known.  It should preferably be
-  unique within the organization that manages it.
+  meaningful within the organization that manages it.
 
 `Owner`
   The organization or individual that manages the instrument.  This
@@ -58,11 +58,11 @@ their semantics:
   `manufacturerIdentifier`.
 
 `Model`
-  The name of the model or type of device of the instrument.  In the
+  The name of the model or type of the instrument.  In the
   case of an off the shelf product, this may be a brand name
   attributed by the manufacturer.  In the case of an custom built
   instrument, it may not have a model name.  Hence this property is
-  not mandatory, but recommended if applicable.  `Model` has an
+  not mandatory, but recommended if the value can be obtained.  `Model` has an
   optional subproperty `modelIdentifier` to be used if a persistent
   identifier for the model is known.
 
