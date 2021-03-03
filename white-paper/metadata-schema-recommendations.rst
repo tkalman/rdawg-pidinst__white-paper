@@ -3,10 +3,9 @@
 Recommendations using the PIDINST metadata schema
 =================================================
 
-In support of unambiguous identification, we recommend that an
-instrument’s associated metadata is published in a common language,
-specifically US English.  In the following section, we provide
-advanced recommendations on how to form the values in the PIDINST
+We recommend that an instrument’s associated metadata is published in a common language,
+specifically US English to enable its reuse.  In the following section, we provide
+advanced recommendations on how to specify the values in the PIDINST
 metadata and discuss special cases.
 
 .. _pidinst-metadata-schema-terminologies:
