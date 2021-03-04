@@ -28,7 +28,7 @@ their semantics:
 
 `Name`
   The name by which this instrument is known.  It should preferably be
-  meaningful within the organization that manages it.
+  meaningful and unique within the organization that manages it.
 
 `Owner`
   The organization or individual that manages the instrument.  This
