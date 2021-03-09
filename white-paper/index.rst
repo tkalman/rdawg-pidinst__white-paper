@@ -23,6 +23,7 @@ Table of contents
    instrument-pids
    publishing
    metadata-schema
+   metadata-schema-recommendations
    registration
    duplication
    physical-objects
