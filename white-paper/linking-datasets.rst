@@ -1,6 +1,46 @@
 Linking instrument PIDs to datasets
 ===================================
 
+One major purpose of PIDINST is to ease tracking the scientific output
+of the instrument.  In order to benefit from this, it is important to
+establish the relation between the datasets and the instrument being
+used to collect the data in a machine readable way.
+
+DataCite metadata
+-----------------
+
+Datasets are usually published with a DataCite DOI.  The `DataCite
+Metadata Schema`_ allows to link the instrument from the metadata
+registered with that DOI for a data publication using the
+*relatedIdentifier* property.  The recommended *relationType* is
+*IsCompiledBy* in this case.  :numref:`fig-link-hzb` shows an example
+for a dataset published by HZB (https://doi.org/10.5442/ND000001).
+The data has been collected using neutron diffraction with the E2 -
+Flat-Cone Diffractometer beamline at BER II.  The image show a
+screenshot of the data publication landing page which links the PID of
+the instrument.  :numref:`snip-link-dataset-datacite-xml` shows a
+section of the DOI metadata from the same data publication containing
+this link.
+
+.. _fig-link-hzb:
+.. figure:: /images/ND000001-landing.png
+    :alt: HZB dataset
+
+    Landing page of a dataset published by HZB which links the PID of
+    the instrument.
+
+.. _snip-link-dataset-datacite-xml:
+.. code-block:: XML
+    :caption: Use of the relatedIdentifier property in the DOI
+	      metadata from a data publication.  The second entry links
+	      the PID of the instrument.
+
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.17815/jlsrf-4-110</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCompiledBy">10.5442/NI000001</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy">10.1103/physrevb.99.174111</relatedIdentifier>
+      </relatedIdentifiers>
+
 schema.org
 ----------
 
@@ -188,6 +228,8 @@ should be used if linking more than one instrument.
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
          instrument_parameter_variable:pidinst_pid = "" ;
+
+.. _DataCite Metadata Schema: https://schema.datacite.org/
 
 .. [#uk_noc]
    British Oceanographic Data Centre (BODC) and National Marine
