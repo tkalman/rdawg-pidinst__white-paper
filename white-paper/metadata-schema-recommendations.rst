@@ -20,7 +20,7 @@ shared and interpreted semantically by computers. Many terminologies
 exist, covering a broad spectrum of disciplines and their best
 practices. The PIDINST schema is designed to complement
 multidisciplinary best practices for property values. Many properties
-allow for soft-typing (e.g. *ownerName*), giving users the ability to
+allow for soft-typing (e.g., *ownerName*), giving users the ability to
 use values of their choice, such as free text or domain-specific
 terminologies. Property attributes enable users and machines to
 understand the context of the value (e.g., *ownerIdentifier*,
@@ -189,11 +189,11 @@ RRIDs
 
 In a similar way to common terminologies, persistent identifiers have
 been created to help users classify and accurately describe physical
-objects.  A related PID is the RRID, research resource identifier, which
-identifies the classes of instruments (models) and not
-instances.\ [#bandrowski2016]_ This work is undertaken by the `UsedIT`_
-group, which is extending the RRID to instrument classes that could be
-used to describe the *Model* (via *modelIdentifier*) property
+objects.  The research resource identifier (RRID) can be used to identify 
+classes of instruments (models) and is thus related to PIDINST, which 
+identifies instrument instances.\ [#bandrowski2016]_ This work is undertaken 
+by the `UsedIT`_ group, which is extending the RRID to instrument classes 
+that could be used to describe the *Model* (via *modelIdentifier*) property
 (:numref:`tab-schema-use-rrid`).  RRIDs are not described in detail
 here, but it is envisioned that the RRID metadata schema, which was
 described in detail previously,\ [#bandrowski2012]_ and extended by
