@@ -41,7 +41,7 @@
   },
   {
     "type": "21.T11148/22c62082a4d2d9ae2602",
-    "parsed_data": "[{\"Date\":{\"dateValue\":\"1999-11-01\",\"dateType\":\"Commissioned\"}}]"
+    "parsed_data": "[{\"Date\":{\"date\":\"1999-11-01\",\"dateType\":\"Commissioned\"}}]"
   },
   {
     "type": "21.T11148/eb3c713572f681e6c4c3",
