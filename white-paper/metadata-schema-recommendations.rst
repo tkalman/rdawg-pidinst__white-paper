@@ -149,7 +149,7 @@ in :numref:`tab-schema-handle-record`.
     | | (Dates)                          |                                                                                                              |
     |                                    |     [{                                                                                                       |
     |                                    |       "Date":{                                                                                               |
-    |                                    |         "dateValue":"1999-11-01",                                                                            |
+    |                                    |         "date":"1999-11-01",                                                                                 |
     |                                    |         "dateType":"Commissioned"                                                                            |
     |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
