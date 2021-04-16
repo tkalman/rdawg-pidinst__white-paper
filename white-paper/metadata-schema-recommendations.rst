@@ -246,6 +246,47 @@ Fisher, Addgene, and the MMRRC mouse repository).
     |          |                        |               |         |                                                    | E.g. ‘RRID’                                |
     +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
 
+Dealing with unknown information
+--------------------------------
+
+There are situations where it is not possible or not appropriate to
+provide some piece of information that should normally be present in
+the metadata.  This may for instance happen, if this information is
+simply unknown, if a property has not or not yet been assigned a
+value, or if it is not appropriate to disclose some piece of
+information.  As an example for the latter case, consider a person
+that contributes measurements to a citizen science project, but who
+prefers to remain anonymous for privacy reasons.  That person might
+not want to be named as the owner of the instrument taking the data.
+
+In all these cases it is still useful to make it at least explicit
+that this information has not been omitted inadvertently and also to
+give a reason why it is missing.  For this purpose, PIDINST adopts the
+*standard values for unknown information* from DataCite, see Appendix
+3 in the DataCite Metadata Schema Documentation. [#datacite2019]_
+
+.. _snip-schema-unknown-xml:
+.. code-block:: XML
+    :caption: Encoding unknown values in the instrument PID metadata using XML
+
+      <name>:tba</name>
+      <owners>
+         <owner>
+            <ownerName>:unal</ownerName>
+         </owner>
+      </owners>
+      <manufacturers>
+         <manufacturer>
+            <manufacturerName>:unav</manufacturerName>
+         </manufacturer>
+      </manufacturers>
+
+:numref:`snip-schema-unknown-xml` demonstrates the use of standard
+values for unknown information in the metadata of an instrument PID.
+It shows an instrument that has not yet been assigned a name, e.g. it
+may be assumed that the metadata record will be updated at a later
+point in time including a name.  The owner of the instrument is
+refused to be disclosed and the manufacturer is not known.
 
 .. _NVS:
    https://www.bodc.ac.uk/resources/products/web_services/vocab/
@@ -273,3 +314,8 @@ Fisher, Addgene, and the MMRRC mouse repository).
    hybrid human and machine resource curation pipeline for the
    Neuroscience Information Framework. Database (Oxford). 2012 Mar
    20;2012:bas005. https://doi.org/10.1093/database/bas005
+
+.. [#datacite2019]
+   DataCite Metadata Working Group (2019).  DataCite Metadata Schema
+   Documentation for the Publication and Citation of Research Data.
+   Version 4.3.  DataCite e.V.  https://doi.org/10.14454/7xq3-zf69
