@@ -58,7 +58,7 @@ in :numref:`tab-schema-handle-record`.
     | | (Identifier)                     |                                                                                                              |
     |                                    |     {                                                                                                        |
     |                                    |       "identifierValue":"http://hdl.handle.net/21.T11998/0000-001A-3905-F",                                  |
-    |                                    |       "identiferType":"Handle"                                                                               |
+    |                                    |       "identifierType":"Handle"                                                                              |
     |                                    |     }                                                                                                        |
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | | 21.T11148/9a15a4735d4bda329d80   | .. code-block:: JSON                                                                                         |
@@ -148,8 +148,8 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/22c62082a4d2d9ae2602   | .. code-block:: JSON                                                                                         |
     | | (Dates)                          |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |       "Date":{                                                                                               |
-    |                                    |         "date":"1999-11-01",                                                                                 |
+    |                                    |       "date":{                                                                                               |
+    |                                    |         "dateValue":"1999-11-01",                                                                            |
     |                                    |         "dateType":"Commissioned"                                                                            |
     |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
