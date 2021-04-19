@@ -72,7 +72,7 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/4eaec4bc0f1df68ab2a7   | .. code-block:: JSON                                                                                         |
     | | (Owners)                         |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |       "Owner": {                                                                                             |
+    |                                    |       "owner": {                                                                                             |
     |                                    |         "ownerName":"National Oceanography Centre",                                                          |
     |                                    |         "ownerContact":"louise.darroch@bodc.ac.uk",                                                          |
     |                                    |         "ownerIdentifier":{                                                                                  |
@@ -86,7 +86,7 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/1f3e82ddf0697a497432   | .. code-block:: JSON                                                                                         |
     | | (Manufacturers)                  |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |       "Manufacturer":{                                                                                       |
+    |                                    |       "manufacturer":{                                                                                       |
     |                                    |         "manufacturerName":"Sea-Bird Scientific",                                                            |
     |                                    |         "manufacturerIdentifier":{                                                                           |
     |                                    |           "manufacturerIdentifierValue":                                                                     |
@@ -124,23 +124,23 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/72928b84e060d491ee41   | .. code-block:: JSON                                                                                         |
     | | (MeasuredVariables)              |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |       "MeasuredVariable":{                                                                                   |
-    |                                    |         "VariableMeasured":                                                                                  |
+    |                                    |       "measuredVariable":{                                                                                   |
+    |                                    |         "variableMeasured":                                                                                  |
     |                                    |           "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"                                         |
     |                                    |       }                                                                                                      |
     |                                    |     },{                                                                                                      |
-    |                                    |       "MeasuredVariable":{                                                                                   |
-    |                                    |         "VariableMeasured":                                                                                  |
+    |                                    |       "measuredVariable":{                                                                                   |
+    |                                    |         "variableMeasured":                                                                                  |
     |                                    |           "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"                                         |
     |                                    |       }                                                                                                      |
     |                                    |     },{                                                                                                      |
-    |                                    |       "MeasuredVariable":{                                                                                   |
-    |                                    |         "VariableMeasured":                                                                                  |
+    |                                    |       "measuredVariable":{                                                                                   |
+    |                                    |         "variableMeasured":                                                                                  |
     |                                    |           "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"                                         |
     |                                    |       }                                                                                                      |
     |                                    |     },{                                                                                                      |
-    |                                    |       "MeasuredVariable":{                                                                                   |
-    |                                    |         "VariableMeasured":                                                                                  |
+    |                                    |       "measuredVariable":{                                                                                   |
+    |                                    |         "variableMeasured":                                                                                  |
     |                                    |           "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"                                         |
     |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
@@ -157,8 +157,8 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/eb3c713572f681e6c4c3   | .. code-block:: JSON                                                                                         |
     | | (AlternateIdentifiers)           |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |       "AlternateIdentifier":{                                                                                |
-    |                                    |         "AlternateIdentifierValue":"2490",                                                                   |
+    |                                    |       "alternateIdentifier":{                                                                                |
+    |                                    |         "alternateIdentifierValue":"2490",                                                                   |
     |                                    |         "alternateIdentifierType":"serialNumber"                                                             |
     |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
@@ -166,10 +166,10 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/178fb558abc755ca7046   | .. code-block:: JSON                                                                                         |
     | | (RelatedIdentifiers)             |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |       "RelatedIdentifier":{                                                                                  |
-    |                                    |         "RelatedIdentifierValue":                                                                            |
+    |                                    |       "relatedIdentifier":{                                                                                  |
+    |                                    |         "relatedIdentifierValue":                                                                            |
     |                                    |           "https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf",                            |
-    |                                    |         "RelatedIdentifierType": "URL",                                                                      |
+    |                                    |         "relatedIdentifierType": "URL",                                                                      |
     |                                    |         "relationType":"IsDescribedBy "                                                                      |
     |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
