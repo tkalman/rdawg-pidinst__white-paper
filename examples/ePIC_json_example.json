@@ -5,7 +5,7 @@
   },
   {
     "type": "21.T11148/8eb858ee0b12e8e463a5",
-    "parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/0000-001A-3905-F\",\"identiferType\":\"Handle\"}"
+    "parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/0000-001A-3905-F\",\"identifierType\":\"Handle\"}"
   },
   {
     "type": "21.T11148/9a15a4735d4bda329d80",
@@ -41,7 +41,7 @@
   },
   {
     "type": "21.T11148/22c62082a4d2d9ae2602",
-    "parsed_data": "[{\"Date\":{\"date\":\"1999-11-01\",\"dateType\":\"Commissioned\"}}]"
+    "parsed_data": "[{\"date\":{\"dateValue\":\"1999-11-01\",\"dateType\":\"Commissioned\"}}]"
   },
   {
     "type": "21.T11148/eb3c713572f681e6c4c3",
