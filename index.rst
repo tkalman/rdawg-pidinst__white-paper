@@ -61,7 +61,7 @@ Attribution 4.0 International License <cc-by_>`_.
    :hidden:
 
    white-paper/index
-   cookbook/index
+   epic-cookbook/index
 
 .. _pidinst: https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 .. _rda: https://www.rd-alliance.org/
