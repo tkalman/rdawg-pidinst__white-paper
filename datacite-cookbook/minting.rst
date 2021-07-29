@@ -1,0 +1,3 @@
+Minting the instrument DOI
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
