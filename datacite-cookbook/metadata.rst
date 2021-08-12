@@ -16,9 +16,9 @@ PIDINST Schema onto the DataCite Schema <PIDINST DataCite schema_>`_
 Mapping of PIDINST metadata onto DataCite
 -----------------------------------------
 
-In the following, we will discuss that mapping and describe how the
-metadata describing the instrument can be best represented in the
-DataCite Schema:
+In the following, we will discuss based on the mapping provided by
+PIDINST WG how the metadata describing the instrument can be best
+represented in the DataCite Schema:
 
 `Identifier`
   The DOI that you are going to create.  Add as DataCite property
@@ -46,9 +46,9 @@ DataCite Schema:
   the manufacturer in the `nameIdentifier` subproperty of `Creator`.
 
 `Model`
-  The name of the model or type of the instrument.  Unfortunately, the
-  DataCite Schema has no suitable property for that, so you'll need to
-  leave it out.
+  The name of the model or type of the instrument.  Unfortunately, as
+  of this writing, the DataCite Schema has no suitable property for
+  that, so you'll need to leave it out.\ [#dc_model]_
 
 `Description`
   A textual description of the device and its capabilities.  Add as
@@ -92,5 +92,13 @@ Additional properties in the DataCite Schema
 
 
 .. _DataCite Metadata Schema: https://schema.datacite.org/
+
 .. _PIDINST DataCite schema:
    https://github.com/rdawg-pidinst/schema/blob/master/schema-datacite.rst
+
+.. [#dc_model]
+   There is a `Proposal to add a Series property <dc_issue72_>`_ to
+   the DataCite schema that would be suitable to put the instrument
+   model once the proposal is adopted.
+
+.. _dc_issue72: https://github.com/datacite/schema/issues/72
