@@ -88,7 +88,42 @@ represented in the DataCite Schema:
 Additional properties in the DataCite Schema
 --------------------------------------------
 
+There are a few more properties in the DataCite Schema that have no
+counterpart in the PIDINST Schema and that either need to be set
+because they are mandatory in DataCite or that are worth considering.
+Of course, any other DataCite property not mentioned here may be
+considered as well, if it makes sense for a particular use case.
 
+`Publisher`
+  “The name of the entity that holds, archives, publishes, prints,
+  distributes, releases, issues, or produces the resource” (quote from
+  the definition in the DataCite Schema).  It's not quite clear what
+  that would mean in the case of an instrument and it seem to be a
+  little redundant with what would be the `Owner` in the PIDINST
+  Schema.  But it is mandatory in the DataCite Schema, so it needs to
+  be set.  We recommend to set it to the entity that created the DOI
+  and is responsible for maintaining the DOI metadata.
+
+`PublicationYear`
+  Mandatory in the DataCite Schema.  We suggest to set it to the year
+  of issuing the DOI.
+
+`ResourceType`
+  DataCite DOIs are for many different types of objects, so there is a
+  need to indicate the type.  This is mandatory in the DataCite
+  Schema.  Obviously, for an instrument DOI there should be an
+  indication that this DOI identifies an instrument instance.  In
+  DataCite, `ResourceType` is free text, but it has a subproperty
+  `resourceTypeGeneral` having a controlled list of values with
+  defined types of resources.  Unfortunately, as of this writing, non
+  of these values would fit for an instrument, so we recommend to set
+  `ResourceType` to `Instrument` with
+  `resourceTypeGeneral=Other`.\ [#dc_resource]_
+
+`FundingReference`
+  This is optional in the DataCite Schema, but it may be useful to
+  acknowledge external funding that supported the purchase or the
+  creation of the instrument.
 
 
 .. _DataCite Metadata Schema: https://schema.datacite.org/
@@ -98,7 +133,14 @@ Additional properties in the DataCite Schema
 
 .. [#dc_model]
    There is a `Proposal to add a Series property <dc_issue72_>`_ to
-   the DataCite schema that would be suitable to put the instrument
+   the DataCite Schema that would be suitable to put the instrument
    model once the proposal is adopted.
+
+.. [#dc_resource]
+   There is a `Proposal to add Instrument to the controlled list of
+   values for resourceTypeGeneral <dc_issue70_>`_ in the DataCite
+   Schema.
+
+.. _dc_issue70: https://github.com/datacite/schema/issues/70
 
 .. _dc_issue72: https://github.com/datacite/schema/issues/72
