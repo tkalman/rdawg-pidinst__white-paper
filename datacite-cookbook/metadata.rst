@@ -69,7 +69,7 @@ represented in the DataCite Schema:
   DataCite property `Date`.  Use `dateType=Available` to indicate the
   date that the instrument is or was in operation.  Use a single date
   if the instrument is still in operation, to indicate a start date.
-  Use a date intervall to indicate a start and an end date, if the
+  Use a date interval to indicate a start and an end date, if the
   instrument has already been decommissioned.
 
 `RelatedIdentifier`
