@@ -57,7 +57,7 @@ represented in the DataCite Schema:
 `InstrumentType`
   A classification of the type of the instrument.  There is no
   dedicated property for this in the DataCite Schema, but you may add
-  it in the property `Subject`.
+  keywords providing such a classification in the property `Subject`.
 
 `MeasuredVariable`
   The variables or physical properties that the instrument measures or
