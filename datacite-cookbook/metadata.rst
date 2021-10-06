@@ -1,8 +1,8 @@
 Collecting the metadata
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-For creating a DOI for an instrument, you need to collect all the
-metadata that describe the instrument and that you want to register in
+To create a DOI for an instrument, you need to collect all the
+metadata that describe the instrument and you want to register in
 the DOI record.  Section :ref:`pidinst-metadata-schema` in the PIDINST
 White Paper describes the metadata that you should consider to
 include.
@@ -16,8 +16,7 @@ PIDINST Schema onto the DataCite Schema <PIDINST DataCite schema_>`_
 Mapping of PIDINST metadata onto DataCite
 -----------------------------------------
 
-In the following, we will discuss based on the mapping provided by
-PIDINST WG how the metadata describing the instrument can be best
+Based on the mapping provided by PIDINST WG, in the following we will discuss how the metadata describing the instrument can be best
 represented in the DataCite Schema:
 
 `Identifier`
