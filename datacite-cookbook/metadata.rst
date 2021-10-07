@@ -16,7 +16,8 @@ PIDINST Schema onto the DataCite Schema <PIDINST DataCite schema_>`_
 Mapping of PIDINST metadata onto DataCite
 -----------------------------------------
 
-Based on the mapping provided by PIDINST WG, in the following we will discuss how the metadata describing the instrument can be best
+Based on the mapping provided by PIDINST WG, in the following we will
+discuss how the metadata describing the instrument can be best
 represented in the DataCite Schema:
 
 `Identifier`
@@ -83,6 +84,13 @@ represented in the DataCite Schema:
   attributed by the manufacturer.  Use
   `alternateIdentifierType=InventoryNumber` for an inventory number
   used by the owner.
+
+  Note that as opposed to the PIDINST schema,
+  `alternateIdentifierType` is free text in the DataCite schema.
+  Thus, when adding an alternate identifier that is not a serial
+  number or an inventory number, you are not forced to use
+  `alternateIdentifierType=Other`, but may set the appropriate type in
+  `alternateIdentifierType` right away.
 
 Additional properties in the DataCite Schema
 --------------------------------------------
