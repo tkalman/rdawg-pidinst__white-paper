@@ -47,6 +47,9 @@ The group produced the following outputs:
   Detailed instructions on how to create instrument PIDs using the
   ePIC infrastructure.
 
+* :ref:`datacite-cookbook` :raw-html:`<br />`
+  Detailed instructions on how to create DataCite DOIs for instruments.
+
 .. image:: /images/cc-by.*
     :alt: Creative Commons License
     :target: `cc-by`_
@@ -61,7 +64,8 @@ Attribution 4.0 International License <cc-by_>`_.
    :hidden:
 
    white-paper/index
-   cookbook/index
+   epic-cookbook/index
+   datacite-cookbook/index
 
 .. _pidinst: https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 .. _rda: https://www.rd-alliance.org/
