@@ -37,6 +37,13 @@ The group produced the following outputs:
   pp. 1–12.  DOI: https://doi.org/10.5334/dsj-2020-018 :raw-html:`<br />`
   This paper provides an overview of the work of PIDINST.
 
+* Krahl, R, Darroch, L, Huber, R, Devaraju, A, Klump, J, Habermann, T,
+  Stocker, M, snd The Research Data Alliance Persistent Identification
+  of Instruments Working Group members.  2021.  Metadata Schema for
+  the Persistent Identification of Instruments.  Research Data
+  Alliance.  DOI: https://doi.org/10.15497/RDA00070 :raw-html:`<br />`
+  This defines the Metadata Schema.  Submitted as a RDA recommendation.
+
 * :ref:`white-paper` :raw-html:`<br />`
   This white paper provides recommendations for the use of instrument
   PIDs and gives technical details that go beyond the overview
