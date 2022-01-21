@@ -38,7 +38,7 @@ The group produced the following outputs:
   This paper provides an overview of the work of PIDINST.
 
 * Krahl, R, Darroch, L, Huber, R, Devaraju, A, Klump, J, Habermann, T,
-  Stocker, M, snd The Research Data Alliance Persistent Identification
+  Stocker, M, and The Research Data Alliance Persistent Identification
   of Instruments Working Group members.  2021.  Metadata Schema for
   the Persistent Identification of Instruments.  Research Data
   Alliance.  DOI: https://doi.org/10.15497/RDA00070 :raw-html:`<br />`
