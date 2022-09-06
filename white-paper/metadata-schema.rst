@@ -3,11 +3,14 @@
 PIDINST metadata schema
 =======================
 
-The metadata that is to be registered with an instrument PID need to
+The metadata that is to be registered with an instrument PID needs to
 contain enough information to unambiguously identify the
-instrument across networks and infrastructures.  It furthermore allows
-to link resources related to the instrument and thus provides a mean
-to aggregate information about the instrument.
+instrument across networks and infrastructures. It should also allow
+linking related resources to the instrument, thus providing a means
+to aggregate information about the instrument. The PIDINST working group defined 
+a schema of metadata that can be registered alongside instrument PIDs at 
+PID providers to help meet these criteria. Version 1.0 has been endorsed
+as an RDA recommendation\ [#pidinst2022v1_0]_.
 
 Currently, two variants of the metadata schema exist.  The original
 `PIDINST schema`_, based on the evaluation of use cases collected by
@@ -22,6 +25,9 @@ their semantics:
   The PID of the instrument.  The subproperty
   `identifierType` contains the type of the PID, e.g. `Handle` or
   `DOI` in the case of an ePIC Handle or a DataCite DOI respectively.
+
+`SchemaVersion`
+  The version number of the PIDINST schema used to create a record.
 
 `LandingPage`
   The URL of the landing page that the PID resolves to.
@@ -136,3 +142,10 @@ their semantics:
 
 .. _PIDINST DataCite schema:
    https://github.com/rdawg-pidinst/schema/blob/master/schema-datacite.rst
+
+.. [#pidinst2022v1_0]
+   Krahl, R., Darroch, L., Huber, R., Devaraju, A., Klump, J., Habermann, T., 
+   Stocker, M., & The Research Data Alliance Persistent Identification of 
+   Instruments Working Group members (2022). Metadata Schema for the 
+   Persistent Identification of Instruments (1.0). Research Data Alliance. 
+   DOI: https://doi.org/10.15497/RDA00070
