@@ -67,7 +67,7 @@ their semantics:
 `Model`
   The name of the model or type of the instrument.  In the
   case of an off the shelf product, this may be a brand name
-  attributed by the manufacturer.  In the case of an custom built
+  attributed by the manufacturer.  In the case of a custom built
   instrument, it may not have a model name.  Hence this property is
   not mandatory, but recommended if the value can be obtained.  `Model` has
   optional subproperties `modelIdentifier` and `modelIdentifierType` to be used 
@@ -88,7 +88,7 @@ their semantics:
 
 `MeasuredVariable`
   The variables or physical properties that the instrument measures or
-  observes. Some communities have established vocabularies or schemes 
+  observes. Some communities have established terminologies 
   to identify measured variables that are specific to their respective domain 
   (see :ref:`pidinst-metadata-schema-terminologies`).  If such a 
   standard is applicable, it should be used for for `MeasuredVariable`.
