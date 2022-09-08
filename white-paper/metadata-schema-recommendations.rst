@@ -134,14 +134,7 @@ in :numref:`tab-schema-handle-record`.
     |                                    |            "http://vocab.nerc.ac.uk/collection/L05/current/350/",                                            |
     |                                    |          "instrumentTypeIdentifierType":"URL"                                                                |
     |                                    |        }                                                                                                     |
-    |                                    |     }]                                                                                                       |
-    +------------------------------------+--------------------------------------------------------------------------------------------------------------+
-    | | 21.T11148/f76ad9d0324302fc47dd   | .. code-block:: JSON                                                                                         |
-    | | (InstrumentType)                 |                                                                                                              |
-    |                                    |     [                                                                                                        |
-    |                                    |       "http://vocab.nerc.ac.uk/collection/L05/current/134/",                                                 |
-    |                                    |       "http://vocab.nerc.ac.uk/collection/L05/current/350/"                                                  |
-    |                                    |     ]                                                                                                        |                         
+    |                                    |     }]                                                                                                       |                    
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | | 21.T11148/72928b84e060d491ee41   | .. code-block:: JSON                                                                                         |
     | | (MeasuredVariables)              |                                                                                                              |
