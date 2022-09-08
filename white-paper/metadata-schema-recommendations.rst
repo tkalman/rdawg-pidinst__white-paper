@@ -33,7 +33,7 @@ terminologies that describe *instrumentType* (via *instrumentTypeIdentifier*) or
 *Model* (via *modelIdentifier*) are used widely in the Earth science
 marine domain (`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
 `http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
-An example of the use of common terminologies in ePID records is shown
+An example of the use of common terminologies in ePIC records is shown
 in :numref:`tab-schema-handle-record`.
 
 .. _tab-schema-handle-record:
