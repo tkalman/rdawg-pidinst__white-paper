@@ -12,23 +12,23 @@ MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener
 GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen, Am
 Fassberg 11, 37077 Göttingen, Germany
 
-*Anita Bandrowski* (abandrowski@ucsd.edu, https://orcid.org/0000-0002-5497-0243),
-Department of Neuoscience, University of California at San Diego,
-9500 Gilman Drive La Jolla, CA 92093-0662
-
-*Markus Stocker* (markus.stocker@tib.eu, https://orcid.org/0000-0001-5492-3212),
-TIB Leibniz Information Centre for Science and Technology, Welfengarten
-1 B, 30167 Hannover, Germany and PANGAEA, Center for Marine
-Environmental Sciences (MARUM), University of Bremen, Leobener Str. 8,
-28359 Bremen, Germany
-
 *Rolf Krahl* (rolf.krahl@helmholtz-berlin.de, https://orcid.org/0000-0002-1266-3819),
 Helmholtz-Zentrum Berlin für Materialien und Energie GmbH,
 Albert-Einstein-Str. 15, 12489 Berlin, Germany
 
+sven.bingert@gwdg.de
+
+philipp.wieder@gwdg.de
+
+*Anita Bandrowski* (abandrowski@ucsd.edu, https://orcid.org/0000-0002-5497-0243),
+Department of Neuroscience, University of California at San Diego,
+9500 Gilman Drive La Jolla, CA 92093-0662
+
 *Ted Habermann* (ted@tedhabermann.com, http://orcid.org/0000-0003-3585-6733),
 Metadata Game Changers, 3980 Broadway, Suite 103-185, Boulder,
 Colorado, USA 80304
+
+mark.vandesanden@surf.nl
 
 *Claudio D'Onofrio* (claudio.donofrio@nateko.lu.se, https://orcid.org/0000-0002-1982-3889),
 ICOS Carbon Portal, Lund University, Physical Geography & Ecosystem
@@ -53,6 +53,14 @@ Germany
 
 *Tina Dohna* (tdohna@marum.de, https://orcid.org/0000-0002-5948-0980),
 MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28199 Bremen, Germany
+
+*Jens Klump* (jens.klump@csiro.au, https://orcid.org/0000-0001-5911-6022),
+CSIRO Mineral Resources, 26 Dick Perry Avenue, Kensington WA 6151, Australia
+
+*Markus Stocker* (markus.stocker@tib.eu, https://orcid.org/0000-0001-5492-3212),
+TIB Leibniz Information Centre for Science and Technology,
+Welfengarten 1 B, 30167 Hannover, Germany and Leibniz University
+Hannover, Welfengarten 1, 30167 Hannover, Germany
 
 *The Research Data Alliance Persistent Identification of Instruments
 Working Group members* (https://www.rd-alliance.org/node/57186/members)
