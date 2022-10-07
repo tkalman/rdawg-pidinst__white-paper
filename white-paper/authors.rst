@@ -13,7 +13,7 @@ GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen, Am
 Fassberg 11, 37077 Göttingen, Germany
 
 *Rolf Krahl* (rolf.krahl@helmholtz-berlin.de, https://orcid.org/0000-0002-1266-3819),
-Helmholtz-Zentrum Berlin für Materialien und Energie GmbH,
+Helmholtz-Zentrum Berlin für Materialien und Energie,
 Albert-Einstein-Str. 15, 12489 Berlin, Germany
 
 *Sven Bingert* (sven.bingert@gwdg.de, https://orcid.org/0000-0001-9547-1582),
