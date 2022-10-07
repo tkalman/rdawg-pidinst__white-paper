@@ -16,9 +16,13 @@ Fassberg 11, 37077 Göttingen, Germany
 Helmholtz-Zentrum Berlin für Materialien und Energie GmbH,
 Albert-Einstein-Str. 15, 12489 Berlin, Germany
 
-sven.bingert@gwdg.de
+*Sven Bingert* (sven.bingert@gwdg.de, https://orcid.org/0000-0001-9547-1582),
+GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
+Burckhardtweg 4, 37077 Göttingen, Germany
 
-philipp.wieder@gwdg.de
+*Philipp Wieder* (philipp.wieder@gwdg.de, https://orcid.org/0000-0002-6992-1866),
+GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
+Burckhardtweg 4, 37077 Göttingen, Germany
 
 *Anita Bandrowski* (abandrowski@ucsd.edu, https://orcid.org/0000-0002-5497-0243),
 Department of Neuroscience, University of California at San Diego,
