@@ -9,8 +9,8 @@ MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener
 MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28359 Bremen, Germany
 
 *Ulrich Schwardmann* (ulrich.schwardmann@gwdg.de, https://orcid.org/0000-0001-6337-8674),
-GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen, Am
-Fassberg 11, 37077 Göttingen, Germany
+GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
+Burckhardtweg 4, 37077 Göttingen, Germany
 
 *Rolf Krahl* (rolf.krahl@helmholtz-berlin.de, https://orcid.org/0000-0002-1266-3819),
 Helmholtz-Zentrum Berlin für Materialien und Energie,
