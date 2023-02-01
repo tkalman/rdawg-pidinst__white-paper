@@ -62,7 +62,7 @@ MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener
 CSIRO Mineral Resources, 26 Dick Perry Avenue, Kensington WA 6151, Australia
 
 *Markus Stocker* (markus.stocker@tib.eu, https://orcid.org/0000-0001-5492-3212),
-TIB Leibniz Information Centre for Science and Technology,
+TIB – Leibniz Information Centre for Science and Technology,
 Welfengarten 1 B, 30167 Hannover, Germany and Leibniz University
 Hannover, Welfengarten 1, 30167 Hannover, Germany
 
