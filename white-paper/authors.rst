@@ -28,7 +28,8 @@ Burckhardtweg 4, 37077 Göttingen, Germany
 
 *Anita Bandrowski* (abandrowski@ucsd.edu, https://orcid.org/0000-0002-5497-0243),
 Department of Neuroscience, University of California at San Diego,
-9500 Gilman Drive La Jolla, CA 92093-0662
+9500 Gilman Drive La Jolla, CA 92093-0662 and SciCrunch Inc, 9500
+Gilman Drive La Jolla, CA 92093-0662
 
 *Ted Habermann* (ted@tedhabermann.com, http://orcid.org/0000-0003-3585-6733),
 Metadata Game Changers, 3980 Broadway, Suite 103-185, Boulder,
