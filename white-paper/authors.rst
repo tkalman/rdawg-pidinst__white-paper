@@ -35,7 +35,8 @@ Gilman Drive La Jolla, CA 92093-0662
 Metadata Game Changers, 3980 Broadway, Suite 103-185, Boulder,
 Colorado, USA 80304
 
-mark.vandesanden@surf.nl
+*Mark van de Sanden* (mark.vandesanden@surf.nl, https://orcid.org/0000-0002-2718-8918),
+SURF, Science Park 140, 1098 XG Amsterdam, The Netherlands
 
 *Claudio D'Onofrio* (claudio.donofrio@nateko.lu.se, https://orcid.org/0000-0002-1982-3889),
 ICOS Carbon Portal, Lund University, Physical Geography & Ecosystem
