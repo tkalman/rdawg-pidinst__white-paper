@@ -26,6 +26,10 @@ Burckhardtweg 4, 37077 Göttingen, Germany
 GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
 Burckhardtweg 4, 37077 Göttingen, Germany
 
+*Tibor Kálmán* (tibor.kalman@gwdg.de, https://orcid.org/0000-0001-5194-5053),
+GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
+Burckhardtweg 4, 37077 Göttingen, Germany
+
 *Anita Bandrowski* (abandrowski@ucsd.edu, https://orcid.org/0000-0002-5497-0243),
 Department of Neuroscience, University of California at San Diego,
 9500 Gilman Drive La Jolla, CA 92093-0662 and SciCrunch Inc, 9500
