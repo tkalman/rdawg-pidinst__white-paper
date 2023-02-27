@@ -6,7 +6,9 @@ Liverpool, L3 5DA, United Kingdom
 MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28359 Bremen, Germany
 
 *Anusuriya Devaraju* (adevaraju@marum.de, https://orcid.org/0000-0003-0870-3192),
-MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28359 Bremen, Germany
+Terrestrial Ecosystem Research Network (TERN), The University of
+Queensland, Long Pocket Precinct, Level 5 Foxtail Building #1019, 80
+Meiers Road, Indooroopilly QLD 4068, Australia
 
 *Ulrich Schwardmann* (ulrich.schwardmann@gwdg.de, https://orcid.org/0000-0001-6337-8674),
 GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
@@ -24,15 +26,21 @@ Burckhardtweg 4, 37077 Göttingen, Germany
 GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
 Burckhardtweg 4, 37077 Göttingen, Germany
 
+*Tibor Kálmán* (tibor.kalman@gwdg.de, https://orcid.org/0000-0001-5194-5053),
+GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
+Burckhardtweg 4, 37077 Göttingen, Germany
+
 *Anita Bandrowski* (abandrowski@ucsd.edu, https://orcid.org/0000-0002-5497-0243),
 Department of Neuroscience, University of California at San Diego,
-9500 Gilman Drive La Jolla, CA 92093-0662
+9500 Gilman Drive La Jolla, CA 92093-0662 and SciCrunch Inc, 9500
+Gilman Drive La Jolla, CA 92093-0662
 
 *Ted Habermann* (ted@tedhabermann.com, http://orcid.org/0000-0003-3585-6733),
 Metadata Game Changers, 3980 Broadway, Suite 103-185, Boulder,
 Colorado, USA 80304
 
-mark.vandesanden@surf.nl
+*Mark van de Sanden* (mark.vandesanden@surf.nl, https://orcid.org/0000-0002-2718-8918),
+SURF, Science Park 140, 1098 XG Amsterdam, The Netherlands
 
 *Claudio D'Onofrio* (claudio.donofrio@nateko.lu.se, https://orcid.org/0000-0002-1982-3889),
 ICOS Carbon Portal, Lund University, Physical Geography & Ecosystem
