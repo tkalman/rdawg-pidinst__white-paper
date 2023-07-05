@@ -15,13 +15,13 @@ at PID providers compliant with RDA PIDINST recommendations.
 	   providers.
     :name: tab-register-guidance
 
-    +--------------+--------------------------------+--------------------------------------------------------------------------------------------------+
-    | PID provider | Technical resource             | Metadata schema                                                                                  |
-    +==============+================================+==================================================================================================+
-    | ePIC         | :ref:`epic-cookbook`           | `PIDINST <https://github.com/rdawg-pidinst/schema/blob/master/schema.rst>`_                      |
-    +--------------+--------------------------------+--------------------------------------------------------------------------------------------------+
-    | DataCite     | https://datacite.org/dois.html | `PIDINST to DataCite <https://github.com/rdawg-pidinst/schema/blob/master/schema-datacite.rst>`_ |
-    +--------------+--------------------------------+--------------------------------------------------------------------------------------------------+
+    +--------------+--------------------------+--------------------------------------------------------------------------------------------------+
+    | PID provider | Technical resource       | Metadata schema                                                                                  |
+    +==============+==========================+==================================================================================================+
+    | ePIC         | :ref:`epic-cookbook`     | `PIDINST <https://github.com/rdawg-pidinst/schema/blob/master/schema.rst>`_                      |
+    +--------------+--------------------------+--------------------------------------------------------------------------------------------------+
+    | DataCite     | :ref:`datacite-cookbook` | `PIDINST to DataCite <https://github.com/rdawg-pidinst/schema/blob/master/schema-datacite.rst>`_ |
+    +--------------+--------------------------+--------------------------------------------------------------------------------------------------+
 
 
 Local registration at institutional instrument providers
