@@ -46,6 +46,7 @@ in :numref:`tab-schema-handle-record`.
 	   can be viewed at
 	   http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
     :name: tab-schema-handle-record
+    :class: longtable
 
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | Type                               | Data                                                                                                         |
