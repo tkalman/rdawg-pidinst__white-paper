@@ -84,8 +84,8 @@ in :numref:`tab-schema-handle-record`.
     |                                    |           "ownerIdentifierValue":                                                                            |
     |                                    |             "http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/",                                      |
     |                                    |           "ownerIdentifierType":"URL"                                                                        |
-    |                                    |          }                                                                                                   |
-    |                                    |        }                                                                                                     |
+    |                                    |         }                                                                                                    |
+    |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | | 21.T11148/1f3e82ddf0697a497432   | .. code-block:: JSON                                                                                         |
@@ -104,12 +104,12 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/c1a0ec5ad347427f25d6   | .. code-block:: JSON                                                                                         |
     | | (Model)                          |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |        "modelName":"Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series",  |
-    |                                    |        "modelIdentifier":{                                                                                   |
-    |                                    |          "modelIdentifierValue":                                                                             |
-    |                                    |            "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/",                                       |
-    |                                    |          "modelIdentifierType":"URL"                                                                         |
-    |                                    |        }                                                                                                     |
+    |                                    |       "modelName":"Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series",   |
+    |                                    |       "modelIdentifier":{                                                                                    |
+    |                                    |         "modelIdentifierValue":                                                                              |
+    |                                    |           "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/",                                        |
+    |                                    |         "modelIdentifierType":"URL"                                                                          |
+    |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | | 21.T11148/55f8ebc805e65b5b71dd   | .. code-block:: JSON                                                                                         |
@@ -122,19 +122,19 @@ in :numref:`tab-schema-handle-record`.
     | | 21.T11148/f76ad9d0324302fc47dd   | .. code-block:: JSON                                                                                         |
     | | (InstrumentType)                 |                                                                                                              |
     |                                    |     [{                                                                                                       |
-    |                                    |        "instrumentTypeName":"water temperature sensor",                                                      |
-    |                                    |        "instrumentTypeIdentifier":{                                                                          |
-    |                                    |          "instrumentTypeIdentifierValue":                                                                    |
-    |                                    |            "http://vocab.nerc.ac.uk/collection/L05/current/134/",                                            |
-    |                                    |          "instrumentTypeIdentifierType":"URL"                                                                |
-    |                                    |        }                                                                                                     |
+    |                                    |       "instrumentTypeName":"water temperature sensor",                                                       |
+    |                                    |       "instrumentTypeIdentifier":{                                                                           |
+    |                                    |         "instrumentTypeIdentifierValue":                                                                     |
+    |                                    |           "http://vocab.nerc.ac.uk/collection/L05/current/134/",                                             |
+    |                                    |         "instrumentTypeIdentifierType":"URL"                                                                 |
+    |                                    |       }                                                                                                      |
     |                                    |     },{                                                                                                      |
-    |                                    |        "instrumentTypeName":"salinity sensor",                                                               |
-    |                                    |        "instrumentTypeIdentifier":{                                                                          |
-    |                                    |          "instrumentTypeIdentifierValue":                                                                    |
-    |                                    |            "http://vocab.nerc.ac.uk/collection/L05/current/350/",                                            |
-    |                                    |          "instrumentTypeIdentifierType":"URL"                                                                |
-    |                                    |        }                                                                                                     |
+    |                                    |       "instrumentTypeName":"salinity sensor",                                                                |
+    |                                    |       "instrumentTypeIdentifier":{                                                                           |
+    |                                    |         "instrumentTypeIdentifierValue":                                                                     |
+    |                                    |           "http://vocab.nerc.ac.uk/collection/L05/current/350/",                                             |
+    |                                    |         "instrumentTypeIdentifierType":"URL"                                                                 |
+    |                                    |       }                                                                                                      |
     |                                    |     }]                                                                                                       |                    
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | | 21.T11148/72928b84e060d491ee41   | .. code-block:: JSON                                                                                         |

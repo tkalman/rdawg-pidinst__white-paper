@@ -32,12 +32,12 @@ with a *relationType* attribute *IsIdenticalTo* as shown in
     :caption: Merging duplicate instrument PID records using JSON
 
     [{
-       "RelatedIdentifier":{
-          "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en",
-          "RelatedIdentifierType": "DOI",
-          "relationType":"IsIdenticalTo"
-          }
-      }]
+      "RelatedIdentifier":{
+        "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en",
+        "RelatedIdentifierType": "DOI",
+        "relationType":"IsIdenticalTo"
+      }
+    }]
 
 Recent advances in technologies are expanding to algorithms that
 automatically detect and resolve deduplication. While such methodologies
