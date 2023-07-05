@@ -19,16 +19,16 @@ achieved using the PIDINST metadata schema *relatedIdentifier* property
 with a *relationType* attribute *IsIdenticalTo* as shown in
 :numref:`snip-dub-merge-xml` and :numref:`%s <snip-dub-merge-json>`.
 
-.. _snip-dub-merge-xml:
 .. code-block:: XML
+    :name: snip-dub-merge-xml
     :caption: Merging duplicate instrument PID records using XML
 
       <relatedIdentifiers>
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo">10.4232/10.CPoS-2013-02en</relatedIdentifier>
       </relatedIdentifiers>
 
-.. _snip-dub-merge-json:
 .. code-block:: JSON
+    :name: snip-dub-merge-json
     :caption: Merging duplicate instrument PID records using JSON
 
     [{

@@ -36,7 +36,6 @@ marine domain (`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.ne
 An example of the use of common terminologies in ePIC records is shown
 in :numref:`tab-schema-handle-record`.
 
-.. _tab-schema-handle-record:
 .. table:: Handle record of instrument identifier
 	   http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
 	   the use of common terminologies to identify instrument
@@ -46,6 +45,7 @@ in :numref:`tab-schema-handle-record`.
 	   metadata property is provided in JSON. The Handle record
 	   can be viewed at
 	   http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+    :name: tab-schema-handle-record
 
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | Type                               | Data                                                                                                         |
@@ -243,8 +243,8 @@ reproducibility checklist, resolved by identifiers.org and the n2t
 resolver and echoed by some of the major reagent providers (e.g., Thermo
 Fisher, Addgene, and the MMRRC mouse repository).
 
-.. _tab-schema-use-rrid:
 .. table:: Example showing the use of RRIDs in the PIDINST metadata schema.
+    :name: tab-schema-use-rrid
 
     +----------+------------------------+---------------+---------+----------------------------------------------------+--------------------------------------------+
     |          |                        |               |         |                                                    |                                            |
@@ -293,8 +293,8 @@ give a reason why it is missing.  For this purpose, PIDINST adopts the
 *standard values for unknown information* from DataCite, see Appendix
 3 in the DataCite Metadata Schema Documentation. [#datacite2019]_
 
-.. _snip-schema-unknown-xml:
 .. code-block:: XML
+    :name: snip-schema-unknown-xml
     :caption: Encoding unknown values in the instrument PID metadata using XML
 
       <name>:tba</name>

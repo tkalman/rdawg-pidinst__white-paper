@@ -8,12 +8,12 @@ The following resources (:numref:`tab-register-guidance`) provide
 technical guidance for institutions to publish and manage PID records
 at PID providers compliant with RDA PIDINST recommendations.
 
-.. _tab-register-guidance:
 .. table:: Technical guidance for publishing and managing instrument
 	   PIDs at PID providers compliant with RDA PIDINST
 	   recommendations. The table provides links to the relevant
 	   metadata schema that accompanies PID records at PID
 	   providers.
+    :name: tab-register-guidance
 
     +--------------+--------------------------------+--------------------------------------------------------------------------------------------------+
     | PID provider | Technical resource             | Metadata schema                                                                                  |

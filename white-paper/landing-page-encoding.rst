@@ -43,8 +43,8 @@ respective representation in JSON-LD of the schema example shown in
 :numref:`tab-schema-handle-record` is shown in
 :numref:`snip-landing-encoding-json-ld`.
 
-.. _snip-landing-encoding-json-ld:
 .. code-block:: JSON
+    :name: snip-landing-encoding-json-ld
     :caption: representation in JSON-LD of the example of
 	      :numref:`tab-schema-handle-record`.
 
@@ -199,8 +199,8 @@ that results into the following serialization
 and the names used in the type definitions are replaced by their type
 PID suffixes:
 
-.. _snip-landing-encoding-turtle:
 .. code-block:: turtle
+    :name: snip-landing-encoding-turtle
     :caption: representation in Turtle Terse RDF of the NERC example
 	      of :numref:`tab-schema-handle-record` that was generated
 	      by a JSON-LD to RDF converter from the JSON-LD in
@@ -278,8 +278,8 @@ instrument PIDs can be found indirectly using a combination of
 *GetCapabilities* and *DescribeSensor* operational requests to a SOS
 server.
 
-.. _snip-landing-encoding-sensorml:
 .. code-block:: xml
+    :name: snip-landing-encoding-sensorml
     :caption: An example of expressing an instrument PID
 	      (http://hdl.handle.net/21.T11998/0000-001A-3905-F) as
 	      identifying metadata within a SensorML technical

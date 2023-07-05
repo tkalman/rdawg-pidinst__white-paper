@@ -22,15 +22,15 @@ the instrument.  :numref:`snip-link-dataset-datacite-xml` shows a
 section of the DOI metadata from the same data publication containing
 this link.
 
-.. _fig-link-hzb:
 .. figure:: /images/ND000001-landing.png
+    :name: fig-link-hzb
     :alt: HZB dataset
 
     Landing page of a dataset published by HZB which links the PID of
     the instrument.
 
-.. _snip-link-dataset-datacite-xml:
 .. code-block:: XML
+    :name: snip-link-dataset-datacite-xml
     :caption: Use of the relatedIdentifier property in the DOI
 	      metadata from a data publication.  The second entry links
 	      the PID of the instrument.
@@ -66,22 +66,22 @@ event. As such, new types and properties are required to support the
 description of observation events and related scientific instruments
 to ensure full compliance with Schema.org functionality.
 
-.. _fig-link-pangea:
 .. figure:: /images/image2.png
+    :name: fig-link-pangea
     :alt: PANGAEA dataset
 
     An example of a dataset published by PANGAEA which includes its
     instrument identifier
     (https://doi.pangaea.de/10013/sensor.664525cf-45b9-4969-bb88-91a1c5e97a5b)
 
-.. _fig-link-model:
 .. figure:: /images/image1.png
+    :name: fig-link-model
     :alt: Conceptual model
 
     Conceptual model of Event and Specific Instrument Type (Vehicle)
 
-.. _fig-link-schema-org:
 .. figure:: /images/image3.png
+    :name: fig-link-schema-org
     :alt: Schema.org
 
     Snippet of schema.org representation of event and instrument
@@ -120,8 +120,8 @@ groups, other information relating to parameter streams or instruments
 could be expressed, such as calibralibrations and instrument reference
 frames and orientations.
 
-.. _snip-link-netcdf-cdl:
 .. code-block:: default
+    :name: snip-link-netcdf-cdl
     :caption: Truncated CF-NetCDF4 CDL file. Note some terminologies
 	      are in development.
 
@@ -212,8 +212,8 @@ instrument identifier may be expressed as an instrument attribute e.g.
 :numref:`snip-link-pidinst-netcdf`. Ideally, blank separated lists
 should be used if linking more than one instrument.
 
-.. _snip-link-pidinst-netcdf:
 .. code-block:: default
+    :name: snip-link-pidinst-netcdf
     :caption: Addition of a instrument PID attribute to NCEI CF-NetCDF
 	      files.
 
