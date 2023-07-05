@@ -10,7 +10,7 @@ related resources to the instrument, thus providing a means to
 aggregate information about the instrument.  The PIDINST working group
 defined a schema of metadata that can be registered alongside
 instrument PIDs at PID providers to help meet these criteria.  Version
-1.0 has been endorsed as an RDA recommendation\ [#pidinst2022v1_0]_.
+1.0 has been endorsed as an RDA recommendation.\ [#pidinst2022v1_0]_
 
 Currently, two variants of the metadata schema exist.  The original
 `PIDINST schema`_, based on the evaluation of use cases collected by

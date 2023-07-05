@@ -294,7 +294,7 @@ In all these cases it is still useful to make it at least explicit
 that this information has not been omitted inadvertently and also to
 give a reason why it is missing.  For this purpose, PIDINST adopts the
 *standard values for unknown information* from DataCite, see Appendix
-3 in the DataCite Metadata Schema Documentation. [#datacite2019]_
+3 in the DataCite Metadata Schema Documentation.\ [#datacite2019]_
 
 .. code-block:: XML
     :name: snip-schema-unknown-xml
