@@ -235,3 +235,68 @@ should be used if linking more than one instrument.
    Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
    Guiding Principles for scientific data management and stewardship.
    *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+
+OpenAIRE CERIF metadata
+-----------------------
+
+The *OpenAIRE Guidelines for CRIS Managers* [#crisguidelines2023]_ provide orientation for Research Information System (CRIS) managers
+to expose their metadata in a way that is compatible with the OpenAIRE
+infrastructure as well as the European Open Science Cloud (EOSC). These
+Guidelines also serve as an example of a CERIF-based (Common European Research Information Format)
+standard for information interchange between individual CRISs and other
+research e-Infrastructures.
+
+The metadata format described by the Guidelines are includes Equipment
+which could contain Instruments as well via the `GeneratedBy property`_.
+
+.. _snip-link-product-oaire-cerif-xml:
+.. code-block:: XML
+    :caption: Use of the equipment entity for an instrument in
+          exposed in a product (dataset) metadata record.
+          Detailed `product (dataset) example`_ at *OpenAIRE Guidelines for CRIS Managers repository on GitHub*.
+
+      <GeneratedBy>
+        <Equipment id="82394874">
+		    <Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
+			<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
+			<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
+        </Equipment>
+      </GeneratedBy>
+
+The products (dataset) relates internal to the Equipment record via the *id* attribute, eg. 82394874 .
+The metadata for the equipment itself is exposed via equipment metadata record and described in the `Equipment entity`_.
+
+.. _snip-link-equipment-oaire-cerif-xml:
+.. code-block:: XML
+    :caption: Use of the equipment entity for an instrument in
+          exposed in a product (dataset) metadata record.
+          Detailed `equipment example`_ at *OpenAIRE Guidelines for CRIS Managers repository on GitHub*.
+
+ 	  <Equipment xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="82394874">
+		<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
+		<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
+		<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
+		<Owner>
+          <OrgUnit id="OrgUnits/312346">
+			<Acronym>CNR</Acronym>
+			<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
+			<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
+		  </OrgUnit>
+		</Owner>
+      </Equipment>
+
+
+.. _OpenAIRE Guidelines for CRIS Managers: https://doi.org/10.5281/zenodo.8050936
+
+.. _GeneratedBy property: https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/cerif_xml_product_entity.html#generatedby
+
+.. _Equipment entity: https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/cerif_xml_equipment_entity.html
+
+.. _product (dataset) example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_products.xml#L30
+
+.. _equipment example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_equipments.xml#L18C1-L29C17
+
+.. [#crisguidelines2023]
+   Dvořák, Jan, Czerniak, Andreas, & Ivanović, Dragan. (2023). OpenAIRE
+   Guidelines for CRIS Managers 1.2 (1.2.0). *Zenodo*.
+   https://doi.org/10.5281/zenodo.8050936
