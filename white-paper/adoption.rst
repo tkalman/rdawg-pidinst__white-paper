@@ -11,10 +11,10 @@ one experimental station at BESSY II.\ [#hzb_nc_st]_ The DOIs resolve
 to the respective instrument page from the HZB instrument database
 that did already exist before and was thus not created for this
 purpose.  One particularity with these instruments is that they are
-custom built by HZB.  Thus, in the metadata HZB appears as Creator as
-well as Contributor with property contributorType value
-HostingInstitution.  It is noteworthy that one of the DOIs uses the
-additional property fundingReference from the DataCite schema to
+custom built by HZB.  Thus, in the metadata HZB appears as `Creator`
+as well as `Contributor` with property `contributorType` value
+`HostingInstitution`.  It is noteworthy that one of the DOIs uses the
+additional property `fundingReference` from the DataCite schema to
 acknowledge external funding that HZB received for upgrading the
 instrument.  This property was not considered in the PIDINST schema,
 or in the DataCite mapping.  HZB plans to continue the adoption and to
