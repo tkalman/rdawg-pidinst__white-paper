@@ -79,7 +79,7 @@ in :numref:`tab-schema-handle-record`.
     | | (Owners)                         |                                                                                                              |
     |                                    |     [                                                                                                        |
     |                                    |       {                                                                                                      |
-    |                                    |         "owner": {                                                                                           |
+    |                                    |         "Owner": {                                                                                           |
     |                                    |           "ownerName":"National Oceanography Centre",                                                        |
     |                                    |           "ownerContact":"someone@example.ac.uk",                                                            |
     |                                    |           "ownerIdentifier": {                                                                               |
@@ -94,7 +94,7 @@ in :numref:`tab-schema-handle-record`.
     | | (Manufacturers)                  |                                                                                                              |
     |                                    |     [                                                                                                        |
     |                                    |       {                                                                                                      |
-    |                                    |         "manufacturer": {                                                                                    |
+    |                                    |         "Manufacturer": {                                                                                    |
     |                                    |           "manufacturerName":"Sea-Bird Scientific",                                                          |
     |                                    |           "manufacturerIdentifier": {                                                                        |
     |                                    |             "manufacturerIdentifierValue": "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/",        |
@@ -127,7 +127,7 @@ in :numref:`tab-schema-handle-record`.
     | | (InstrumentTypes)                |                                                                                                              |
     |                                    |     [                                                                                                        |
     |                                    |       {                                                                                                      |
-    |                                    |         "instrumentType": {                                                                                  |
+    |                                    |         "InstrumentType": {                                                                                  |
     |                                    |           "instrumentTypeName":"water temperature sensor",                                                   |
     |                                    |           "instrumentTypeIdentifier": {                                                                      |
     |                                    |             "instrumentTypeIdentifierValue":"http://vocab.nerc.ac.uk/collection/L05/current/134/",           |
@@ -136,7 +136,7 @@ in :numref:`tab-schema-handle-record`.
     |                                    |         }                                                                                                    |
     |                                    |       },                                                                                                     |
     |                                    |       {                                                                                                      |
-    |                                    |         "instrumentType": {                                                                                  |
+    |                                    |         "InstrumentType": {                                                                                  |
     |                                    |           "instrumentTypeName":"salinity sensor",                                                            |
     |                                    |           "InstrumentTypeIdentifier":{                                                                       |
     |                                    |             "instrumentTypeIdentifierValue":"http://vocab.nerc.ac.uk/collection/L05/current/350/",           |
@@ -150,16 +150,16 @@ in :numref:`tab-schema-handle-record`.
     | | (MeasuredVariables)              |                                                                                                              |
     |                                    |     [                                                                                                        |
     |                                    |       {                                                                                                      |
-    |                                    |         "measuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"                       |
+    |                                    |         "MeasuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"                       |
     |                                    |       },                                                                                                     |
     |                                    |       {                                                                                                      |
-    |                                    |         "measuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"                       |
+    |                                    |         "MeasuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"                       |
     |                                    |       },                                                                                                     |
     |                                    |       {                                                                                                      |
-    |                                    |         "measuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"                       |
+    |                                    |         "MeasuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"                       |
     |                                    |       },                                                                                                     |
     |                                    |       {                                                                                                      |
-    |                                    |         "measuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"                       |
+    |                                    |         "MeasuredVariable": "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"                       |
     |                                    |       }                                                                                                      |
     |                                    |     ]                                                                                                        |
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
@@ -178,7 +178,7 @@ in :numref:`tab-schema-handle-record`.
     | | (AlternateIdentifiers)           |                                                                                                              |
     |                                    |     [                                                                                                        |
     |                                    |       {                                                                                                      |
-    |                                    |         "alternateIdentifier": {                                                                             |
+    |                                    |         "AlternateIdentifier": {                                                                             |
     |                                    |           "alternateIdentifierValue":"2490",                                                                 |
     |                                    |           "alternateIdentifierType":"serialNumber"                                                           |
     |                                    |         }                                                                                                    |
@@ -189,7 +189,7 @@ in :numref:`tab-schema-handle-record`.
     | | (RelatedIdentifiers)             |                                                                                                              |
     |                                    |     [                                                                                                        |
     |                                    |       {                                                                                                      |
-    |                                    |         "relatedIdentifier": {                                                                               |
+    |                                    |         "RelatedIdentifier": {                                                                               |
     |                                    |           "relatedIdentifierValue":                                                                          |
     |                                    |             "https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf",                          |
     |                                    |           "relatedIdentifierType": "URL",                                                                    |
