@@ -163,6 +163,25 @@ service by EUDAT.  The initial proof-of-concept was set up by SURF.
 It was further developed by the GWDG, which will operate the service
 in a production mode.
 
+Natural Environmental Data Service (EDS)
+----------------------------------------
+
+The `NERC Environmental Data Service (EDS) <EDS_>`_ is a trusted UK facility 
+providing data stewardship services for environmental data across 
+all environmental science domains. The EDS is made up of five data 
+centres with domain specific expertise; the British Oceanographic 
+Data Centre (BODC), Centre for Environmental Data Analysis (CEDA),
+Environmental Information Data Centre (EIDC), National Geoscience 
+Data Centre (NGDS), and UK Polar Data Centre (PDC). The NERC-supported 
+EDS brings the data centres together to provide an integrated data 
+service across all environmental science domains. As part of the 
+Research Data Cloud Pilot project funded by the UK Research and 
+Innovation Council (UKRI), the EDS will prototype digital 
+infrastructure to cite graphs of all the PIDs used to generate 
+formal environmental data collections derived from sensors. 
+These graphs (or 'reliquaries' of complex citations) will include 
+persistent identifiers for instruments following the PIDINST 
+recommendations. 
 
 .. _SensorML:
    https://www.opengeospatial.org/standards/sensorml
@@ -190,3 +209,7 @@ in a production mode.
    and Pfeiffenberger, H. (2015): O2A: A Generic Framework for Enabling
    the Flow of Sensor Observations to Archives and Publications, OCEANS
    2015 Genova. doi: 10.1109/OCEANS-Genova.2015.7271657
+
+.. _EDS:
+   https://eds.ukri.org/ 
+
