@@ -41,7 +41,7 @@
   },
   {
     "type": "21.T11148/72928b84e060d491ee41",
-    "parsed_data": "[{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/\"}]"
+    "parsed_data": "[{\"MeasuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/\"}]"
   },
   {
     "type": "21.T11148/22c62082a4d2d9ae2602",
@@ -49,10 +49,10 @@
   },
   {
     "type": "21.T11148/eb3c713572f681e6c4c3",
-    "parsed_data": "[{\"alternateIdentifier\":{\"alternateIdentifierValue\":\"2490\",\"alternateIdentifierType\":\"serialNumber\"}}]"
+    "parsed_data": "[{\"AlternateIdentifier\":{\"alternateIdentifierValue\":\"2490\",\"alternateIdentifierType\":\"serialNumber\"}}]"
   },
   {
     "type": "21.T11148/178fb558abc755ca7046",
-    "parsed_data": "[{\"relatedIdentifier\":{\"relatedIdentifierValue\":\"https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf\",\"relatedIdentifierType\": \"URL\",\"relationType\":\"IsDescribedBy \"}}]"
+    "parsed_data": "[{\"RelatedIdentifier\":{\"relatedIdentifierValue\":\"https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf\",\"relatedIdentifierType\": \"URL\",\"relationType\":\"IsDescribedBy \"}}]"
   }
 ]
