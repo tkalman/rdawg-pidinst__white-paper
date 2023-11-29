@@ -100,25 +100,24 @@ Centre (NOC)\ [#uk_noc]_ and British Antarctic Survey (BAS)\ [#uk_bas]_
 are currently working together to improve the integrity of the data
 management workflow from these sensor systems to end-users across the UK
 National Environment Research Council (NERC) large research vessel
-fleet, as part of a UK initiative, I/Ocean. In doing so, we can make
+fleet, as part of the initiative, I/Ocean. In doing so, we can make
 cost effective use of vessel time while improving the
 FAIRness,\ [#wilkinson2016]_ and in turn, access of data from these
 sensor arrays. The initial phase of the solution implements common
-NetCDF formats across ships enabling harmonised access to data for
-researchers on board while reducing ambiguity using common metadata
-standards. The formats are based on NetCDF4 and comply with Climate
-Forecast conventions. NetCDF4 groups are used to include rich
-information about the instruments used to derive parameter streams. Data
-streams are linked to the instruments which produced them using the
-variable attribute *instrument* from Attribute Convention for Data
-Discovery (ACDD) 1-3 (:numref:`snip-link-netcdf-cdl`). Each instrument
-is identified as a group where their properties are expressed in
-variables including the instrument’s PID. Each property is defined
-using common terminologies published on the NERC Vocabulary Server. In
-this way, users can express properties of their choice. Through
-groups, other information relating to parameter streams or instruments
-could be expressed, such as calibralibrations and instrument reference
-frames and orientations.
+NetCDF formats enabling harmonised access to data for
+researchers across ships. The formats are based on NetCDF4 and comply 
+with Climate Forecast conventions. It has currently been proposed that 
+NetCDF4 groups could be used to identify instruments and associated metadata 
+in a similar way to the SONAR-netCDF4 convention for sonar data\ [#sonar]_. 
+In doing so, the instrument PID is implemented as the data of a geophysical 
+variable within a group that has an applicable date range (:numref:`snip-link-netcdf-cdl`).
+For example, when the sensor was installed. Data streams are then linked to 
+the instruments which produced them using the variable attribute *instrument* 
+from Attribute Convention for Data Discovery (ACDD) 1-3. Through groups, 
+other variables or attributes could hold more detailed information relating to 
+an instrument. Additionally, groups may potentially offer a way to store 
+other information with valid date ranges, such as calibrations, instrument 
+reference frames and instrument orientations (e.g. the reference point of an anemometer).
 
 .. code-block:: default
     :name: snip-link-netcdf-cdl
@@ -155,72 +154,47 @@ frames and orientations.
         group: SBE_2490 {
           variables:
             string instrument_pid(NCOLUMNS) ;
-               instrument_pid:long_name = "PIDINST PID" ;
-               instrument_pid:sdn_variable_name = "TBC" ;
-               instrument_pid:sdn_variable_urn = "TBC" ;
-            string uuid(NCOLUMNS) ;
-               uuid:long_name = "UUID" ;
-               uuid:sdn_variable_name = "Universally Unique Identifier (UUID)" ;
-               uuid:sdn_variable_urn = "SDN:W07::IDEN0007" ;
-            string instrument_name(NCOLUMNS) ;
-               instrument_name:long_name = "Instrument name" ;
-               instrument_name:sdn_variable_name = "Long name" ;
-               instrument_name:sdn_variable_urn = "SDN:W07::IDEN0002" ;
-            string serial_number(NCOLUMNS) ;
-               serial_number:long_name = "Instrument serial number" ;
-               serial_number:sdn_variable_name = "Serial Number" ;
-               serial_number:sdn_variable_urn = "SDN:W07::IDEN0005" ;
-            string model_id(NCOLUMNS) ;
-               model_id:long_name = "Model Name Identifier" ;
-               model_id:sdn_variable_name = "Model name" ;
-               model_id:sdn_variable_urn = "SDN:W07::IDEN0003" ;
-            float accuracy_temperature(NCOLUMNS) ;
-               accuracy_temperature:long_name = "Instrument accuracy of temperature" ;
-               accuracy_temperature:units = "degC" ;
-               accuracy_temperature:sdn_variable_name = "Accuracy" ;
-               accuracy_temperature:sdn_variable_urn = "SDN:W04::CAPB0001" ;
-               accuracy_temperature:variable_parameter = "/seatemp" ;
-               accuracy_temperature:sdn_uom_urn = "SDN:P06::UPAA" ;
-               accuracy_temperature:sdn_uom_name = "Degrees Celsius" ;
+               instrument_pid:long_name = "Instrument identifier" ;
 
           // group attributes:
                :date_valid_from = "2020-01-31T00:00:00Z" ;
-               :metadata_link = "https://linkedsystems.uk/system/instance/TOOL0022_2490/current/" ;
-               :comment = "\n2020-06-26T13:29:42Z: Instrument cleaned on 2020-02-10T13:04:00Z" ;
+               :date_valid_to = "2020-08-16T00:00:00Z" ;
+
           data:
 
            instrument_pid = "http://hdl.handle.net/21.T11998/0000-001A-3905-F" ;
 
-           uuid = "TOOL0022_2490" ;
-
-           instrument_name = "SBE 37-IM MicroCAT s/n 2490" ;
-
-           serial_number = "2490" ;
-
-           model_id = "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/" ;
-
-           accuracy_temperature = 0.002 ;
           } // group SBE_2490
         } // group instruments
       }
 
 The National Centres for Environmental Information (NCEI) at the
-National Oceanic and Atmospheric Administration (NOAA) in the US, also
-report instruments in CF-NetCDF files but as empty data variables within
-the root group of the NetCDF file instead of sub groups. The PID
-instrument identifier may be expressed as an instrument attribute e.g.
-:numref:`snip-link-pidinst-netcdf`. Ideally, blank separated lists
-should be used if linking more than one instrument.
+National Oceanic and Atmospheric Administration (NOAA) in the US, 
+report instruments using a CF-NetCDF specification\ [#ncei]_. These
+are either global attributes specified using the *instrument* 
+attribute from the Attribute Convention for Data Discovery (ACDD)
+1-3. Alternatively the are defined as empty geophysical variables 
+within the root group of the NetCDF file. In the latter case, 
+the instrument PID may be expressed as an attribute *instrument_pid*
+e.g. :numref:`snip-link-pidinst-netcdf` within the recommended variable 
+attributes. Alternatively, an *instrument_pid* attribute could be added 
+to the set of global attributes.
 
 .. code-block:: default
     :name: snip-link-pidinst-netcdf
-    :caption: Addition of a instrument PID attribute to NCEI CF-NetCDF
-	      files.
+    :caption: Addition of an instrument PID attribute to NCEI CF-NetCDF
+	      files v2.0.
 
-      int instrument_parameter_variable;
-         instrument_parameter_variable:long_name = "" ;
-         instrument_parameter_variable:comment = "" ;
-         instrument_parameter_variable:instrument_pid = "" ;
+	char instrument1 ;
+      instrument1:instrument_pid = "http://hdl.handle.net/21.T11998/0000-001A-3905-F" ;
+		instrument1:long_name = "Seabird 37 Microcat" ;
+		instrument1:ncei_name = "CTD" ;
+		instrument1:make_model = "SBE-37" ;
+		instrument1:serial_number = "1859723" ;
+		instrument1:calibration_date = "2016-03-25" ;
+		instrument1:accuracy = "" ;
+		instrument1:precision = "" ;
+		instrument1:comment = "serial number and calibration dates are bogus" ;
 
 .. _DataCite Metadata Schema: https://schema.datacite.org/
 
@@ -235,6 +209,14 @@ should be used if linking more than one instrument.
    Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
    Guiding Principles for scientific data management and stewardship.
    *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+
+.. [#ncei]
+   https://www.ncei.noaa.gov/data/oceans/ncei/formats/netcdf/v2.0/index.html
+
+.. [#sonar]
+   Macaulay, Gavin; Pena, Hector (2018). The SONAR-netCDF4 convention for 
+   sonar data, Version 1.0. ICES Cooperative Research Reports (CRR). 
+   Report. https://doi.org/10.17895/ices.pub.4392 
 
 OpenAIRE CERIF metadata
 -----------------------
