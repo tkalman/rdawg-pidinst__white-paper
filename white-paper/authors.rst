@@ -1,4 +1,4 @@
-*Louise Darroch* (louise.darroch@bodc.ac.uk, https://orcid.org/0000-0003-4163-9575),
+*Louise Darroch* (lorr@noc.ac.uk, https://orcid.org/0000-0003-4163-9575),
 British Oceanographic Data Centre, National Oceanography Centre,
 Liverpool, L3 5DA, United Kingdom
 
