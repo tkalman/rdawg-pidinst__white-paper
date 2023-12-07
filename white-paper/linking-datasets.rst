@@ -173,12 +173,12 @@ National Oceanic and Atmospheric Administration (NOAA) in the US,
 report instruments using a CF-NetCDF specification\ [#ncei]_. These
 are either global attributes specified using the *instrument* 
 attribute from the Attribute Convention for Data Discovery (ACDD)
-1-3. Alternatively the are defined as empty geophysical variables 
+1-3. Alternatively they are defined as empty geophysical variables 
 within the root group of the NetCDF file. In the latter case, 
 the instrument PID may be expressed as an attribute *instrument_pid*
-e.g. :numref:`snip-link-pidinst-netcdf` within the recommended variable 
-attributes. Alternatively, an *instrument_pid* attribute could be added 
-to the set of global attributes.
+within the recommended variable attributes as shown in
+:numref:`snip-link-pidinst-netcdf` . Alternatively, an *instrument_pid* 
+attribute could be added to the set of global attributes.
 
 .. code-block:: default
     :name: snip-link-pidinst-netcdf
@@ -214,7 +214,7 @@ to the set of global attributes.
    https://www.ncei.noaa.gov/data/oceans/ncei/formats/netcdf/v2.0/index.html
 
 .. [#sonar]
-   Macaulay, Gavin; Pena, Hector (2018). The SONAR-netCDF4 convention for 
+   Macaulay, Gavin; Peña, Hector (2018). The SONAR-netCDF4 convention for 
    sonar data, Version 1.0. ICES Cooperative Research Reports (CRR). 
    Report. https://doi.org/10.17895/ices.pub.4392 
 
