@@ -81,7 +81,7 @@ in :numref:`tab-schema-handle-record`.
     |                                    |       {                                                                                                      |
     |                                    |         "Owner": {                                                                                           |
     |                                    |           "ownerName":"National Oceanography Centre",                                                        |
-    |                                    |           "ownerContact":"someone@example.ac.uk",                                                            |
+    |                                    |           "ownerContact":"someone@example.org",                                                            |
     |                                    |           "ownerIdentifier": {                                                                               |
     |                                    |             "ownerIdentifierValue": "http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/",              |
     |                                    |             "ownerIdentifierType":"URL"                                                                      |
