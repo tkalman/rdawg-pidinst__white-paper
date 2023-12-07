@@ -41,7 +41,7 @@
   },
   {
     "type": "21.T11148/72928b84e060d491ee41",
-    "parsed_data": "[{\"MeasuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\"},{\"measuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/\"}]"
+    "parsed_data": "[{\"MeasuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/\"},{\"MeasuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/\"},{\"MeasuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\"},{\"MeasuredVariable\":\"http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/\"}]"
   },
   {
     "type": "21.T11148/22c62082a4d2d9ae2602",
