@@ -21,7 +21,7 @@
   },
   {
     "type": "21.T11148/4eaec4bc0f1df68ab2a7",
-    "parsed_data": "[{\"Owner\": {\"ownerName\":\"National Oceanography Centre\",\"ownerContact\":\"someone@example.ac.uk\",\"ownerIdentifier\":{\"ownerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/\",\"ownerIdentifierType\":\"URL\"}}}]"
+    "parsed_data": "[{\"Owner\": {\"ownerName\":\"National Oceanography Centre\",\"ownerContact\":\"someone@example.org\",\"ownerIdentifier\":{\"ownerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/\",\"ownerIdentifierType\":\"URL\"}}}]"
   },
   {
     "type": "21.T11148/1f3e82ddf0697a497432",
