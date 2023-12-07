@@ -177,7 +177,7 @@ attribute from the Attribute Convention for Data Discovery (ACDD)
 within the root group of the NetCDF file. In the latter case, 
 the instrument PID may be expressed as an attribute *instrument_pid*
 within the recommended variable attributes as shown in
-:numref:`snip-link-pidinst-netcdf` . Alternatively, an *instrument_pid* 
+:numref:`snip-link-pidinst-netcdf`. Alternatively, an *instrument_pid* 
 attribute could be added to the set of global attributes.
 
 .. code-block:: default
