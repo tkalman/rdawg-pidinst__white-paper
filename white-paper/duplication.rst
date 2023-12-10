@@ -42,8 +42,7 @@ property with a *relationType* attribute *IsIdenticalTo* as shown in
 Recent advances in technologies are expanding to algorithms that
 automatically detect and resolve deduplication.  While such
 methodologies have been known to improve the efficiency of detection
-in large collections such as Google Scholar or `OpenAIRE Research
-Graph <https://graph.openaire.eu>`_, algorithms may be limited by heterogeneous representations for
+in large collections such as Google Scholar or `OpenAIRE Graph <https://graph.openaire.eu>`_, algorithms may be limited by heterogeneous representations for
 example, by the use of differing semantics.  While automatic detection
 is encouraged, the PIDINST schema is designed to complement
 multidisciplinary best practices for property values and many
