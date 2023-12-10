@@ -258,7 +258,7 @@ which could contain Instruments as well via the `GeneratedBy property`_.
       <GeneratedBy>
         <Equipment id="82394876">
             <Name xml:lang="en">E2 - Flat-Cone Diffractometer</Name>
-            <Identifier type="DOI">10.5442/NI000001</Identifier>
+            <Identifier type="DOI">https://doi.org/10.5442/NI000001</Identifier>
             <Description xml:lang="en">A 3-dimensional part of the reciprocal space can be scanned in less then five steps by combining the “off-plane Bragg-scattering” and the flat-cone layer concept while using a new computer-controlled tilting axis of the detector bank. Parasitic scattering from cryostat or furnace walls is reduced by an oscillating \"radial\" collimator. The datasets and all connected information is stored in one independent NeXus file format for each measurement and can be easily archived. The software package TVneXus deals with the raw data sets, the transformed physical spaces and the usual data analysis tools (e.g. MatLab). TVneXus can convert to various data sets e.g. into powder diffractograms, linear detector projections, rotation crystal pictures or the 2D/3D reciprocal space.</Description>
         </Equipment>
       </GeneratedBy>
@@ -274,7 +274,7 @@ The metadata for the equipment itself is exposed via equipment metadata record a
 
       <Equipment xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="82394876">
         <Name xml:lang="en">E2 - Flat-Cone Diffractometer</Name>
-        <Identifier type="DOI">10.5442/NI000001</Identifier>
+        <Identifier type="DOI">https://doi.org/10.5442/NI000001</Identifier>
         <Description xml:lang="en">A 3-dimensional part of the reciprocal space can be scanned in less then five steps by combining the “off-plane Bragg-scattering” and the flat-cone layer concept while using a new computer-controlled tilting axis of the detector bank. Parasitic scattering from cryostat or furnace walls is reduced by an oscillating \"radial\" collimator. The datasets and all connected information is stored in one independent NeXus file format for each measurement and can be easily archived. The software package TVneXus deals with the raw data sets, the transformed physical spaces and the usual data analysis tools (e.g. MatLab). TVneXus can convert to various data sets e.g. into powder diffractograms, linear detector projections, rotation crystal pictures or the 2D/3D reciprocal space.</Description>
         <Owner>
           <OrgUnit id="OrgUnits/350002">
