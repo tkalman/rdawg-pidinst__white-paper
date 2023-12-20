@@ -32,8 +32,8 @@ this link.
 .. code-block:: XML
     :name: snip-link-dataset-datacite-xml
     :caption: Use of the relatedIdentifier property in the DOI
-	      metadata from a data publication.  The second entry links
-	      the PID of the instrument.
+          metadata from a data publication.  The second entry links
+          the PID of the instrument.
 
       <relatedIdentifiers>
         <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.17815/jlsrf-4-110</relatedIdentifier>
@@ -123,7 +123,7 @@ frames and orientations.
 .. code-block:: default
     :name: snip-link-netcdf-cdl
     :caption: Truncated CF-NetCDF4 CDL file. Note some terminologies
-	      are in development.
+          are in development.
 
       netcdf iocean_example {
       dimensions:
@@ -215,26 +215,12 @@ should be used if linking more than one instrument.
 .. code-block:: default
     :name: snip-link-pidinst-netcdf
     :caption: Addition of a instrument PID attribute to NCEI CF-NetCDF
-	      files.
+          files.
 
       int instrument_parameter_variable;
          instrument_parameter_variable:long_name = "" ;
          instrument_parameter_variable:comment = "" ;
          instrument_parameter_variable:instrument_pid = "" ;
-
-.. _DataCite Metadata Schema: https://schema.datacite.org/
-
-.. [#uk_noc]
-   British Oceanographic Data Centre (BODC) and National Marine
-   Facilities (NMF) divisions
-
-.. [#uk_bas]
-   Uk Polar Data Centre division
-
-.. [#wilkinson2016]
-   Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
-   Guiding Principles for scientific data management and stewardship.
-   *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
 
 OpenAIRE CERIF metadata
 -----------------------
@@ -253,38 +239,45 @@ which could contain Instruments as well via the `GeneratedBy property`_.
 .. code-block:: XML
     :caption: Use of the equipment entity for an instrument in
           exposed in a product (dataset) metadata record.
-          Detailed `product (dataset) example`_ at *OpenAIRE Guidelines for CRIS Managers repository on GitHub*.
+          Detailed `product (dataset) example`_ at *OpenAIRE
+          Guidelines for CRIS Managers repository on GitHub*.
 
       <GeneratedBy>
-        <Equipment id="82394874">
-		    <Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
-			<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
-			<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
+        <Equipment id="82394876">
+            <Name xml:lang="en">E2 - Flat-Cone Diffractometer</Name>
+            <Identifier type="DOI">https://doi.org/10.5442/NI000001</Identifier>
+            <Description xml:lang="en">A 3-dimensional part of the reciprocal space can be scanned in less then five steps by combining the “off-plane Bragg-scattering” and the flat-cone layer concept while using a new computer-controlled tilting axis of the detector bank. Parasitic scattering from cryostat or furnace walls is reduced by an oscillating \"radial\" collimator. The datasets and all connected information is stored in one independent NeXus file format for each measurement and can be easily archived. The software package TVneXus deals with the raw data sets, the transformed physical spaces and the usual data analysis tools (e.g. MatLab). TVneXus can convert to various data sets e.g. into powder diffractograms, linear detector projections, rotation crystal pictures or the 2D/3D reciprocal space.</Description>
         </Equipment>
       </GeneratedBy>
 
-The products (dataset) relates internal to the Equipment record via the *id* attribute, eg. 82394874 .
-The metadata for the equipment itself is exposed via equipment metadata record and described in the `Equipment entity`_.
+The products (dataset) relates internal to the Equipment record via
+the *id* attribute, eg. 82394874.  The metadata for the equipment
+itself is exposed via equipment metadata record and described in the
+`Equipment entity`_.
 
 .. _snip-link-equipment-oaire-cerif-xml:
 .. code-block:: XML
     :caption: Use of the equipment entity for an instrument in
           exposed in a product (dataset) metadata record.
-          Detailed `equipment example`_ at *OpenAIRE Guidelines for CRIS Managers repository on GitHub*.
+          Detailed `equipment example`_ at *OpenAIRE Guidelines for
+          CRIS Managers repository on GitHub*.
 
- 	  <Equipment xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="82394874">
-		<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
-		<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
-		<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
-		<Owner>
-          <OrgUnit id="OrgUnits/312346">
-			<Acronym>CNR</Acronym>
-			<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
-			<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
-		  </OrgUnit>
-		</Owner>
+      <Equipment xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="82394876">
+        <Name xml:lang="en">E2 - Flat-Cone Diffractometer</Name>
+        <Identifier type="DOI">https://doi.org/10.5442/NI000001</Identifier>
+        <Description xml:lang="en">A 3-dimensional part of the reciprocal space can be scanned in less then five steps by combining the “off-plane Bragg-scattering” and the flat-cone layer concept while using a new computer-controlled tilting axis of the detector bank. Parasitic scattering from cryostat or furnace walls is reduced by an oscillating \"radial\" collimator. The datasets and all connected information is stored in one independent NeXus file format for each measurement and can be easily archived. The software package TVneXus deals with the raw data sets, the transformed physical spaces and the usual data analysis tools (e.g. MatLab). TVneXus can convert to various data sets e.g. into powder diffractograms, linear detector projections, rotation crystal pictures or the 2D/3D reciprocal space.</Description>
+        <Owner>
+          <OrgUnit id="OrgUnits/350002">
+            <Acronym>HZB</Acronym>
+            <Name xml:lang="de">Helmholtz-Zentrum Berlin Für Materialien Und Energie</Name>
+            <Name xml:lang="en">Helmholtz-Zentrum Berlin</Name>
+            <RORID>https://ror.org/02aj13c28</RORID>
+          </OrgUnit>
+        </Owner>
       </Equipment>
 
+
+.. _DataCite Metadata Schema: https://schema.datacite.org/
 
 .. _OpenAIRE Guidelines for CRIS Managers: https://doi.org/10.5281/zenodo.8050936
 
@@ -295,6 +288,18 @@ The metadata for the equipment itself is exposed via equipment metadata record a
 .. _product (dataset) example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_products.xml#L30
 
 .. _equipment example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_equipments.xml#L18C1-L29C17
+
+.. [#uk_noc]
+   British Oceanographic Data Centre (BODC) and National Marine
+   Facilities (NMF) divisions
+
+.. [#uk_bas]
+   Uk Polar Data Centre division
+
+.. [#wilkinson2016]
+   Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
+   Guiding Principles for scientific data management and stewardship.
+   *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
 
 .. [#crisguidelines2023]
    Dvořák, Jan, Czerniak, Andreas, & Ivanović, Dragan. (2023). OpenAIRE

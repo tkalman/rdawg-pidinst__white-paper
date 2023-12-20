@@ -11,10 +11,10 @@ one experimental station at BESSY II.\ [#hzb_nc_st]_ The DOIs resolve
 to the respective instrument page from the HZB instrument database
 that did already exist before and was thus not created for this
 purpose.  One particularity with these instruments is that they are
-custom built by HZB.  Thus, in the metadata HZB appears as Creator as
-well as Contributor with property contributorType value
-HostingInstitution.  It is noteworthy that one of the DOIs uses the
-additional property fundingReference from the DataCite schema to
+custom built by HZB.  Thus, in the metadata HZB appears as `Creator`
+as well as `Contributor` with property `contributorType` value
+`HostingInstitution`.  It is noteworthy that one of the DOIs uses the
+additional property `fundingReference` from the DataCite schema to
 acknowledge external funding that HZB received for upgrading the
 instrument.  This property was not considered in the PIDINST schema,
 or in the DataCite mapping.  HZB plans to continue the adoption and to
@@ -162,6 +162,44 @@ The current plan foresees that B2INST will be offered as a public
 service by EUDAT.  The initial proof-of-concept was set up by SURF.
 It was further developed by the GWDG, which will operate the service
 in a production mode.
+
+National Institute of Standards and Technology (NIST)
+-----------------------------------------------------
+
+Recently, a group of researchers collaborating with the Office of Data
+and Informatics at NIST had deployed a proto-instance of an instrument
+database.  It is our hope that this database will becomes a living
+record of all instruments from NIST.  We view the persistent
+identification of research instruments as an essential attribute
+anyone engaged in the production of high-quality and reproducible
+science.
+
+We chose the SharePoint platform as our evaluation portal for the ease
+of setting up an internal facing web interface.  We made a SharePoint
+List object based on the RDA PIDINST schema v1.0 release.  Next, we
+populated the columns using two data sources.  The first is the NIST
+electron microscopy Nexus microscope inventory.  The second the NIST
+Sunflower property databases.  For the Sunflower property database, we
+limited our results to only instruments listed under a single division
+with NIST so that our feasibility study stayed manageable.  In all,
+there are 600+ instruments in the proto-database.
+
+From the two data sources, we were able to populate many of the
+required columns but not all.  For the `LandingPage` requirement,
+since the vast majority of our instruments do not have landing pages,
+we programmatically generated these with the Pelican static site
+generator using Sunflower property data.  The pages with
+internally-resolvable IP addresses are added to a local web host with
+the understanding that some of these can be made public at NIST’s
+discretion.  For the `Identifier` requirement, we minted these using
+Handle, and then imported them into SharePoint.  For fields like
+`Owner` and `ownerName`, NIST is identified as the top-level owner.
+However, it is our hope that instrument custodians will self-report as
+second or third-line owners as the practice of persistent identifier
+for instruments take root.  It is worth mentioning that SharePoint
+List objects are not capable of having nested (1-n) objects.
+Therefore, our instrument database remains in prototype stage until a
+suitable database is identified.  This work is on-going.
 
 Natural Environmental Data Service (EDS)
 ----------------------------------------
