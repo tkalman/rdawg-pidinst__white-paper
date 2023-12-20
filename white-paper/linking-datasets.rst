@@ -253,7 +253,8 @@ which could contain Instruments as well via the `GeneratedBy property`_.
 .. code-block:: XML
     :caption: Use of the equipment entity for an instrument in
           exposed in a product (dataset) metadata record.
-          Detailed `product (dataset) example`_ at *OpenAIRE Guidelines for CRIS Managers repository on GitHub*.
+          Detailed `product (dataset) example`_ at *OpenAIRE
+          Guidelines for CRIS Managers repository on GitHub*.
 
       <GeneratedBy>
         <Equipment id="82394876">
@@ -263,14 +264,17 @@ which could contain Instruments as well via the `GeneratedBy property`_.
         </Equipment>
       </GeneratedBy>
 
-The products (dataset) relates internal to the Equipment record via the *id* attribute, eg. 82394874 .
-The metadata for the equipment itself is exposed via equipment metadata record and described in the `Equipment entity`_.
+The products (dataset) relates internal to the Equipment record via
+the *id* attribute, eg. 82394874.  The metadata for the equipment
+itself is exposed via equipment metadata record and described in the
+`Equipment entity`_.
 
 .. _snip-link-equipment-oaire-cerif-xml:
 .. code-block:: XML
     :caption: Use of the equipment entity for an instrument in
           exposed in a product (dataset) metadata record.
-          Detailed `equipment example`_ at *OpenAIRE Guidelines for CRIS Managers repository on GitHub*.
+          Detailed `equipment example`_ at *OpenAIRE Guidelines for
+          CRIS Managers repository on GitHub*.
 
       <Equipment xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="82394876">
         <Name xml:lang="en">E2 - Flat-Cone Diffractometer</Name>
