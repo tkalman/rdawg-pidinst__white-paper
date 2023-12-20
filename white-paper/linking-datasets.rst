@@ -222,20 +222,6 @@ should be used if linking more than one instrument.
          instrument_parameter_variable:comment = "" ;
          instrument_parameter_variable:instrument_pid = "" ;
 
-.. _DataCite Metadata Schema: https://schema.datacite.org/
-
-.. [#uk_noc]
-   British Oceanographic Data Centre (BODC) and National Marine
-   Facilities (NMF) divisions
-
-.. [#uk_bas]
-   Uk Polar Data Centre division
-
-.. [#wilkinson2016]
-   Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
-   Guiding Principles for scientific data management and stewardship.
-   *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
-
 OpenAIRE CERIF metadata
 -----------------------
 
@@ -291,6 +277,8 @@ itself is exposed via equipment metadata record and described in the
       </Equipment>
 
 
+.. _DataCite Metadata Schema: https://schema.datacite.org/
+
 .. _OpenAIRE Guidelines for CRIS Managers: https://doi.org/10.5281/zenodo.8050936
 
 .. _GeneratedBy property: https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/cerif_xml_product_entity.html#generatedby
@@ -300,6 +288,18 @@ itself is exposed via equipment metadata record and described in the
 .. _product (dataset) example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_products.xml#L30
 
 .. _equipment example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_equipments.xml#L18C1-L29C17
+
+.. [#uk_noc]
+   British Oceanographic Data Centre (BODC) and National Marine
+   Facilities (NMF) divisions
+
+.. [#uk_bas]
+   Uk Polar Data Centre division
+
+.. [#wilkinson2016]
+   Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* The FAIR
+   Guiding Principles for scientific data management and stewardship.
+   *Sci Data* 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
 
 .. [#crisguidelines2023]
    Dvořák, Jan, Czerniak, Andreas, & Ivanović, Dragan. (2023). OpenAIRE
