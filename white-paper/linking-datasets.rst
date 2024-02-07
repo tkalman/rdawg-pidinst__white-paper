@@ -19,8 +19,9 @@ shows an example for a dataset published by HZB
 neutron diffraction with the E2 - Flat-Cone Diffractometer beamline at
 BER II.  The image show a screenshot of the data publication landing
 page which links the PID of the instrument.
-:numref:`snip-link-dataset-datacite-xml` shows a section of the DOI
-metadata from the same data publication containing this link.
+:numref:`snip-link-dataset-datacite-xml-relidentifier` and
+:numref:`snip-link-dataset-datacite-xml-relitem` show sections from the
+DOI metadata from the same data publication containing this link.
 
 .. figure:: /images/ND000001-landing.png
     :name: fig-link-hzb
@@ -30,8 +31,8 @@ metadata from the same data publication containing this link.
     the instrument.
 
 .. code-block:: XML
-    :name: snip-link-dataset-datacite-xml
-    :caption: Use of the relatedIdentifier property in the DOI
+    :name: snip-link-dataset-datacite-xml-relidentifier
+    :caption: Use of the RelatedIdentifier property in the DOI
           metadata from a data publication.  The third entry links
           the PID of the instrument.
 
@@ -40,6 +41,21 @@ metadata from the same data publication containing this link.
         <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.17815/jlsrf-4-110</relatedIdentifier>
         <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCollectedBy">10.5442/NI000001</relatedIdentifier>
       </relatedIdentifiers>
+
+.. code-block:: XML
+    :name: snip-link-dataset-datacite-xml-relitem
+    :caption: Use of the RelatedItem property in the DOI metadata from
+	  a data publication to link the PID of the instrument.
+
+      <relatedItems>
+        <!-- ... -->
+        <relatedItem relatedItemType="Instrument" relationType="IsCollectedBy">
+          <relatedItemIdentifier relatedItemIdentifierType="DOI">10.5442/NI000001</relatedItemIdentifier>
+          <titles>
+            <title>E2 - Flat-Cone Diffractometer</title>
+          </titles>
+        </relatedItem>
+      </relatedItems>
 
 schema.org
 ----------
