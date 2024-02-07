@@ -12,15 +12,16 @@ DataCite metadata
 Datasets are usually published with a DataCite DOI.  The `DataCite
 Metadata Schema`_ allows to link the instrument from the metadata
 registered with that DOI for a data publication using the
-*relatedIdentifier* property.  The recommended *relationType* is
-*IsCompiledBy* in this case.  :numref:`fig-link-hzb` shows an example
-for a dataset published by HZB (https://doi.org/10.5442/ND000001).
-The data has been collected using neutron diffraction with the E2 -
-Flat-Cone Diffractometer beamline at BER II.  The image show a
-screenshot of the data publication landing page which links the PID of
-the instrument.  :numref:`snip-link-dataset-datacite-xml` shows a
-section of the DOI metadata from the same data publication containing
-this link.
+*RelatedIdentifier* and *RelatedItem* properties.  The recommended
+*relationType* is *IsCollectedBy* in this case.  :numref:`fig-link-hzb`
+shows an example for a dataset published by HZB
+(https://doi.org/10.5442/ND000001).  The data has been collected using
+neutron diffraction with the E2 - Flat-Cone Diffractometer beamline at
+BER II.  The image show a screenshot of the data publication landing
+page which links the PID of the instrument.
+:numref:`snip-link-dataset-datacite-xml-relidentifier` and
+:numref:`snip-link-dataset-datacite-xml-relitem` show sections from the
+DOI metadata from the same data publication containing this link.
 
 .. figure:: /images/ND000001-landing.png
     :name: fig-link-hzb
@@ -30,16 +31,31 @@ this link.
     the instrument.
 
 .. code-block:: XML
-    :name: snip-link-dataset-datacite-xml
-    :caption: Use of the relatedIdentifier property in the DOI
-          metadata from a data publication.  The second entry links
+    :name: snip-link-dataset-datacite-xml-relidentifier
+    :caption: Use of the RelatedIdentifier property in the DOI
+          metadata from a data publication.  The third entry links
           the PID of the instrument.
 
       <relatedIdentifiers>
-        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.17815/jlsrf-4-110</relatedIdentifier>
-        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCompiledBy">10.5442/NI000001</relatedIdentifier>
         <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy">10.1103/physrevb.99.174111</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.17815/jlsrf-4-110</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCollectedBy">10.5442/NI000001</relatedIdentifier>
       </relatedIdentifiers>
+
+.. code-block:: XML
+    :name: snip-link-dataset-datacite-xml-relitem
+    :caption: Use of the RelatedItem property in the DOI metadata from
+          a data publication to link the PID of the instrument.
+
+      <relatedItems>
+        <!-- ... -->
+        <relatedItem relatedItemType="Instrument" relationType="IsCollectedBy">
+          <relatedItemIdentifier relatedItemIdentifierType="DOI">10.5442/NI000001</relatedItemIdentifier>
+          <titles>
+            <title>E2 - Flat-Cone Diffractometer</title>
+          </titles>
+        </relatedItem>
+      </relatedItems>
 
 schema.org
 ----------
