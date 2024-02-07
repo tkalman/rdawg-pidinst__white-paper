@@ -94,30 +94,32 @@ NetCDF4
 
 State-of-the-art research ships are multimillion-pound floating
 laboratories which operate diverse arrays of high-powered,
-high-resolution sensors around-the-clock (e.g. sea-floor depth, weather,
-ocean current velocity and hydrography etc.). The National Oceanography
-Centre (NOC)\ [#uk_noc]_ and British Antarctic Survey (BAS)\ [#uk_bas]_
-are currently working together to improve the integrity of the data
-management workflow from these sensor systems to end-users across the UK
-National Environment Research Council (NERC) large research vessel
-fleet, as part of the initiative, I/Ocean. In doing so, we can make
-cost effective use of vessel time while improving the
-FAIRness,\ [#wilkinson2016]_ and in turn, access of data from these
-sensor arrays. The initial phase of the solution implements common
-NetCDF formats enabling harmonised access to data for
-researchers across ships. The formats are based on NetCDF4 and comply 
-with Climate Forecast conventions. It has currently been proposed that 
-NetCDF4 groups could be used to identify instruments and associated metadata 
-in a similar way to the SONAR-netCDF4 convention for sonar data\ [#sonar]_. 
-In doing so, the instrument PID is implemented as the data of a geophysical 
-variable within a group that has an applicable date range (:numref:`snip-link-netcdf-cdl`).
-For example, when the sensor was installed. Data streams are then linked to 
-the instruments which produced them using the variable attribute *instrument* 
-from Attribute Convention for Data Discovery (ACDD) 1-3. Through groups, 
-other variables or attributes could hold more detailed information relating to 
-an instrument. Additionally, groups may potentially offer a way to store 
-other information with valid date ranges, such as calibrations, instrument 
-reference frames and instrument orientations (e.g. the reference point of an anemometer).
+high-resolution sensors around-the-clock (e.g. sea-floor depth,
+weather, ocean current velocity and hydrography etc.). The National
+Oceanography Centre (NOC)\ [#uk_noc]_ and British Antarctic Survey
+(BAS)\ [#uk_bas]_ are currently working together to improve the
+integrity of the data management workflow from these sensor systems to
+end-users across the UK National Environment Research Council (NERC)
+large research vessel fleet, as part of the initiative, I/Ocean. In
+doing so, we can make cost effective use of vessel time while
+improving the FAIRness,\ [#wilkinson2016]_ and in turn, access of data
+from these sensor arrays. The initial phase of the solution
+implements common NetCDF formats enabling harmonised access to data
+for researchers across ships. The formats are based on NetCDF4 and
+comply with Climate Forecast conventions. It has currently been
+proposed that NetCDF4 groups could be used to identify instruments and
+associated metadata in a similar way to the SONAR-netCDF4 convention
+for sonar data\ [#sonar]_. In doing so, the instrument PID is
+implemented as the data of a geophysical variable within a group that
+has an applicable date range (:numref:`snip-link-netcdf-cdl`). For
+example, when the sensor was installed. Data streams are then linked
+to the instruments which produced them using the variable attribute
+*instrument* from Attribute Convention for Data Discovery (ACDD) 1-3.
+Through groups, other variables or attributes could hold more detailed
+information relating to an instrument. Additionally, groups may
+potentially offer a way to store other information with valid date
+ranges, such as calibrations, instrument reference frames and
+instrument orientations (e.g. the reference point of an anemometer).
 
 .. code-block:: default
     :name: snip-link-netcdf-cdl
@@ -169,15 +171,15 @@ reference frames and instrument orientations (e.g. the reference point of an ane
       }
 
 The National Centres for Environmental Information (NCEI) at the
-National Oceanic and Atmospheric Administration (NOAA) in the US, 
+National Oceanic and Atmospheric Administration (NOAA) in the US,
 report instruments using a CF-NetCDF specification\ [#ncei]_. These
-are either global attributes specified using the *instrument* 
+are either global attributes specified using the *instrument*
 attribute from the Attribute Convention for Data Discovery (ACDD)
-1-3. Alternatively they are defined as empty geophysical variables 
-within the root group of the NetCDF file. In the latter case, 
+1-3. Alternatively they are defined as empty geophysical variables
+within the root group of the NetCDF file. In the latter case,
 the instrument PID may be expressed as an attribute *instrument_pid*
 within the recommended variable attributes as shown in
-:numref:`snip-link-pidinst-netcdf`. Alternatively, an *instrument_pid* 
+:numref:`snip-link-pidinst-netcdf`. Alternatively, an *instrument_pid*
 attribute could be added to the set of global attributes.
 
 .. code-block:: default
@@ -281,9 +283,9 @@ itself is exposed via equipment metadata record and described in the
    https://www.ncei.noaa.gov/data/oceans/ncei/formats/netcdf/v2.0/index.html
 
 .. [#sonar]
-   Macaulay, Gavin; Peña, Hector (2018). The SONAR-netCDF4 convention for 
-   sonar data, Version 1.0. ICES Cooperative Research Reports (CRR). 
-   Report. https://doi.org/10.17895/ices.pub.4392 
+   Macaulay, Gavin; Peña, Hector (2018). The SONAR-netCDF4 convention for
+   sonar data, Version 1.0. ICES Cooperative Research Reports (CRR).
+   Report. https://doi.org/10.17895/ices.pub.4392
 
 .. [#crisguidelines2023]
    Dvořák, Jan, Czerniak, Andreas, & Ivanović, Dragan. (2023). OpenAIRE
