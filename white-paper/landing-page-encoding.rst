@@ -46,7 +46,7 @@ respective representation in JSON-LD of the schema example shown in
 .. code-block:: JSON
     :name: snip-landing-encoding-json-ld
     :caption: representation in JSON-LD of the example of
-	      :numref:`tab-schema-handle-record`.
+              :numref:`tab-schema-handle-record`.
 
       {
         "@context": {
@@ -233,9 +233,9 @@ PID suffixes:
 .. code-block:: turtle
     :name: snip-landing-encoding-turtle
     :caption: representation in Turtle Terse RDF of the NERC example
-	      of :numref:`tab-schema-handle-record` that was generated
-	      by a JSON-LD to RDF converter from the JSON-LD in
-	      :numref:`snip-landing-encoding-json-ld`.
+              of :numref:`tab-schema-handle-record` that was generated
+              by a JSON-LD to RDF converter from the JSON-LD in
+              :numref:`snip-landing-encoding-json-ld`.
 
       @prefix ns0: <http://hdl.handle.net/21.T11148/> .
       @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -333,11 +333,11 @@ server.
 .. code-block:: xml
     :name: snip-landing-encoding-sensorml
     :caption: An example of expressing an instrument PID
-	      (http://hdl.handle.net/21.T11998/0000-001A-3905-F) as
-	      identifying metadata within a SensorML technical
-	      description using the *sml:identifier* property for a
-	      SeaBird Scientific SBE 37 Conductivity, temperature and
-	      depth sensor.
+              (http://hdl.handle.net/21.T11998/0000-001A-3905-F) as
+              identifying metadata within a SensorML technical
+              description using the *sml:identifier* property for a
+              SeaBird Scientific SBE 37 Conductivity, temperature and
+              depth sensor.
 
       <sml:identifier>
         <sml:Term definition="http://www.example.com/definitions/pidinst/">
