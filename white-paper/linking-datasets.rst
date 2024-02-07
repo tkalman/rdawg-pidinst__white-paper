@@ -225,12 +225,14 @@ should be used if linking more than one instrument.
 OpenAIRE CERIF metadata
 -----------------------
 
-The *OpenAIRE Guidelines for CRIS Managers* [#crisguidelines2023]_ provide orientation for Research Information System (CRIS) managers
-to expose their metadata in a way that is compatible with the OpenAIRE
-infrastructure as well as the European Open Science Cloud (EOSC). These
-Guidelines also serve as an example of a CERIF-based (Common European Research Information Format)
-standard for information interchange between individual CRISs and other
-research e-Infrastructures.
+The *OpenAIRE Guidelines for CRIS Managers* [#crisguidelines2023]_
+provide orientation for Research Information System (CRIS) managers to
+expose their metadata in a way that is compatible with the OpenAIRE
+infrastructure as well as the European Open Science Cloud (EOSC).
+These Guidelines also serve as an example of a CERIF-based (Common
+European Research Information Format) standard for information
+interchange between individual CRISs and other research
+e-Infrastructures.
 
 The metadata format described by the Guidelines are includes Equipment
 which could contain Instruments as well via the `GeneratedBy property`_.
