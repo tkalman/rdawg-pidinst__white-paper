@@ -19,8 +19,8 @@ class meta(setuptools.Command):
     description = "generate meta files"
     user_options = []
     meta_template = '''
-__version__ = "%(version)s"
-__date__ = "%(date)s"
+version = "%(version)s"
+date = "%(date)s"
 '''
 
     def initialize_options(self):

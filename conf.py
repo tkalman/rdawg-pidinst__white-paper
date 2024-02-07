@@ -19,11 +19,11 @@ copyright = "2020, %s" % author
 
 # The full version, including alpha/beta/rc tags
 # Dummy for the time being
-release = _meta.__version__
+release = _meta.version
 # The short X.Y version
 version = ".".join(release.split(".")[0:2])
 
-today = _meta.__date__
+today = _meta.date
 
 # -- General configuration ---------------------------------------------------
 
