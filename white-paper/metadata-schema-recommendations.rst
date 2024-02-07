@@ -38,14 +38,14 @@ An example of the use of common terminologies in ePIC records is shown
 in :numref:`tab-schema-handle-record`.
 
 .. table:: Handle record of instrument identifier
-	   http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
-	   the use of common terminologies to identify instrument
-	   metadata compliant with the PIDINST schema as implemented
-	   by ePIC.  The terminologies used are published on the `NERC
-	   Vocabulary Server (NVS) <NVS_>`_.  The data for each
-	   metadata property is provided in JSON.  The Handle record
-	   can be viewed at
-	   http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+           http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
+           the use of common terminologies to identify instrument
+           metadata compliant with the PIDINST schema as implemented
+           by ePIC.  The terminologies used are published on the `NERC
+           Vocabulary Server (NVS) <NVS_>`_.  The data for each
+           metadata property is provided in JSON.  The Handle record
+           can be viewed at
+           http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
     :name: tab-schema-handle-record
     :class: longtable
 
@@ -81,7 +81,7 @@ in :numref:`tab-schema-handle-record`.
     |                                    |       {                                                                                                      |
     |                                    |         "Owner": {                                                                                           |
     |                                    |           "ownerName":"National Oceanography Centre",                                                        |
-    |                                    |           "ownerContact":"someone@example.org",                                                            |
+    |                                    |           "ownerContact":"someone@example.org",                                                              |
     |                                    |           "ownerIdentifier": {                                                                               |
     |                                    |             "ownerIdentifierValue": "http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/",              |
     |                                    |             "ownerIdentifierType":"URL"                                                                      |
@@ -144,7 +144,7 @@ in :numref:`tab-schema-handle-record`.
     |                                    |           }                                                                                                  |
     |                                    |         }                                                                                                    |
     |                                    |       }                                                                                                      |
-    |                                    |     ]                                                                                                        |                    
+    |                                    |     ]                                                                                                        |
     +------------------------------------+--------------------------------------------------------------------------------------------------------------+
     | | 21.T11148/72928b84e060d491ee41   | .. code-block:: JSON                                                                                         |
     | | (MeasuredVariables)              |                                                                                                              |
