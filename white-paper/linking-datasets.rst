@@ -185,18 +185,18 @@ attribute could be added to the set of global attributes.
 .. code-block:: default
     :name: snip-link-pidinst-netcdf
     :caption: Addition of an instrument PID attribute to NCEI CF-NetCDF
-	      files v2.0.
+              files v2.0.
 
-	char instrument1 ;
+        char instrument1 ;
       instrument1:instrument_pid = "http://hdl.handle.net/21.T11998/0000-001A-3905-F" ;
-		instrument1:long_name = "Seabird 37 Microcat" ;
-		instrument1:ncei_name = "CTD" ;
-		instrument1:make_model = "SBE-37" ;
-		instrument1:serial_number = "1859723" ;
-		instrument1:calibration_date = "2016-03-25" ;
-		instrument1:accuracy = "" ;
-		instrument1:precision = "" ;
-		instrument1:comment = "serial number and calibration dates are bogus" ;
+                instrument1:long_name = "Seabird 37 Microcat" ;
+                instrument1:ncei_name = "CTD" ;
+                instrument1:make_model = "SBE-37" ;
+                instrument1:serial_number = "1859723" ;
+                instrument1:calibration_date = "2016-03-25" ;
+                instrument1:accuracy = "" ;
+                instrument1:precision = "" ;
+                instrument1:comment = "serial number and calibration dates are bogus" ;
 
 OpenAIRE CERIF metadata
 -----------------------
