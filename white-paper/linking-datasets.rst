@@ -45,7 +45,7 @@ DOI metadata from the same data publication containing this link.
 .. code-block:: XML
     :name: snip-link-dataset-datacite-xml-relitem
     :caption: Use of the RelatedItem property in the DOI metadata from
-	  a data publication to link the PID of the instrument.
+          a data publication to link the PID of the instrument.
 
       <relatedItems>
         <!-- ... -->
