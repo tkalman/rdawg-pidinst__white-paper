@@ -58,6 +58,9 @@ The group produced the following outputs:
 * :ref:`datacite-cookbook` :raw-html:`<br />`
   Detailed instructions on how to create DataCite DOIs for instruments.
 
+* :ref:`adoption` :raw-html:`<br />`
+  Collection of examples of PIDINST adoption.
+
 .. image:: /images/cc-by.*
     :alt: Creative Commons License
     :target: `cc-by`_
@@ -74,6 +77,7 @@ Attribution 4.0 International License <cc-by_>`_.
    white-paper/index
    epic-cookbook/index
    datacite-cookbook/index
+   adoption/index
 
 .. _pidinst: https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 .. _rda: https://www.rd-alliance.org/
