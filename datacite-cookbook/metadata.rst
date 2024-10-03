@@ -31,22 +31,22 @@ instrument can be best represented in the DataCite Schema:
 
 `Name`
   The name by which this instrument is known.  Add as DataCite property
-  `Title`. The DataCite schema allows for multiple kinds of titles that are 
+  `Title <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/title/>`_. The DataCite schema allows for multiple kinds of titles that are 
   distinguished by the `titleType` subproperty. A title without a specified
-  type is assumed to be the main title. Many instruments are commonly refered 
-  to with acronyms. Use "title (acronym)" to include the acronym in the main title.
+  type is assumed to be the main title. 
+  
+  Many instruments are commonly refered 
+  to with acronyms. Use "title" with TitleType="AlternateTitle" to include the acronym for the instrument.
   
 `Owner`
   The organization or individual that manages the instrument.  Add as
   DataCite property `Contributor` with `contributorType=HostingInstitution`.  
-  An identifier can be used to unambiguously identify the owner,
-  typically a `ROR <https://ror.org>`, in the `nameIdentifier`
+  An identifier, typically a `ROR <https://ror.org>`, can be used to unambiguously identify the owner in the `nameIdentifier`
   subproperty of `Contributor <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/contributor/>`_.
 
 `Manufacturer`
   The organization or individual that built the instrument.  Add as
-  DataCite property `Creator`.  Consider also to add an identifier for
-  the manufacturer in the `nameIdentifier` subproperty of `Creator <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/>`_.
+  DataCite property `Creator`.  Consider also to add an identifier, typically a `ROR <https://ror.org>`, for the manufacturer in the `nameIdentifier` subproperty of `Creator <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/>`_.
 
 `Model`
   The name of the model or type of the instrument.  As of this
@@ -111,9 +111,9 @@ instrument can be best represented in the DataCite Schema:
   other versions of the instrument.
   * `HasPart <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#haspart>`_ and `IsPartOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispartof>`_ can be used to define parts of instruments or instruments with parts.
 
-  Version 4.5 of the DataCite schema added the relation type `Collects<https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects>`_
-  for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B. The complimentary relationship
-  (dataset B is collected by instrument A) can be described using the relation type `IsCollectedBy<https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#iscollectedby>`_.
+  `Collects<https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects>`_ (added in Version 4.5 of the schema) can be used for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B
+  * `IsCollectedBy<https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#iscollectedby>`_ (also added in Version 4.5 of the schema) can be used for the complimentary relationship
+  (dataset B is collected by instrument A).
 
 
 `AlternateIdentifier`
@@ -183,7 +183,7 @@ considered as well, if it makes sense for a particular use case.
 
 `FundingReference`
   This optional element can be used to acknowledge external funding that supported the purchase or the
-  creation of the instrument. See `funder metadata <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/fundingreference/>`_ for details.
+  creation of the instrument. See `FundingReference <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/fundingreference/>`_ for details.
 
 .. _DataCite Metadata Schema: https://datacite-metadata-schema.readthedocs.io/en/4.5/introduction/
 
