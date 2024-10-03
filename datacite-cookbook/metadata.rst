@@ -31,16 +31,17 @@ instrument can be best represented in the DataCite Schema:
 
 `Name`
   The name by which this instrument is known.  Add as DataCite property
-  `Title <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/title/>`_. The DataCite schema allows for multiple kinds of titles that are 
+  `Title <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/title/>`_. The DataCite schema allows for multiple kinds of titles that are
   distinguished by the `titleType` subproperty. A title without a specified
-  type is assumed to be the main title. 
-  
-  Many instruments are commonly refered 
-  to with acronyms. Use "title" with TitleType="AlternateTitle" to include the acronym for the instrument.
-  
+  type is assumed to be the main title.
+
+  Many instruments are commonly refered
+  to with acronyms. Use "title" with TitleType="AlternateTitle" to include
+  the acronym for the instrument.
+
 `Owner`
   The organization or individual that manages the instrument.  Add as
-  DataCite property `Contributor` with `contributorType=HostingInstitution`.  
+  DataCite property `Contributor` with `contributorType=HostingInstitution`.
   An identifier, typically a `ROR <https://ror.org>`, can be used to unambiguously identify the owner in the `nameIdentifier`
   subproperty of `Contributor <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/contributor/>`_.
 
@@ -62,7 +63,7 @@ instrument can be best represented in the DataCite Schema:
 `Description`
   A textual description of the device and its capabilities.  Add as
   DataCite property `Description` with `descriptionType=Abstract`. A description with
-  `descriptionType=TechnicalInfo` can also be used to provide additional technical details 
+  `descriptionType=TechnicalInfo` can also be used to provide additional technical details
   (see Model, InstrumentType, and MeasuredVariable).
 
 `InstrumentType`
@@ -96,23 +97,24 @@ instrument can be best represented in the DataCite Schema:
   DataCite Schema has a property with the same name, having very
   similar subproperties and semantics as the PIDINST Schema.
 
-  The type of the relation is described using the relationType property. The DataCite schema has 
+  The type of the relation is described using the relationType property. The DataCite schema has
   a list of valid `relation types <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/>`_.
-  
+
   Several relation types can be used to connect to more detailed instrument metadata:
   * `IsDescribedBy <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isdescribedby>_`
-  can be used to link to a more detailed description of the instrument. 
+  can be used to link to a more detailed description of the instrument.
   * `HasMetadata <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasmetadata>` can be used to
-  link to metadata records that describe the instrument in more detail. 
+  link to metadata records that describe the instrument in more detail.
   * `HasVersion <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasversion>`_,
-  `IsVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isversionof>`_,  
-  `IsNewVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isnewversionof>`_, 
+  `IsVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isversionof>`_,
+  `IsNewVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isnewversionof>`_,
   and `IsPreviousVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispreviousversionof>`_ can be used to link to
   other versions of the instrument.
-  * `HasPart <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#haspart>`_ and `IsPartOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispartof>`_ can be used to define parts of instruments or instruments with parts.
+  * `HasPart <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#haspart>`_ 
+  and `IsPartOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispartof>`_ can be used to define parts of instruments or instruments with parts.
 
-  `Collects<https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects>`_ (added in Version 4.5 of the schema) can be used for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B
-  * `IsCollectedBy<https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#iscollectedby>`_ (also added in Version 4.5 of the schema) can be used for the complimentary relationship
+  `Collects <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects>`_ (added in Version 4.5 of the schema) can be used for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B
+  * `IsCollectedBy <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#iscollectedby>`_ (also added in Version 4.5 of the schema) can be used for the complimentary relationship
   (dataset B is collected by instrument A).
 
 
@@ -164,7 +166,8 @@ considered as well, if it makes sense for a particular use case.
   be set.  We recommend to set it to the entity that created the DOI
   and is responsible for maintaining the DOI metadata.
 
-  In Version 4.5 of the schema several sub-properties were added to `publisher<https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/#id1>`_:
+  In Version 4.5 of the schema several sub-properties were added
+  to `publisher <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/#id1>`_:
   *  publisherIdentifier: An identifier for the publisher. Use a ROR ID if available.
   *  publisherIdentifierScheme: The scheme for the publisher identifier (e.g. ROR).
   *  schemeURI: The URI of the identifier scheme (e.g. https://ror.org).
@@ -173,10 +176,11 @@ considered as well, if it makes sense for a particular use case.
   Mandatory in the DataCite Schema.  We suggest to set it to the year
   of issuing the DOI.
 
-`ResourceTypeGeneral`and `ResourceType` 
+`ResourceTypeGeneral`and `ResourceType`
   DataCite DOIs are for many different types of objects, so there is a
-  need to indicate the type.  ResourceTypeGeneral is a mandatory element in the DataCite
-  Schema selected from a `shared vocabulary <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/>`_.
+  need to indicate the type. ResourceTypeGeneral is a mandatory element in the DataCite
+  Schema selected from a
+  `shared vocabulary <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/>`_.
   Set `resourceTypeGeneral=Instrument` for DataCite instrument metadata records.
 
   ResourceType is a free text field that can be used to provide a more specific resource type.
