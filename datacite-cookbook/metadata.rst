@@ -190,16 +190,17 @@ considered as well, if it makes sense for a particular use case.
   Mandatory in the DataCite Schema.  We suggest to set it to the year
   of issuing the DOI.
 
-`ResourceTypeGeneral` and `ResourceType`
+`ResourceType`
   DataCite DOIs are for many different types of objects, so there is a
-  need to indicate the type.  `resourceTypeGeneral` is a mandatory
-  element in the DataCite Schema selected from a `shared vocabulary
-  <DataCite definition resourceTypeGeneral_>`_.  Set
+  need to indicate the type.  Therefore, the `DataCite property
+  ResourceType`_ is mandatory.  The subproperty `resourceTypeGeneral`
+  is needs to be selected from a `controlled vocabulary <DataCite
+  definition resourceTypeGeneral_>`_.  Set
   `resourceTypeGeneral=Instrument` for DataCite instrument metadata
   records.
 
-  `ResourceType` is a free text field that can be used to provide a
-  more specific resource type.
+  `ResourceType` itself is a free text field that can be used to
+  provide a more specific resource type.
 
 `FundingReference`
   This optional element can be used to acknowledge external funding
@@ -227,6 +228,9 @@ considered as well, if it makes sense for a particular use case.
 
 .. _DataCite property Date:
    https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/date/
+
+.. _DataCite property ResourceType:
+   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/resourcetype/
 
 .. _DataCite property AlternateIdentifier:
    https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/alternateidentifier/
