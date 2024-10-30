@@ -30,8 +30,8 @@ instrument can be best represented in the DataCite Schema:
   URL along with the metadata when creating the DOI.
 
 `Name`
-  The name by which this instrument is known.  Add as DataCite property
-  `Title <DataCite property Title_>`_. The DataCite schema allows for multiple kinds of titles that are
+  The name by which this instrument is known.  Add as `DataCite property
+  Title`_. The DataCite schema allows for multiple kinds of titles that are
   distinguished by the `titleType` subproperty. A title without a specified
   type is assumed to be the main title.
 
@@ -41,13 +41,13 @@ instrument can be best represented in the DataCite Schema:
 
 `Owner`
   The organization or individual that manages the instrument.  Add as
-  DataCite property `Contributor` with `contributorType=HostingInstitution`.
+  `DataCite property Contributor`_ with `contributorType=HostingInstitution`.
   An identifier, typically a `ROR`_, can be used to unambiguously identify the owner in the `nameIdentifier`
-  subproperty of `Contributor <DataCite property Contributor_>`_.
+  subproperty of `Contributor`.
 
 `Manufacturer`
   The organization or individual that built the instrument.  Add as
-  DataCite property `Creator`.  Consider also to add an identifier, typically a `ROR`_, for the manufacturer in the `nameIdentifier` subproperty of `Creator <DataCite property Creator_>`_.
+  `DataCite property Creator`_.  Consider also to add an identifier, typically a `ROR`_, for the manufacturer in the `nameIdentifier` subproperty of `Creator`.
 
 `Model`
   The name of the model or type of the instrument.  As of this
@@ -168,7 +168,7 @@ considered as well, if it makes sense for a particular use case.
   and is responsible for maintaining the DOI metadata.
 
   In Version 4.5 of the schema several sub-properties were added
-  to `publisher <DataCite property Publisher_>`_:
+  to `DataCite property Publisher`_:
 
   *  `publisherIdentifier`: Identifier for publisher. Use a ROR ID if available.
   *  `publisherIdentifierScheme`: Scheme for publisher identifier (e.g. `ROR`).
@@ -192,7 +192,7 @@ considered as well, if it makes sense for a particular use case.
 
 `FundingReference`
   This optional element can be used to acknowledge external funding that supported the purchase or the
-  creation of the instrument. See `FundingReference <DataCite property FundingReference_>`_ for details.
+  creation of the instrument. See `DataCite property FundingReference`_ for details.
 
 .. _ROR: https://ror.org/
 
