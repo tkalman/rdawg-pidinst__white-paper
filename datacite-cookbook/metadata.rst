@@ -21,8 +21,8 @@ following additional hints and discuss how the metadata describing the
 instrument can be best represented in the DataCite Schema:
 
 `Identifier`
-  The DOI that you are going to create.  Add as DataCite property
-  `Identifier` with `identifierType=DOI`.
+  The DOI that you are going to create.  Add as `DataCite property
+  Identifier`_ with `identifierType=DOI`.
 
 `LandingPage`
   The URL of the landing page that the PID resolves to.  The DataCite
@@ -87,7 +87,7 @@ instrument can be best represented in the DataCite Schema:
 
 `Date`
   Relevant events pertaining to this instrument instance.  Add as
-  DataCite property `Date`.  Use `dateType=Available` to indicate the
+  `DataCite property Date`_.  Use `dateType=Available` to indicate the
   date that the instrument is or was in operation.  Use a single date
   if the instrument is still in operation, to indicate a start date.
   Use a date interval to indicate a start and an end date, if the
@@ -121,7 +121,7 @@ instrument can be best represented in the DataCite Schema:
 
 `AlternateIdentifier`
   To be used if this instrument is also registered elsewhere.  Add as
-  DataCite property `AlternateIdentifier`.  Use
+  `DataCite property AlternateIdentifier`_.  Use
   `alternateIdentifierType=SerialNumber` for a serial number
   attributed by the manufacturer.  Use
   `alternateIdentifierType=InventoryNumber` for an inventory number
@@ -198,6 +198,9 @@ considered as well, if it makes sense for a particular use case.
 
 .. _DataCite Metadata Schema: https://datacite-metadata-schema.readthedocs.io/en/4.5/introduction/
 
+.. _DataCite property Identifier:
+   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/identifier/
+
 .. _DataCite property Creator:
    https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/
 
@@ -209,6 +212,12 @@ considered as well, if it makes sense for a particular use case.
 
 .. _DataCite property Contributor:
    https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/contributor/
+
+.. _DataCite property Date:
+   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/date/
+
+.. _DataCite property AlternateIdentifier:
+   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/alternateidentifier/
 
 .. _DataCite property FundingReference:
    https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/fundingreference/
