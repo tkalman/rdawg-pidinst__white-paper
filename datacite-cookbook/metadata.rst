@@ -36,7 +36,7 @@ instrument can be best represented in the DataCite Schema:
   type is assumed to be the main title.
 
   Many instruments are commonly refered
-  to with acronyms. Use "title" with TitleType="AlternateTitle" to include
+  to with acronyms. Use `Title` with `titleType=AlternateTitle` to include
   the acronym for the instrument.
 
 `Owner`
@@ -170,9 +170,9 @@ considered as well, if it makes sense for a particular use case.
   In Version 4.5 of the schema several sub-properties were added
   to `publisher <DataCite property Publisher_>`_:
 
-  *  publisherIdentifier: Identifier for publisher. Use a ROR ID if available.
-  *  publisherIdentifierScheme: Scheme for publisher identifier (e.g. ROR).
-  *  schemeURI: The URI of the identifier scheme (e.g. https://ror.org).
+  *  `publisherIdentifier`: Identifier for publisher. Use a ROR ID if available.
+  *  `publisherIdentifierScheme`: Scheme for publisher identifier (e.g. `ROR`).
+  *  `schemeURI`: The URI of the identifier scheme (e.g. `https://ror.org`).
 
 `PublicationYear`
   Mandatory in the DataCite Schema.  We suggest to set it to the year
@@ -180,14 +180,14 @@ considered as well, if it makes sense for a particular use case.
 
 `ResourceTypeGeneral` and `ResourceType`
   DataCite DOIs are for many different types of objects, so there is a
-  need to indicate the type. ResourceTypeGeneral is a
+  need to indicate the type. `resourceTypeGeneral` is a
   mandatory element in the DataCite
   Schema selected from a
   `shared vocabulary <DataCite definition resourceTypeGeneral_>`_.
   Set `resourceTypeGeneral=Instrument` for DataCite instrument
   metadata records.
 
-  ResourceType is a free text field that can be used to provide a more
+  `ResourceType` is a free text field that can be used to provide a more
   specific resource type.
 
 `FundingReference`
