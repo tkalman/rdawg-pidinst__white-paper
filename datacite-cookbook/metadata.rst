@@ -102,21 +102,21 @@ instrument can be best represented in the DataCite Schema:
   a list of valid `relation types <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/>`_.
 
   Several relation types can be used to connect to more detailed instrument metadata:
-  * `IsDescribedBy <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isdescribedby>_`
-  can be used to link to a more detailed description of the instrument.
-  * `HasMetadata <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasmetadata>` can be used to
-  link to metadata records that describe the instrument in more detail.
-  * `HasVersion <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasversion>`_,
-  `IsVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isversionof>`_,
-  `IsNewVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isnewversionof>`_,
-  and `IsPreviousVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispreviousversionof>`_ can be used to link to
-  other versions of the instrument.
-  * `HasPart <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#haspart>`_
-  and `IsPartOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispartof>`_ can be used to define parts of instruments or instruments with parts.
 
-  `Collects <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects>`_ (added in Version 4.5 of the schema) can be used for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B
+  * `IsDescribedBy <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isdescribedby>_`
+    can be used to link to a more detailed description of the instrument.
+  * `HasMetadata <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasmetadata>` can be used to
+    link to metadata records that describe the instrument in more detail.
+  * `HasVersion <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasversion>`_,
+    `IsVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isversionof>`_,
+    `IsNewVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isnewversionof>`_,
+    and `IsPreviousVersionOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispreviousversionof>`_ can be used to link to
+    other versions of the instrument.
+  * `HasPart <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#haspart>`_
+    and `IsPartOf <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispartof>`_ can be used to define parts of instruments or instruments with parts.
+  * `Collects <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects>`_ (added in Version 4.5 of the schema) can be used for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B
   * `IsCollectedBy <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#iscollectedby>`_ (also added in Version 4.5 of the schema) can be used for the complimentary relationship
-  (dataset B is collected by instrument A).
+    (dataset B is collected by instrument A).
 
 
 `AlternateIdentifier`
@@ -169,6 +169,7 @@ considered as well, if it makes sense for a particular use case.
 
   In Version 4.5 of the schema several sub-properties were added
   to `publisher <https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/#id1>`_:
+
   *  publisherIdentifier: Identifier for publisher. Use a ROR ID if available.
   *  publisherIdentifierScheme: Scheme for publisher identifier (e.g. ROR).
   *  schemeURI: The URI of the identifier scheme (e.g. https://ror.org).
@@ -177,7 +178,7 @@ considered as well, if it makes sense for a particular use case.
   Mandatory in the DataCite Schema.  We suggest to set it to the year
   of issuing the DOI.
 
-`ResourceTypeGeneral`and `ResourceType`
+`ResourceTypeGeneral` and `ResourceType`
   DataCite DOIs are for many different types of objects, so there is a
   need to indicate the type. ResourceTypeGeneral is a
   mandatory element in the DataCite
