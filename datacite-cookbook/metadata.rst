@@ -100,7 +100,6 @@ instrument can be best represented in the DataCite Schema:
 
   The type of the relation is described using the relationType property. The DataCite schema has
   a list of valid `relation types <DataCite definition relationType_>`_.
-
   Several relation types can be used to connect to more detailed instrument metadata:
 
   * `IsDescribedBy <DataCite definition IsDescribedBy_>`_
