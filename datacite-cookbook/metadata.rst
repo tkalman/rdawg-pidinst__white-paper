@@ -41,13 +41,16 @@ instrument can be best represented in the DataCite Schema:
 
 `Owner`
   The organization or individual that manages the instrument.  Add as
-  `DataCite property Contributor`_ with `contributorType=HostingInstitution`.
-  An identifier, typically a `ROR`_, can be used to unambiguously identify the owner in the `nameIdentifier`
-  subproperty of `Contributor`.
+  `DataCite property Contributor`_ with
+  `contributorType=HostingInstitution`.  An identifier, typically a
+  `ROR`_, can be used to unambiguously identify the owner in the
+  `nameIdentifier` subproperty of `Contributor`.
 
 `Manufacturer`
   The organization or individual that built the instrument.  Add as
-  `DataCite property Creator`_.  Consider also to add an identifier, typically a `ROR`_, for the manufacturer in the `nameIdentifier` subproperty of `Creator`.
+  `DataCite property Creator`_.  Consider also to add an identifier,
+  typically a `ROR`_, for the manufacturer in the `nameIdentifier`
+  subproperty of `Creator`.
 
 `Model`
   The name of the model or type of the instrument.  As of this
@@ -94,28 +97,35 @@ instrument can be best represented in the DataCite Schema:
   instrument has already been decommissioned.
 
 `RelatedIdentifier`
-  This can be used to establish links to related resources with identifiers.
-  The DataCite Schema has a property with the same name, having very
-  similar subproperties and semantics as the PIDINST Schema.
+  This can be used to establish links to related resources with
+  identifiers.  The DataCite Schema has a property with the same name,
+  having very similar subproperties and semantics as the PIDINST
+  Schema.
 
-  The type of the relation is described using the relationType property. The DataCite schema has
-  a list of valid `relation types <DataCite definition relationType_>`_.
-  Several relation types can be used to connect to more detailed instrument metadata:
+  The type of the relation is described using the relationType
+  property.  The DataCite schema has a list of valid `relation types
+  <DataCite definition relationType_>`_.  Several relation types can
+  be used to connect to more detailed instrument metadata:
 
-  * `IsDescribedBy <DataCite definition IsDescribedBy_>`_
-    can be used to link to a more detailed description of the instrument.
+  * `IsDescribedBy <DataCite definition IsDescribedBy_>`_ can be used
+    to link to a more detailed description of the instrument.
   * `HasMetadata <DataCite definition HasMetadata_>`_ can be used to
-    link to metadata records that describe the instrument in more detail.
-  * `HasVersion <DataCite definition HasVersion_>`_,
-    `IsVersionOf <DataCite definition IsVersionOf_>`_,
-    `IsNewVersionOf <DataCite definition IsNewVersionOf_>`_,
-    and `IsPreviousVersionOf <DataCite definition IsPreviousVersionOf_>`_ can be used to link to
-    other versions of the instrument.
-  * `HasPart <DataCite definition HasPart_>`_
-    and `IsPartOf <DataCite definition IsPartOf_>`_ can be used to define parts of instruments or instruments with parts.
-  * `Collects <DataCite definition Collects_>`_ (added in Version 4.5 of the schema) can be used for describing the relation between an instrument and a dataset, i.e. instrument A collects dataset B
-  * `IsCollectedBy <DataCite definition IsCollectedBy_>`_ (also added in Version 4.5 of the schema) can be used for the complimentary relationship
-    (dataset B is collected by instrument A).
+    link to metadata records that describe the instrument in more
+    detail.
+  * `HasVersion <DataCite definition HasVersion_>`_, `IsVersionOf
+    <DataCite definition IsVersionOf_>`_, `IsNewVersionOf <DataCite
+    definition IsNewVersionOf_>`_, and `IsPreviousVersionOf <DataCite
+    definition IsPreviousVersionOf_>`_ can be used to link to other
+    versions of the instrument.
+  * `HasPart <DataCite definition HasPart_>`_ and `IsPartOf <DataCite
+    definition IsPartOf_>`_ can be used to define parts of instruments
+    or instruments with parts.
+  * `Collects <DataCite definition Collects_>`_ (added in Version 4.5
+    of the schema) can be used for describing the relation between an
+    instrument and a dataset, i.e. instrument A collects dataset B.
+  * `IsCollectedBy <DataCite definition IsCollectedBy_>`_ (also added
+    in Version 4.5 of the schema) can be used for the complimentary
+    relationship (dataset B is collected by instrument A).
 
 
 `AlternateIdentifier`
@@ -169,9 +179,12 @@ considered as well, if it makes sense for a particular use case.
   In Version 4.5 of the schema several sub-properties were added
   to `DataCite property Publisher`_:
 
-  *  `publisherIdentifier`: Identifier for publisher. Use a ROR ID if available.
-  *  `publisherIdentifierScheme`: Scheme for publisher identifier (e.g. `ROR`).
-  *  `schemeURI`: The URI of the identifier scheme (e.g. `https://ror.org`).
+  * `publisherIdentifier`: Identifier for publisher.  Use a ROR ID if
+    available.
+  * `publisherIdentifierScheme`: Scheme for publisher identifier
+    (e.g. `ROR`).
+  * `schemeURI`: The URI of the identifier scheme
+    (e.g. `https://ror.org`).
 
 `PublicationYear`
   Mandatory in the DataCite Schema.  We suggest to set it to the year
@@ -179,19 +192,19 @@ considered as well, if it makes sense for a particular use case.
 
 `ResourceTypeGeneral` and `ResourceType`
   DataCite DOIs are for many different types of objects, so there is a
-  need to indicate the type. `resourceTypeGeneral` is a
-  mandatory element in the DataCite
-  Schema selected from a
-  `shared vocabulary <DataCite definition resourceTypeGeneral_>`_.
-  Set `resourceTypeGeneral=Instrument` for DataCite instrument
-  metadata records.
+  need to indicate the type.  `resourceTypeGeneral` is a mandatory
+  element in the DataCite Schema selected from a `shared vocabulary
+  <DataCite definition resourceTypeGeneral_>`_.  Set
+  `resourceTypeGeneral=Instrument` for DataCite instrument metadata
+  records.
 
-  `ResourceType` is a free text field that can be used to provide a more
-  specific resource type.
+  `ResourceType` is a free text field that can be used to provide a
+  more specific resource type.
 
 `FundingReference`
-  This optional element can be used to acknowledge external funding that supported the purchase or the
-  creation of the instrument. See `DataCite property FundingReference`_ for details.
+  This optional element can be used to acknowledge external funding
+  that supported the purchase or the creation of the instrument.  See
+  `DataCite property FundingReference`_ for details.
 
 .. _ROR: https://ror.org/
 
