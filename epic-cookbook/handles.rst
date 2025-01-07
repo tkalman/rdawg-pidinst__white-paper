@@ -145,7 +145,7 @@ Service endpoint: ``https://vm04.pid.gwdg.de:8001/api/handles/``
 
 The process to derive the ``privkey.pem`` and ``certificate_only.pem``
 from a is described for instance at:
-http://eudat-b2safe.github.io/B2HANDLE/creatingclientcertificates.html
+https://eudat-b2handle.github.io/B2HANDLE/creatingclientcertificates.html
 
 The Handle API does not have an internal suffix generator.  The suffix
 needs to be provided by the user.
