@@ -8,9 +8,9 @@ representations.  Each property, sub-property and attribute is
 resolvable through a unique handle record:
 
 +----------------------+---------------------------------------------------------------------------+
-|Human-readable        |http://dtr-test.pidconsortium.eu/#objects/21.T11148/17ce618137e697852ea6   |
+|Human-readable        |https://dtr-test.pidconsortium.net/#objects/21.T11148/17ce618137e697852ea6   |
 +----------------------+---------------------------------------------------------------------------+
-|JSON representation   |http://dtr-test.pidconsortium.eu/objects/21.T11148/17ce618137e697852ea6    |
+|JSON representation   |https://dtr-test.pidconsortium.net/objects/21.T11148/17ce618137e697852ea6    |
 +----------------------+---------------------------------------------------------------------------+
 
 
@@ -41,11 +41,11 @@ PIDs are typically created using POST/PUT methods.  Using the POST
 method will automatically generate a Universally Unique Identifier
 (UUID) within the suffix of a handle record.  Alternatively a suffix
 can be manually created via PUT method using a local identifier (see
-https://doc.pidconsortium.eu/guides/api-create/).
+https://doc.pidconsortium.net/docs/create).
 
 All examples below use cURL requests at the command line (in Linux).
 Requests can also use PHP, Perl and Python (see
-https://doc.pidconsortium.eu/guides/api-create/).  Examples also use
+hhttps://doc.pidconsortium.net/docs/create).  Examples also use
 the test API endpoint http://vm04.pid.gwdg.de:8081/handles/.  Each
 ePIC member may use their own API end-point.
 
