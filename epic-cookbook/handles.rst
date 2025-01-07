@@ -114,7 +114,7 @@ Using the ePIC API
 
 The following HTTP protocol methods enable users to manage their PID
 handle records using the ePIC API based on username-password.
-Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
+Service endpoint: ``https://pid.gwdg.de/handles/``
 
 **Get a PID:**
 
@@ -140,7 +140,8 @@ Using the Handle API
 
 The following HTTP protocol methods enable users to manage their PID
 handle records using the generic Handle API based on Certificates.
-Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
+Service endpoint: ``https://vm04.pid.gwdg.de:8001/api/handles/`` 
+(Server: ``vm04.pid.gwdg.de``, Port: ``8001``, Resources: ``/api/handles/<PID>``)
 
 The process to derive the ``privkey.pem`` and ``certificate_only.pem``
 from a is described for instance at:
