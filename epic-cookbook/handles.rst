@@ -140,8 +140,7 @@ Using the Handle API
 
 The following HTTP protocol methods enable users to manage their PID
 handle records using the generic Handle API based on Certificates.
-Service endpoint: ``https://vm04.pid.gwdg.de:8001/api/handles/`` 
-(Server: ``vm04.pid.gwdg.de``, Port: ``8001``, Resources: ``/api/handles/<PID>``)
+Service endpoint: ``https://vm04.pid.gwdg.de:8001/api/handles/``
 
 The process to derive the ``privkey.pem`` and ``certificate_only.pem``
 from a is described for instance at:
